@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Tennis Counter</string>
+    <string name="games">Games</string>
+    <string name="zero">0</string>
+    <string name="point">+1 point</string>
+    <string name="ace">ACE</string>
+    <string name="new_game">New Game</string>
+    <string name="current">Current</string>
+    <string name="stats">Match Score</string>
+    <string name="winner">WINNER</string>
+    <string name="unforced">Unforced ERR</string>
+    <string name="playerA">Player A</string>
+    <string name="playerB">Player B</string>
+    <string name="sets">Sets</string>
+    <string name="set_1">Set 1</string>
+    <string name="set_2">Set 2</string>
+    <string name="set_3">Set 3</string>
+
+
+</resources>
