@@ -37,9 +37,16 @@ public class MainActivity extends AppCompatActivity {
 
         //display(quantity);
         //displayPrice(quantity * 5);
-        String priceMessage = "Total: $" + (quantity * 5);
+        //String priceMessage = "Total: $" + (quantity * 5);
+        //priceMessage = priceMessage + "\nThank you!";
+        //displayMessage(priceMessage);
+
+        // January 2018
+        int price = calculatePrice();
+        String priceMessage = "Total: $" + price;
         priceMessage = priceMessage + "\nThank you!";
         displayMessage(priceMessage);
+
     }
 
     /**
@@ -88,8 +95,9 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Calculates the price of the order
      */
-    private void calculatePrice(int quantity) {
+    private int calculatePrice() {
 
         int price = quantity * 5;
+        return price;
     }
 }
