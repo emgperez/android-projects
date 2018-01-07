@@ -43,9 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         // January 2018
         int price = calculatePrice();
-        String priceMessage = "Total: $" + price;
-        priceMessage = priceMessage + "\nThank you!";
-        displayMessage(priceMessage);
+        displayMessage(createOrderSummary(price));
+
 
     }
 
@@ -97,7 +96,19 @@ public class MainActivity extends AppCompatActivity {
      */
     private int calculatePrice() {
 
-        int price = quantity * 5;
-        return price;
+        return quantity * 5;
+
+    }
+
+    /**
+     * Creates order summary
+     */
+    private String createOrderSummary(int price) {
+
+        String priceMessage = "Name: Captain Slow";
+        priceMessage += "\nQuantity: " + quantity;
+        priceMessage += "\nTotal: $" + price;
+        priceMessage += "\nThank you!";
+        return priceMessage;
     }
 }
