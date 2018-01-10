@@ -13,6 +13,7 @@ package com.example.android.justjava;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import java.text.NumberFormat;
 
@@ -22,6 +23,7 @@ import java.text.NumberFormat;
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 0;
+    //boolean withTopping = false;
 
 
     @Override
@@ -43,7 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
         // January 2018
         int price = calculatePrice();
-        displayMessage(createOrderSummary(price));
+        boolean topping = getToppingState(view);
+        displayMessage(createOrderSummary(price, topping));
+
 
 
     }
@@ -93,14 +97,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Get topping check box state
+     */
+    private boolean getToppingState(View view)
+    {
+        CheckBox toppings = (CheckBox)findViewById(R.id.topping);
+        boolean checked = false;
+
+        if(toppings.isChecked())
+            checked = true;
+
+        return checked;
+    }
+
+    /**
      * Creates order summary
      *
      * @param price of the order
      * @return text summary
      */
-    private String createOrderSummary(int price) {
+    private String createOrderSummary(int price, boolean withTopping) {
 
         String priceMessage = "Name: Captain Slow";
+        priceMessage += "\nAdd whipped cream? " + withTopping;
         priceMessage += "\nQuantity: " + quantity;
         priceMessage += "\nTotal: $" + price;
         priceMessage += "\nThank you!";
