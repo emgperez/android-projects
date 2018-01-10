@@ -12,6 +12,7 @@ package com.example.android.justjava;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
@@ -46,9 +47,10 @@ public class MainActivity extends AppCompatActivity {
         // January 2018
         int price = calculatePrice();
         boolean topping = getToppingState(view);
+
+        // Log the topping value
+        Log.v("MainActivity", "Has whipped cream: " + topping);
         displayMessage(createOrderSummary(price, topping));
-
-
 
     }
 
@@ -64,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method displays the given quantity value on the screen.
      */
-    private void displayQuantity(int quant) {
+    private void displayQuantity(int figure) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + quant);
+        quantityTextView.setText("" + figure);
     }
 
     /**
