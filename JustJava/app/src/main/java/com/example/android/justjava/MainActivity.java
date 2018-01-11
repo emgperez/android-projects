@@ -49,11 +49,18 @@ public class MainActivity extends AppCompatActivity {
 
         // January 2018
         int price = calculatePrice();
-        getToppingState(view);
+        //getToppingState(view);
+
+        CheckBox creamTopping = (CheckBox)findViewById(R.id.whipped_cream_topping);
+        CheckBox chocolateTopping = (CheckBox)findViewById(R.id.chocolate_topping);
+        boolean wCream = creamTopping.isChecked();
+        boolean wChocolate = chocolateTopping.isChecked();
 
         // Log the topping value
-        Log.v("MainActivity", "Has whipped cream: " + withCream);
-        displayMessage(createOrderSummary(price, withCream, withChocolate));
+        Log.v("MainActivity", "Has whipped cream: " + wCream);
+        Log.v("MainActivity", "Has whipped cream: " + wChocolate);
+
+        displayMessage(createOrderSummary(price, wCream, wChocolate));
 
     }
 
@@ -108,12 +115,8 @@ public class MainActivity extends AppCompatActivity {
     {
         CheckBox creamTopping = (CheckBox)findViewById(R.id.whipped_cream_topping);
         CheckBox chocolateTopping = (CheckBox)findViewById(R.id.chocolate_topping);
-
-        if(creamTopping.isChecked())
-            withCream = true;
-
-        if(chocolateTopping.isChecked())
-            withChocolate = true;
+        withCream = creamTopping.isChecked();
+        withChocolate = chocolateTopping.isChecked();
 
     }
 
