@@ -24,7 +24,10 @@ import java.text.NumberFormat;
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 0;
-    //boolean withTopping = false;
+
+    // Topping choices
+    boolean withCream = false;
+    boolean withChocolate = false;
 
 
     @Override
@@ -46,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
         // January 2018
         int price = calculatePrice();
-        boolean topping = getToppingState(view);
+        getToppingState(view);
 
         // Log the topping value
-        Log.v("MainActivity", "Has whipped cream: " + topping);
-        displayMessage(createOrderSummary(price, topping));
+        Log.v("MainActivity", "Has whipped cream: " + withCream);
+        displayMessage(createOrderSummary(price, withCream, withChocolate));
 
     }
 
@@ -101,27 +104,32 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Get topping check box state
      */
-    private boolean getToppingState(View view)
+    private void getToppingState(View view)
     {
-        CheckBox toppings = (CheckBox)findViewById(R.id.topping);
-        boolean checked = false;
+        CheckBox creamTopping = (CheckBox)findViewById(R.id.whipped_cream_topping);
+        CheckBox chocolateTopping = (CheckBox)findViewById(R.id.chocolate_topping);
 
-        if(toppings.isChecked())
-            checked = true;
+        if(creamTopping.isChecked())
+            withCream = true;
 
-        return checked;
+        if(chocolateTopping.isChecked())
+            withChocolate = true;
+
     }
 
     /**
      * Creates order summary
      *
      * @param price of the order
+     * @param toppingOne topping for whipped cream
+     * @param toppingTwo topping for chocolate
      * @return text summary
      */
-    private String createOrderSummary(int price, boolean withTopping) {
+    private String createOrderSummary(int price, boolean toppingOne, boolean toppingTwo) {
 
         String priceMessage = "Name: Captain Slow";
-        priceMessage += "\nAdd whipped cream? " + withTopping;
+        priceMessage += "\nAdd whipped cream? " + toppingOne;
+        priceMessage += "\nAdd chocolate? " + toppingTwo;
         priceMessage += "\nQuantity: " + quantity;
         priceMessage += "\nTotal: $" + price;
         priceMessage += "\nThank you!";
