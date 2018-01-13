@@ -10,6 +10,9 @@ package com.example.android.justjava;
 
 
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -65,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
         EditText textName= (EditText)findViewById(R.id.user_name);
         String username = textName.getText().toString();
 
-
-
         int price = calculatePrice(wCream, wChocolate);
 
         // Log the values
@@ -74,7 +75,33 @@ public class MainActivity extends AppCompatActivity {
         Log.v("MainActivity", "Has whipped cream: " + wChocolate);
         Log.v("MainActivity", "Name: " + username);
 
-        displayMessage(createOrderSummary(username, price, wCream, wChocolate));
+
+        String subject = "Just Java order for " + username;
+        String body = createOrderSummary(username, price, wCream, wChocolate);
+
+        /*Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse(email));
+
+        try {
+            startActivity(emailIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this,"No email app found", Toast.LENGTH_SHORT).show();
+        }*/
+
+
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, body);
+        try {
+            startActivity(emailIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this,"No email app found", Toast.LENGTH_SHORT).show();
+        }
+
+
+        // We won't display the order, since we'll be using an intent to send it via e-mail
+        // displayMessage(createOrderSummary(username, price, wCream, wChocolate));
 
     }
 
