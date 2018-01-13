@@ -108,11 +108,11 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method displays the given text on the screen
      */
-    private void displayMessage(String message){
+    /*private void displayMessage(String message){
 
         TextView orderSummaryTextView = (TextView)findViewById(R.id.order_summary_text_view);
         orderSummaryTextView.setText(message);
-    }
+    }*/
 
     /**
      * This method displays the given quantity value on the screen.
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
         priceMessage += "\nAdd chocolate? " + toppingTwo;
         priceMessage += "\nQuantity: " + quantity;
         priceMessage += "\nTotal: $" + price;
-        priceMessage += "\nThank you!";
+        priceMessage += "\n" + getString(R.string.thank_you);
         return priceMessage;
     }
 }
