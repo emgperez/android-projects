@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import java.text.NumberFormat;
 
@@ -56,11 +57,15 @@ public class MainActivity extends AppCompatActivity {
         boolean wCream = creamTopping.isChecked();
         boolean wChocolate = chocolateTopping.isChecked();
 
+        EditText textName= (EditText)findViewById(R.id.user_name);
+        String username = textName.getText().toString();
+
+
         // Log the topping value
         Log.v("MainActivity", "Has whipped cream: " + wCream);
         Log.v("MainActivity", "Has whipped cream: " + wChocolate);
 
-        displayMessage(createOrderSummary(price, wCream, wChocolate));
+        displayMessage(createOrderSummary(price, wCream, wChocolate, username));
 
     }
 
@@ -128,12 +133,13 @@ public class MainActivity extends AppCompatActivity {
      * @param toppingTwo topping for chocolate
      * @return text summary
      */
-    private String createOrderSummary(int price, boolean toppingOne, boolean toppingTwo) {
+    private String createOrderSummary(int price, boolean toppingOne, boolean toppingTwo, String name) {
 
         String priceMessage = "Name: Captain Slow";
         priceMessage += "\nAdd whipped cream? " + toppingOne;
         priceMessage += "\nAdd chocolate? " + toppingTwo;
         priceMessage += "\nQuantity: " + quantity;
+        priceMessage += "\nName: " + name;
         priceMessage += "\nTotal: $" + price;
         priceMessage += "\nThank you!";
         return priceMessage;
