@@ -17,6 +17,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.text.NumberFormat;
 
 /**
@@ -98,6 +100,11 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increment(View view) {
 
+        if (quantity >= 100)
+        {
+            Toast.makeText(this,"Quantity can't be more than 100", Toast.LENGTH_SHORT).show();
+            return;
+        }
         quantity +=1;
         displayQuantity(quantity);
     }
@@ -106,6 +113,12 @@ public class MainActivity extends AppCompatActivity {
      * Decrease quantity by one
      */
     public void decrement(View view) {
+
+        if(quantity <= 1)
+        {
+            Toast.makeText(this ,"Quantity can't be less than 1", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         quantity-=1;
         displayQuantity(quantity);
