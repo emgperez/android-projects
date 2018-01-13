@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         Log.v("MainActivity", "Has whipped cream: " + wChocolate);
         Log.v("MainActivity", "Name: " + username);
 
-        displayMessage(createOrderSummary(price, wCream, wChocolate, username));
+        displayMessage(createOrderSummary(username, price, wCream, wChocolate));
 
     }
 
@@ -134,13 +134,12 @@ public class MainActivity extends AppCompatActivity {
      * @param toppingTwo topping for chocolate
      * @return text summary
      */
-    private String createOrderSummary(int price, boolean toppingOne, boolean toppingTwo, String name) {
+    private String createOrderSummary(String name, int price, boolean toppingOne, boolean toppingTwo) {
 
-        String priceMessage = "Name: Captain Slow";
+        String priceMessage = "Name: " + name;
         priceMessage += "\nAdd whipped cream? " + toppingOne;
         priceMessage += "\nAdd chocolate? " + toppingTwo;
         priceMessage += "\nQuantity: " + quantity;
-        priceMessage += "\nName: " + name;
         priceMessage += "\nTotal: $" + price;
         priceMessage += "\nThank you!";
         return priceMessage;
