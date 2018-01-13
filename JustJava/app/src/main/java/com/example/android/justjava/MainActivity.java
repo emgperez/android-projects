@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
         //String priceMessage = "Name: " + name;
         String priceMessage = getString(R.string.order_summary_name, name);
-        priceMessage += "\nAdd whipped cream? " + toppingOne;
+        priceMessage += "\n" + getString(R.string.order_summary_whipped_cream, toppingOne);
         priceMessage += "\nAdd chocolate? " + toppingTwo;
         priceMessage += "\nQuantity: " + quantity;
         priceMessage += "\nTotal: $" + price;
