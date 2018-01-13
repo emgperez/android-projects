@@ -118,17 +118,16 @@ public class MainActivity extends AppCompatActivity {
      */
     private int calculatePrice(boolean creamTopping, boolean chocolateTopping) {
 
-        int cupPrice = 0;
+        int cupPrice = 5;
 
         // Modify the price depending on the chosen topping
         if (creamTopping && chocolateTopping){
             cupPrice = 8;
         } else if (creamTopping) {
             cupPrice = 6;
-        } else if (chocolateTopping) {
+        } else if (chocolateTopping)
             cupPrice = 7;
-        } else
-            cupPrice = 5;
+
 
         return quantity * cupPrice;
 
