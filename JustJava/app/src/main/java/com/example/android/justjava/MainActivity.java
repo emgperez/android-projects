@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     boolean withCream = false;
     boolean withChocolate = false;
 
+    // Cup price
+    //int cupPrice = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         //displayMessage(priceMessage);
 
         // January 2018
-        int price = calculatePrice();
+
         //getToppingState(view);
 
         CheckBox creamTopping = (CheckBox)findViewById(R.id.whipped_cream_topping);
@@ -60,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         EditText textName= (EditText)findViewById(R.id.user_name);
         String username = textName.getText().toString();
 
+
+
+        int price = calculatePrice(wCream, wChocolate);
 
         // Log the values
         Log.v("MainActivity", "Has whipped cream: " + wCream);
@@ -107,10 +113,24 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Calculates the price of the order
+     * @param creamTopping value of whipped cream topping
+     * @param chocolateTopping value of chocolate topping
      */
-    private int calculatePrice() {
+    private int calculatePrice(boolean creamTopping, boolean chocolateTopping) {
 
-        return quantity * 5;
+        int cupPrice = 0;
+
+        // Modify the price depending on the chosen topping
+        if (creamTopping && chocolateTopping){
+            cupPrice = 8;
+        } else if (creamTopping) {
+            cupPrice = 6;
+        } else if (chocolateTopping) {
+            cupPrice = 7;
+        } else
+            cupPrice = 5;
+
+        return quantity * cupPrice;
 
     }
 
