@@ -61,9 +61,10 @@ public class MainActivity extends AppCompatActivity {
         String username = textName.getText().toString();
 
 
-        // Log the topping value
+        // Log the values
         Log.v("MainActivity", "Has whipped cream: " + wCream);
         Log.v("MainActivity", "Has whipped cream: " + wChocolate);
+        Log.v("MainActivity", "Name: " + username);
 
         displayMessage(createOrderSummary(price, wCream, wChocolate, username));
 
