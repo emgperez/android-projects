@@ -2,8 +2,7 @@
     <string name="app_name">FriendsTVShow-BasicQuiz</string>
     <string name="Question1">Where did Monica and Chandler first get together?</string>
     <string name="Question2">How many seasons of the show were made?</string>
-    <string name="LevelEasy">Easy</string>
-    <string name="LevelMedium">Medium</string>
-    <string name="LevelHard">Hard</string>
-
+    <string name="LevelEasy">EASY</string>
+    <string name="LevelMedium">MEDIUM</string>
+    <string name="LevelHard">HARD</string>
 </resources>
