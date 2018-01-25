@@ -38,8 +38,17 @@ public class MainActivity extends AppCompatActivity {
         // Question number four
         RadioButton answerFour = (RadioButton)findViewById(R.id.choice_4_1);
         if (answerFour.isChecked())
-            correctAnswers += 1;    
+            correctAnswers += 1;
 
+        // Question number five
+        RadioButton answerFive = (RadioButton)findViewById(R.id.choice_5_1);
+        if (answerFive.isChecked())
+            correctAnswers += 1;
+
+        // Question number six
+        RadioButton answerSix = (RadioButton)findViewById(R.id.choice_6_2);
+        if (answerSix.isChecked())
+            correctAnswers += 1;
 
 
 
