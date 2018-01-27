@@ -50,6 +50,36 @@ public class MainActivity extends AppCompatActivity {
         if (answerSix.isChecked())
             correctAnswers += 1;
 
+        // Question number seven
+        RadioButton answerSeven = (RadioButton)findViewById(R.id.choice_7_1);
+        if (answerSeven.isChecked())
+            correctAnswers += 1;
+
+        // Question number eight
+        RadioButton answerEight = (RadioButton)findViewById(R.id.choice_8_2);
+        if (answerEight.isChecked())
+            correctAnswers += 1;
+
+        // Question number nine
+        RadioButton answerNine = (RadioButton)findViewById(R.id.choice_9_2);
+        if (answerNine.isChecked())
+            correctAnswers += 1;
+
+        // Question number ten
+        RadioButton answerTen = (RadioButton)findViewById(R.id.choice_10_2);
+        if (answerTen.isChecked())
+            correctAnswers += 1;
+
+        // Question number eleven
+        RadioButton answerEleven = (RadioButton)findViewById(R.id.choice_11_3);
+        if (answerEleven.isChecked())
+            correctAnswers += 1;
+
+        // Question number twelve
+        RadioButton answerTwelve = (RadioButton)findViewById(R.id.choice_12_2);
+        if (answerTwelve.isChecked())
+            correctAnswers += 1;
+
 
 
     }
