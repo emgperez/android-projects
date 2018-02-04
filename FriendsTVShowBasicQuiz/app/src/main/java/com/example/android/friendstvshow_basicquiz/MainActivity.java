@@ -17,6 +17,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void submitQuestions(View view) {
+
+        checkAnswers(view);
+
+        Toast.makeText(this ,"Correct Answers: " + correctAnswers, Toast.LENGTH_SHORT).show();
+        resetAnswers();
+
+    }
+
     private void checkAnswers(View view) {
 
         // Get questions answers
@@ -82,10 +91,7 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers += 1;
 
 
-        // Display correct answers and then reset the counter
-        Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers ,
-                Toast.LENGTH_LONG).show();
-        resetAnswers();
+
     }
 
     private void resetAnswers(){
