@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -81,6 +82,13 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers += 1;
 
 
+        // Display correct answers and then reset the counter
+        Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers ,
+                Toast.LENGTH_LONG).show();
+        resetAnswers();
+    }
 
+    private void resetAnswers(){
+        correctAnswers = 0;
     }
 }
