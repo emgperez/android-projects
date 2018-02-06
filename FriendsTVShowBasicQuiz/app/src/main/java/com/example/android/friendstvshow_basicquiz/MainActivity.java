@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * This methods triggers the checking of your quiz answers
+     * @param view
+     */
     public void submitQuestions(View view) {
 
         checkAnswers(view);
@@ -26,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Checks the number of correct answers depending on the choices you made
+     * @param view
+     */
     private void checkAnswers(View view) {
 
         // Get questions answers
@@ -94,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * It resets the counter that keeps your correct answers
+     */
     private void resetAnswers(){
         correctAnswers = 0;
     }
