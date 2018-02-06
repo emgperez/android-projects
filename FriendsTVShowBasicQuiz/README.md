@@ -9,4 +9,4 @@
 - Your number of correct answers is displayed with a Toast.
 
 # Screenshot
-<img src="https://github.com/emgperez/android-projects/blob/master/FriendsTVShowBasicQuiz/Quiz_Screenshot.PNG" width="200"/>
+<img src="https://github.com/emgperez/android-projects/blob/master/FriendsTVShowBasicQuiz/Quiz_Screenshot.PNG" width="400"/>
