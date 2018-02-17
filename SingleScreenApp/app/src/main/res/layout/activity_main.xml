@@ -38,7 +38,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"
             android:text="@string/business_name"
-            android:textSize="20sp"/>
+            android:textSize="22sp"/>
 
         <TextView
             android:id="@+id/description"
@@ -47,7 +47,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"
             android:text="@string/description"
-            android:textSize="12sp"/>
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/location"
@@ -57,7 +57,7 @@
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_place"
             android:text="Boulevard of Shining Dreams"
-            android:textSize="12sp"/>
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/hours"
@@ -67,7 +67,7 @@
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_watch_later"
             android:text="Find us from 10:00 to 19:00"
-            android:textSize="12sp"/>
+            android:textSize="14sp"/>
 
 
     </LinearLayout>
