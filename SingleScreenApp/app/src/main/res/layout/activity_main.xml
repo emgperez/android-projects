@@ -26,19 +26,19 @@
     <LinearLayout
         android:id="@+id/business"
         android:layout_width="fill_parent"
-        android:orientation="vertical"
         android:layout_height="0dip"
-        android:layout_weight="4">
+        android:layout_weight="4"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/businessText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
             android:text="@string/business_name"
-            android:textSize="22sp"/>
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/description"
@@ -47,48 +47,47 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"
             android:text="@string/description"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_place"
+            android:gravity="center"
             android:text="Boulevard of Shining Dreams"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/hours"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_watch_later"
+            android:gravity="center"
             android:text="Find us from 10:00 to 19:00"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/contact_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_local_phone"
+            android:gravity="center"
             android:text="Call us on XXXXXXXXX"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/contact_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_mail"
+            android:gravity="center"
             android:text="Throw us an email at iwashyourcar@idetail.com"
-            android:textSize="14sp"/>
-
+            android:textSize="14sp" />
 
 
     </LinearLayout>
@@ -103,12 +102,10 @@
             android:layout_width="wrap_content"
             android:layout_height="8dp"
             android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:background="@color/colorPrimary" />
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal" />
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>
