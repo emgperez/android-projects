@@ -4,9 +4,10 @@
 
 
 # Features 
+
 3 weighted LinearLayouts, containing:
--1 ImageView with a descriptive image
--6 TextViews with example information
+- 1 ImageView with a descriptive image
+- 6 TextViews with example information
 
 
 # Screenshot
