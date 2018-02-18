@@ -10,4 +10,4 @@
 
 
 # Screenshot
-<img src="https://github.com/emgperez/android-projects/tree/master/Screenshots/SingleScreenApp/Screenshot.PNG" width="400"/>
+<img src="https://github.com/emgperez/android-projects/tree/master/SingleScreenApp/Screenshot.PNG" width="400"/>
