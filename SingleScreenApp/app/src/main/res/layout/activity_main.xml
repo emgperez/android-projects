@@ -56,7 +56,7 @@
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_place"
             android:gravity="center"
-            android:text="Boulevard of Shining Dreams"
+            android:text="@string/location"
             android:textSize="14sp" />
 
         <TextView
@@ -66,7 +66,7 @@
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_watch_later"
             android:gravity="center"
-            android:text="Find us from 10:00 to 19:00"
+            android:text="@string/working_hours"
             android:textSize="14sp" />
 
         <TextView
@@ -76,7 +76,7 @@
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_local_phone"
             android:gravity="center"
-            android:text="Call us on XXXXXXXXX"
+            android:text="@string/phone"
             android:textSize="14sp" />
 
         <TextView
@@ -86,7 +86,7 @@
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_mail"
             android:gravity="center"
-            android:text="Write us at iwashyourcar@idetail.com"
+            android:text="@string/email"
             android:textSize="14sp" />
 
 
