@@ -28,7 +28,7 @@
         android:layout_width="fill_parent"
         android:orientation="vertical"
         android:layout_height="0dip"
-        android:layout_weight="3">
+        android:layout_weight="4">
 
         <TextView
             android:id="@+id/businessText"
@@ -68,6 +68,27 @@
             android:drawableLeft="@drawable/ic_watch_later"
             android:text="Find us from 10:00 to 19:00"
             android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_local_phone"
+            android:text="Call us on XXXXXXXXX"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_mail"
+            android:text="Throw us an email at iwashyourcar@idetail.com"
+            android:textSize="14sp"/>
+
 
 
     </LinearLayout>
