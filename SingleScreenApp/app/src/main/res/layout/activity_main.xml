@@ -25,7 +25,7 @@
 
     <LinearLayout
         android:id="@+id/business"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dip"
         android:layout_weight="4"
         android:orientation="vertical">
@@ -86,7 +86,7 @@
             android:layout_marginLeft="30dp"
             android:drawableLeft="@drawable/ic_mail"
             android:gravity="center"
-            android:text="Throw us an email at iwashyourcar@idetail.com"
+            android:text="Write us at iwashyourcar@idetail.com"
             android:textSize="14sp" />
 
 
