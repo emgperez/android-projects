@@ -12,3 +12,4 @@
 
 # Screenshot
 <img src="https://github.com/emgperez/android-projects/tree/master/SingleScreenApp/Screenshot.PNG" width="400"/>
+![alt text](Screenshot.PNG)
