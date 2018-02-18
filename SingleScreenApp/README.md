@@ -11,5 +11,5 @@
 
 
 # Screenshot
-<img src="https://github.com/emgperez/android-projects/tree/master/SingleScreenApp/Screenshot.PNG" width="400"/>
-![alt tag](https://github.com/emgperez/android-projects/tree/master/SingleScreenApp/Screenshot.PNG)
+<img src="android-projects/SingleScreenApp/Screenshot.PNG" width="400"/>
+
