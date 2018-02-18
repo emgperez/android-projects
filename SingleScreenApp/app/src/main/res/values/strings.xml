@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SingleScreenApp</string>
+    <string name="app_name">Auto Detailing</string>
     <string name="business_name"><b>Auto Detailing</b></string>
     <string name="description">We provide you with a state-of-the-art vehicle detailing</string>
 </resources>
