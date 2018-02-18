@@ -11,5 +11,6 @@
 
 
 # Screenshot
-<img src="android-projects/SingleScreenApp/Screenshot.PNG" width="400"/>
+![screenshot](https://github.com/emgperez/android-projects/blob/master/Screenshots/SingleScreenApp/Screenshot.PNG)
+
 
