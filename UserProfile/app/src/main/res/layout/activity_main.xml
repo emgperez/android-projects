@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:padding="6dp"
+        style="@style/TextStyle"
         android:text="Name"/>
 
     <TextView
