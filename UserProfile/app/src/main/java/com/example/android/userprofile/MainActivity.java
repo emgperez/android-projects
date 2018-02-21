@@ -2,6 +2,7 @@ package com.example.android.userprofile;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -10,6 +11,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Create ImageView for profile picture
+        ImageView personalPicture = (ImageView)findViewById(R.id.profile_picture);
+        personalPicture.setImageResource(R.drawable.tennis);
 
         // Inflate the TextViews in activity_main.xml
         // 1. Name
