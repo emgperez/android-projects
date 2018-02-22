@@ -1,3 +1,7 @@
 <resources>
-    
+    <string name="app_name">IdiomaticGermanQuizApp</string>
+    <string name="Question1">Which of these greetings ist NOT used in German?</string>
+    <string name="Question2">You want to ask the way to the Town Hall. Which one do you choose?</string>
+    <string name="Question3">You want to buy a return rail ticket to Wismar. What do you say to the booking-clerk?</string>
+    <string name="Question4">You want a cup of coffee. What should you ask for?</string>
 </resources>
