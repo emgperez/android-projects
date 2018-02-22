@@ -10,6 +10,7 @@
     <string name="Question8">You need to disappear for a moment. How do you say \'I\'ll be back in a moment\'?</string>
     <string name="Question9">You are walking and have lost your way. How would you say that?</string>
     <string name="Question10">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
+    <string name="Question11">Pick two ways of saying \'It is hot today\'</string>
     <string name="AppHeadName">Idiomatic German</string>
 
     <!-- Strings for possible answers-->
@@ -72,6 +73,12 @@
     <string name="ans_10_2">Ich muss morgen früh um neun Uhr aufstehen</string>
     <string name="ans_10_3">Ich muss morgen Vormittag um neun Uhr aufstehen</string>
     <string name="ans_10_4">Ich muss morgen um neun Uhr in der Frühe aufstehen</string>
+
+    <!-- Answers for Question11-->
+    <string name="ans_11_1">Heute bin ich heiß</string>
+    <string name="ans_11_2">Es ist Heute eine Affenhitze</string>
+    <string name="ans_11_3">Mir ist heiß heute</string>
+    <string name="ans_11_4">Es gibt sehr warm heute</string>
 
 
 
