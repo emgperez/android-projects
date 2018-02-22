@@ -49,11 +49,30 @@
     <string name="ans_6_3">Kannitverstan</string>
     <string name="ans_6_4">Wie heißt das auf Englisch?</string>
 
-    <!-- Answers for Question6-->
+    <!-- Answers for Question7-->
     <string name="ans_7_1">Wann fährt der nächste Zug nach Koblenz?</string>
     <string name="ans_7_2">Ob ein Zug nach Koblenz fährt?</string>
     <string name="ans_7_3">Wenn fährt der nächste Zug nach Koblenz?</string>
     <string name="ans_7_4">Wann wird der nächste Zug nach Koblenz losfahren?</string>
+
+    <!-- Answers for Question8-->
+    <string name="ans_8_1">Ich werde in einem Augenblick zurückkommen</string>
+    <string name="ans_8_2">Ich bin im Augenblick wieder zurück</string>
+    <string name="ans_8_3">Ich komme schnell zurück</string>
+    <string name="ans_8_4">Ich bin gleich wieder da</string>
+
+    <!-- Answers for Question9-->
+    <string name="ans_9_1">Ich kenne mich hier nicht aus</string>
+    <string name="ans_9_2">Ich habe mich verlaufen</string>
+    <string name="ans_9_3">Ich weiß nicht, wo ich bin</string>
+    <string name="ans_9_4">Ich habe meinen Weg verloren</string>
+
+    <!-- Answers for Question10-->
+    <string name="ans_10_1">Ich muss morgen morgen um neun Uhr aufstehen</string>
+    <string name="ans_10_2">Ich muss morgen früh um neun Uhr aufstehen</string>
+    <string name="ans_10_3">Ich muss morgen Vormittag um neun Uhr aufstehen</string>
+    <string name="ans_10_4">Ich muss morgen um neun Uhr in der Frühe aufstehen</string>
+
 
 
 
