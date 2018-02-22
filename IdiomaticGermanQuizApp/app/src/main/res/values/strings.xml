@@ -4,4 +4,11 @@
     <string name="Question2">You want to ask the way to the Town Hall. Which one do you choose?</string>
     <string name="Question3">You want to buy a return rail ticket to Wismar. What do you say to the booking-clerk?</string>
     <string name="Question4">You want a cup of coffee. What should you ask for?</string>
+    <string name="Question5">You are looking for accommodation. What is the expression for \'a single room\'?</string>
+    <string name="Question6">You want to ask what a word or phrase is in English. How should you express that?</string>
+    <string name="Question7">You want to ask when the next train to Koblenz leaves. Which is most idiomatic?</string>
+    <string name="Question8">You need to disappear for a moment. How do you say \'I\'ll be back in a moment\'?</string>
+    <string name="Question9">You are walking and have lost your way. How would you say that?</string>
+    <string name="Question10">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
+
 </resources>
