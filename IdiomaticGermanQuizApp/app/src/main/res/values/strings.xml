@@ -10,5 +10,37 @@
     <string name="Question8">You need to disappear for a moment. How do you say \'I\'ll be back in a moment\'?</string>
     <string name="Question9">You are walking and have lost your way. How would you say that?</string>
     <string name="Question10">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
+    <string name="AppHeadName">Idiomatic German</string>
+
+    <!-- Strings for possible answers-->
+    <!-- Answers for Question1-->
+    <string name="ans_1_1">Guten Nachmittag</string>
+    <string name="ans_1_2">Guten Tag</string>
+    <string name="ans_1_3">Guten Morgen</string>
+    <string name="ans_1_4">Guten Abend</string>
+
+    <!-- Answers for Question2-->
+    <string name="ans_2_1">Wo ist das Rathaus?</string>
+    <string name="ans_2_2">Wie komme ich hier zum Rathaus?</string>
+    <string name="ans_2_3">Würden Sie mir sagen, wie ich das Rathaus erreichen kann?</string>
+    <string name="ans_2_4">Wo ist der Weg zum Rathaus?</string>
+
+    <!-- Answers for Question3-->
+    <string name="ans_3_1">Wismar - hin und zurück, bitte</string>
+    <string name="ans_3_2">Eine Rundkarte - Wismar, bitte</string>
+    <string name="ans_3_3">Eine Rundfahrt nach Wismar, bitte</string>
+    <string name="ans_3_4">Eine Heimkehrkarte nach Wismar, bitte</string>
+
+    <!-- Answers for Question4-->
+    <string name="ans_4_1">eine Tasse Kaffee</string>
+    <string name="ans_4_2">eine Tasse Kaffees</string>
+    <string name="ans_4_3">eine Tasse von Kaffee</string>
+    <string name="ans_4_4">eine Kaffeetasse</string>
+
+    <!-- Answers for Question5-->
+    <string name="ans_5_1">eine Zimmer für eine Person</string>
+    <string name="ans_5_2">eine Zimmer mit einem Bett</string>
+    <string name="ans_5_3">ein Einzelzimmer</string>
+    <string name="ans_5_4">ein Einbettzimmer</string>
 
 </resources>
