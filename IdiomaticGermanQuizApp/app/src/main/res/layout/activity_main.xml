@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:text="Barbados"
+                android:text="@string/ans_1_1"
                 android:textSize="12sp" />
 
             <RadioButton
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:text="London"
+                android:text="@string/ans_1_2"
                 android:textSize="12sp" />
 
             <RadioButton
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:text="New York"
+                android:text="@string/ans_1_3"
                 android:textSize="12sp" />
 
             <RadioButton
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:text="New York"
+                android:text="@string/ans_1_4"
                 android:textSize="12sp" />
 
 
