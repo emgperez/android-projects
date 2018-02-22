@@ -43,4 +43,19 @@
     <string name="ans_5_3">ein Einzelzimmer</string>
     <string name="ans_5_4">ein Einbettzimmer</string>
 
+    <!-- Answers for Question6-->
+    <string name="ans_6_1">Was ist das auf Englisch?</string>
+    <string name="ans_6_2">Was ist das in Englisch?</string>
+    <string name="ans_6_3">Kannitverstan</string>
+    <string name="ans_6_4">Wie heißt das auf Englisch?</string>
+
+    <!-- Answers for Question6-->
+    <string name="ans_7_1">Wann fährt der nächste Zug nach Koblenz?</string>
+    <string name="ans_7_2">Ob ein Zug nach Koblenz fährt?</string>
+    <string name="ans_7_3">Wenn fährt der nächste Zug nach Koblenz?</string>
+    <string name="ans_7_4">Wann wird der nächste Zug nach Koblenz losfahren?</string>
+
+
+
+
 </resources>
