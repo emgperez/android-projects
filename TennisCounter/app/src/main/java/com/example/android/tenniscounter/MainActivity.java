@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     // Number of won sets by each player
     int playerOneSets = 0;
     int playerTwoSets = 0;
+
+    // Current set counter
+    int currentSet = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,8 +97,41 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        // And now, take the score and print in on the layout
+        switch (currentSet)
+        {
+            case 1:
+                // Print status on set 1 view
+                // displayStatus(playerOneScore, playerTwoScore, set = 1)
+            case 2:
+                // Print status on set 2 view
+                // displayStatus(playerOneScore, playerTwoScore, set = 2)
+            case 3:
+                // Print status on set 3 view
+                // displayStatus(playerOneScore, playerTwoScore, set = 3)
+        }
+
+
 
     }
+
+
+    /**
+     * Displays the given score for Player One.
+     */
+    //public void displayStatus(int scoreOne, int scoreTwo, int setNumber) {
+    //
+    //    TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+    //    scoreView.setText(String.valueOf(score));
+    //}
+
+    /**
+     * Displays the given score for Player Two.
+     */
+    //public void displayForTeamB(int score) {
+    //    TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+    //    scoreView.setText(String.valueOf(score));
+    //}
 
 
 
