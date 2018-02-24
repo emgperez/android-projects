@@ -77,14 +77,14 @@ public class MainActivity extends AppCompatActivity {
         }
         else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) > 1))
         {
-            // Player One wins the game
+            // Player Two wins the game
             Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
 
             // Reset score
             playerOneScore = 0;
             playerTwoScore = 0;
 
-            // Add a game or set to player one depending on current score
+            // Add a game or set to player two depending on current score
             if((playerTwoGames >= 6) && (Math.abs(playerTwoGames - playerOneGames) > 1))
             {
                 playerOneGames = 0;
