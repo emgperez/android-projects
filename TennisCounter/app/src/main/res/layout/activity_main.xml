@@ -154,7 +154,7 @@
                 <Button
                     style="@style/Button"
                     android:text="@string/unforced"
-                    android:onClick="scorePlayerOne"/>
+                    android:onClick="scorePlayerTwo"/>
 
             </LinearLayout>
 
@@ -184,7 +184,7 @@
                 <Button
                     style="@style/Button"
                     android:text="@string/unforced"
-                    android:onClick="scorePlayerTwo"/>
+                    android:onClick="scorePlayerOne"/>
 
             </LinearLayout>
 
