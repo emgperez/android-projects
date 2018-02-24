@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
         playerTwoScore += 1;
         //displayForTeamA(scoreTeamA);
+
+        // Always check game status when incrementing player score
+        getScore();
     }
 
     public void getScore() {
