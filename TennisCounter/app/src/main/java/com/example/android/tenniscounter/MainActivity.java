@@ -146,6 +146,42 @@ public class MainActivity extends AppCompatActivity {
 
     public void displaySetStatus(int set)
     {
+        switch (set){
+            case 1:
+                // Player One status
+                TextView pOneSetOneView = (TextView) findViewById(R.id.player_a_set1_games);
+                pOneSetOneView.setText(String.valueOf(playerOneGames));
+
+                // Player Two status
+                TextView pTwoSetOneView = (TextView) findViewById(R.id.player_b_set1_games);
+                pTwoSetOneView.setText(String.valueOf(playerTwoGames));
+
+            case 2:
+                // Player One status
+                TextView pOneSetTwoView = (TextView) findViewById(R.id.player_a_set2_games);
+                pOneSetTwoView.setText(String.valueOf(playerOneGames));
+
+                // Player Two status
+                TextView pTwoSetTwoView = (TextView) findViewById(R.id.player_b_set2_games);
+                pTwoSetTwoView.setText(String.valueOf(playerOneGames));
+
+            case 3:
+
+                if(playerOneSets == 2 || playerTwoSets == 2) {
+
+                    Toast.makeText(this ,"Game already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                else {
+                    // Player One status
+                    TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
+                    pOneSetThreeView.setText(String.valueOf(playerOneGames));
+
+                    // Player Two status
+                    TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
+                    pTwoSetThreeView.setText(String.valueOf(playerOneGames));
+                }
+        }
 
     }
 
