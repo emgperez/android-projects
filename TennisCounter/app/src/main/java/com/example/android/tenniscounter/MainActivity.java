@@ -102,13 +102,13 @@ public class MainActivity extends AppCompatActivity {
         {
             case 1:
                 // Print status on set 1 view
-                // displayStatus(playerOneScore, playerTwoScore, set = 1)
+                displayStatus(playerOneScore, playerTwoScore, 1);
             case 2:
                 // Print status on set 2 view
-                // displayStatus(playerOneScore, playerTwoScore, set = 2)
+                displayStatus(playerOneScore, playerTwoScore, 2);
             case 3:
                 // Print status on set 3 view
-                // displayStatus(playerOneScore, playerTwoScore, set = 3)
+                displayStatus(playerOneScore, playerTwoScore, 3);
         }
 
 
@@ -126,8 +126,27 @@ public class MainActivity extends AppCompatActivity {
         String scoreTextTwo = reformatScore(scoreTwo);
 
         // Get all the views for both players and set the values
-        TextView playerOneScoreView = (TextView) findViewById(R.id.player_a_current);
-        playerOneScoreView.setText(scoreTextOne);
+        switch(setNumber) {
+            case 1:
+                displaySetStatus(1);
+            case 2:
+                displaySetStatus(2);
+            case 3:
+                displaySetStatus(3);
+        }
+
+        // Display current score
+        TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
+        playerOneCurrent.setText(scoreTextOne);
+
+        TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
+        playerOneCurrent.setText(scoreTextTwo);
+
+    }
+
+    public void displaySetStatus(int set)
+    {
+
     }
 
     private String reformatScore(int score)
