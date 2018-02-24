@@ -65,8 +65,34 @@ public class MainActivity extends AppCompatActivity {
                 playerTwoGames = 0;
                 playerOneSets += 1;
             }
+            else
+            {
+                playerOneGames += 1;
+            }
 
         }
+        else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) > 1))
+        {
+            // Player One wins the game
+            Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
+
+            // Reset score
+            playerOneScore = 0;
+            playerTwoScore = 0;
+
+            // Add a game or set to player one depending on current score
+            if((playerTwoGames >= 6) && (Math.abs(playerTwoGames - playerOneGames) > 1))
+            {
+                playerOneGames = 0;
+                playerTwoGames = 0;
+                playerTwoSets += 1;
+            }
+            else
+            {
+                playerTwoGames += 1;
+            }
+        }
+
 
     }
 
