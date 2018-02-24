@@ -119,11 +119,35 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Player One.
      */
-    //public void displayStatus(int scoreOne, int scoreTwo, int setNumber) {
-    //
-    //    TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-    //    scoreView.setText(String.valueOf(score));
-    //}
+    public void displayStatus(int scoreOne, int scoreTwo, int setNumber) {
+
+        // First, reformat player score (0 = 0, 1 = 15, and so on)
+        String scoreTextOne = reformatScore(scoreOne);
+        String scoreTextTwo = reformatScore(scoreTwo);
+
+        // Get all the views for both players and set the values
+        TextView playerOneScoreView = (TextView) findViewById(R.id.player_a_current);
+        playerOneScoreView.setText(scoreTextOne);
+    }
+
+    private String reformatScore(int score)
+    {
+        String value = "";
+
+        switch(score)
+        {
+            case 0:
+                value = "0";
+            case 1:
+                value = "15";
+            case 2:
+                value = "30";
+            case 3 :
+                value = "40";
+            case 4:
+                value = "AD";
+        }
+    }
 
     /**
      * Displays the given score for Player Two.
