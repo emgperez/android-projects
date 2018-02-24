@@ -143,15 +143,18 @@
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/ace" />
+                    android:text="@string/ace"
+                    android:onClick="scorePlayerOne"/>
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/winner" />
+                    android:text="@string/winner"
+                    android:onClick="scorePlayerOne"/>
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/unforced" />
+                    android:text="@string/unforced"
+                    android:onClick="scorePlayerOne"/>
 
             </LinearLayout>
 
@@ -170,15 +173,18 @@
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/ace" />
+                    android:text="@string/ace"
+                    android:onClick="scorePlayerTwo"/>
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/winner" />
+                    android:text="@string/winner"
+                    android:onClick="scorePlayerTwo"/>
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/unforced" />
+                    android:text="@string/unforced"
+                    android:onClick="scorePlayerTwo"/>
 
             </LinearLayout>
 
