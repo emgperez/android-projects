@@ -203,8 +203,8 @@
 
         <Button
             android:id="@+id/button"
-            style="@style/New_Game_Button"
-            android:text="@string/new_game" />
+            style="@style/Reset_Button"
+            android:text="@string/reset" />
 
     </RelativeLayout>
     <!-- -->
