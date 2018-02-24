@@ -5,6 +5,7 @@
     <string name="point">+1 point</string>
     <string name="ace">ACE</string>
     <string name="new_game">New Game</string>
+    <string name="reset">Reset</string>
     <string name="current">Current</string>
     <string name="stats">Match Score</string>
     <string name="winner">WINNER</string>
