@@ -147,6 +147,8 @@ public class MainActivity extends AppCompatActivity {
             case 4:
                 value = "AD";
         }
+
+        return value;
     }
 
     /**
