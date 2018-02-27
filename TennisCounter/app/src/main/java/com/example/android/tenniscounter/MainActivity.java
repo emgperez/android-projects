@@ -235,6 +235,51 @@ public class MainActivity extends AppCompatActivity {
         return value;
     }
 
+    public void resetScore(View v) {
+
+        // Reset all views and counters
+
+        // Counters
+        playerOneScore = 0;
+        playerTwoScore = 0;
+        playerOneGames = 0;
+        playerTwoGames = 0;
+        playerOneSets = 0;
+        playerTwoSets = 0;
+        currentSet = 1;
+
+        // Current Score
+        TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
+        playerOneCurrent.setText("0");
+
+        TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
+        playerTwoCurrent.setText("0");
+
+
+        // Games in all sets
+        TextView pOneSetOneView = (TextView) findViewById(R.id.player_a_set1_games);
+        pOneSetOneView.setText(String.valueOf(playerOneGames));
+
+        TextView pTwoSetOneView = (TextView) findViewById(R.id.player_b_set1_games);
+        pTwoSetOneView.setText(String.valueOf(playerTwoGames));
+
+        TextView pOneSetTwoView = (TextView) findViewById(R.id.player_a_set2_games);
+        pOneSetTwoView.setText(String.valueOf(playerOneGames));
+
+        TextView pTwoSetTwoView = (TextView) findViewById(R.id.player_b_set2_games);
+        pTwoSetTwoView.setText(String.valueOf(playerTwoGames));
+
+        TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
+        pOneSetThreeView.setText(String.valueOf(playerOneGames));
+
+        TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
+        pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
+
+
+
+
+    }
+
     /**
      * Displays the given score for Player Two.
      */
