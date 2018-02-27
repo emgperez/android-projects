@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
     // Current set counter
     int currentSet = 1;
 
+    // Control new set
+    boolean newSet = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void getScore() {
 
+        boolean newSet = false;
+
         if((playerOneScore > 3) && (Math.abs(playerOneScore - playerTwoScore) > 1))
         {
             // Player One wins the game
@@ -68,12 +73,13 @@ public class MainActivity extends AppCompatActivity {
             playerTwoScore = 0;
 
             // Add a game or set to player one depending on current score
-            if((playerOneGames >= 5) && (Math.abs(playerOneGames - playerTwoGames) > 1))
+            if((playerOneGames >= 6) && (Math.abs(playerOneGames - playerTwoGames) > 1))
             {
                 playerOneGames = 0;
                 playerTwoGames = 0;
                 playerOneSets += 1;
-                currentSet += 1;
+                newSet = true;
+                //currentSet += 1;
             }
             else
             {
@@ -91,12 +97,13 @@ public class MainActivity extends AppCompatActivity {
             playerTwoScore = 0;
 
             // Add a game or set to player two depending on current score
-            if((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1))
+            if((playerTwoGames >= 6) && (Math.abs(playerTwoGames - playerOneGames) > 1))
             {
                 playerOneGames = 0;
                 playerTwoGames = 0;
                 playerTwoSets += 1;
-                currentSet += 1;
+                newSet = true;
+                //currentSet += 1;
             }
             else
             {
@@ -144,6 +151,14 @@ public class MainActivity extends AppCompatActivity {
         TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
         playerTwoCurrent.setText(scoreTextTwo);
         Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
+
+        // If player scored a set, update the counter (I shouldn't update currentSet BEFORE displaying the status, but AFTER
+        if(newSet) {
+            currentSet += 1;
+
+            // Get ready for next set
+            newSet = false;
+        }
 
         // Get all the views for both players and set the values
         switch(setNumber) {
