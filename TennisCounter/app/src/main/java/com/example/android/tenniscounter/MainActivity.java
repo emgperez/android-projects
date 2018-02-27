@@ -72,8 +72,9 @@ public class MainActivity extends AppCompatActivity {
             playerOneScore = 0;
             playerTwoScore = 0;
 
+                        
             // Add a game or set to player one depending on current score
-            if((playerOneGames >= 6) && (Math.abs(playerOneGames - playerTwoGames) > 1))
+            if((playerOneGames > 5) && (Math.abs(playerOneGames - playerTwoGames) > 1))
             {
                 playerOneGames = 0;
                 playerTwoGames = 0;
@@ -118,8 +119,8 @@ public class MainActivity extends AppCompatActivity {
         {
             case 1:
                 // Print status on set 1 view
-                if(!newSet)
-                    displayStatus(playerOneScore, playerTwoScore, 1);
+                //if(!newSet)
+                displayStatus(playerOneScore, playerTwoScore, 1);
                 break;
             case 2:
                 // Print status on set 2 view
