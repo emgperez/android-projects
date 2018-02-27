@@ -134,10 +134,13 @@ public class MainActivity extends AppCompatActivity {
         switch(setNumber) {
             case 1:
                 displaySetStatus(1);
+                break;
             case 2:
                 displaySetStatus(2);
+                break;
             case 3:
                 displaySetStatus(3);
+                break;
         }
 
         // Display current score
