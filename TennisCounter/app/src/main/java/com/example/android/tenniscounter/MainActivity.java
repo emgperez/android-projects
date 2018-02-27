@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void scorePlayerOne(View v) {
 
         playerOneScore += 1;
+        Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
 
         // Always check game status when incrementing player score
         getScore();
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     public void scorePlayerTwo(View v) {
 
         playerTwoScore += 1;
+        Toast.makeText(this ,"Point for player two: " + playerOneScore, Toast.LENGTH_SHORT).show();
         //displayForTeamA(scoreTeamA);
 
         // Always check game status when incrementing player score
@@ -136,9 +138,12 @@ public class MainActivity extends AppCompatActivity {
         // Display current score
         TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
         playerOneCurrent.setText(scoreTextOne);
+        Toast.makeText(this ,"Displayed current score for player one: " + scoreTextOne, Toast.LENGTH_SHORT).show();
+
 
         TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
-        playerOneCurrent.setText(scoreTextTwo);
+        playerTwoCurrent.setText(scoreTextTwo);
+        Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
 
         // Get all the views for both players and set the values
         switch(setNumber) {
