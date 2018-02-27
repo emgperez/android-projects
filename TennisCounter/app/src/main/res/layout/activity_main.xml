@@ -204,7 +204,8 @@
         <Button
             android:id="@+id/button"
             style="@style/Reset_Button"
-            android:text="@string/reset" />
+            android:text="@string/reset"
+            android:onClick="resetScore"/>
 
     </RelativeLayout>
     <!-- -->
