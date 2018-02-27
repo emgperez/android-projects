@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public void scorePlayerOne(View v) {
 
         playerOneScore += 1;
-        //Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
 
         // Always check game status when incrementing player score
         getScore();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         if((playerOneScore > 3) && (Math.abs(playerOneScore - playerTwoScore) > 1))
         {
             // Player One wins the game
-            //Toast.makeText(this ,"Game for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this ,"Games for player one: " + playerOneGames, Toast.LENGTH_SHORT).show();
 
             // Reset score
             playerOneScore = 0;
