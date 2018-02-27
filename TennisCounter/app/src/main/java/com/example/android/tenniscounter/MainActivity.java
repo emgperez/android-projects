@@ -108,12 +108,15 @@ public class MainActivity extends AppCompatActivity {
             case 1:
                 // Print status on set 1 view
                 displayStatus(playerOneScore, playerTwoScore, 1);
+                break;
             case 2:
                 // Print status on set 2 view
                 displayStatus(playerOneScore, playerTwoScore, 2);
+                break;
             case 3:
                 // Print status on set 3 view
                 displayStatus(playerOneScore, playerTwoScore, 3);
+                break;
         }
 
 
