@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public void scorePlayerOne(View v) {
 
         playerOneScore += 1;
-        Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
 
         // Always check game status when incrementing player score
         getScore();
@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public void scorePlayerTwo(View v) {
 
         playerTwoScore += 1;
-        Toast.makeText(this ,"Point for player two: " + playerOneScore, Toast.LENGTH_SHORT).show();
-        //displayForTeamA(scoreTeamA);
+        //Toast.makeText(this ,"Point for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
 
         // Always check game status when incrementing player score
         getScore();
@@ -61,12 +60,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void getScore() {
 
-        boolean newSet = false;
+        if(newSet)
+            newSet = false;
 
         if((playerOneScore > 3) && (Math.abs(playerOneScore - playerTwoScore) > 1))
         {
             // Player One wins the game
-            Toast.makeText(this ,"Game for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this ,"Game for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
 
             // Reset score
             playerOneScore = 0;
@@ -79,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 playerTwoGames = 0;
                 playerOneSets += 1;
                 newSet = true;
-                //currentSet += 1;
+                currentSet += 1;
+                Toast.makeText(this ,"Set for player one", Toast.LENGTH_SHORT).show();
             }
             else
             {
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) > 1))
         {
             // Player Two wins the game
-            Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
 
             // Reset score
             playerOneScore = 0;
@@ -103,7 +104,8 @@ public class MainActivity extends AppCompatActivity {
                 playerTwoGames = 0;
                 playerTwoSets += 1;
                 newSet = true;
-                //currentSet += 1;
+                currentSet += 1;
+                Toast.makeText(this ,"Set for player two", Toast.LENGTH_SHORT).show();
             }
             else
             {
@@ -116,15 +118,18 @@ public class MainActivity extends AppCompatActivity {
         {
             case 1:
                 // Print status on set 1 view
-                displayStatus(playerOneScore, playerTwoScore, 1);
+                if(!newSet)
+                    displayStatus(playerOneScore, playerTwoScore, 1);
                 break;
             case 2:
                 // Print status on set 2 view
-                displayStatus(playerOneScore, playerTwoScore, 2);
+                if(!newSet)
+                    displayStatus(playerOneScore, playerTwoScore, 2);
                 break;
             case 3:
                 // Print status on set 3 view
-                displayStatus(playerOneScore, playerTwoScore, 3);
+                if(!newSet)
+                    displayStatus(playerOneScore, playerTwoScore, 3);
                 break;
         }
 
@@ -145,20 +150,21 @@ public class MainActivity extends AppCompatActivity {
         // Display current score
         TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
         playerOneCurrent.setText(scoreTextOne);
-        Toast.makeText(this ,"Displayed current score for player one: " + scoreTextOne, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this ,"Displayed current score for player one: " + scoreTextOne, Toast.LENGTH_SHORT).show();
 
 
         TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
         playerTwoCurrent.setText(scoreTextTwo);
-        Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
 
         // If player scored a set, update the counter (I shouldn't update currentSet BEFORE displaying the status, but AFTER
-        if(newSet) {
-            currentSet += 1;
+        //if(newSet) {
+            //currentSet += 1;
+            //Toast.makeText(this ,"New set", Toast.LENGTH_SHORT).show();
 
             // Get ready for next set
-            newSet = false;
-        }
+            //newSet = false;
+        //}
 
         // Get all the views for both players and set the values
         switch(setNumber) {
