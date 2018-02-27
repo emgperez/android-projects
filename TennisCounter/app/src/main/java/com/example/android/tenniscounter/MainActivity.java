@@ -198,14 +198,19 @@ public class MainActivity extends AppCompatActivity {
         {
             case 0:
                 value = "0";
+                break;
             case 1:
                 value = "15";
+                break;
             case 2:
                 value = "30";
+                break;
             case 3 :
                 value = "40";
+                break;
             case 4:
                 value = "AD";
+                break;
         }
 
         return value;
