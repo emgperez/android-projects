@@ -133,6 +133,13 @@ public class MainActivity extends AppCompatActivity {
         String scoreTextOne = reformatScore(scoreOne);
         String scoreTextTwo = reformatScore(scoreTwo);
 
+        // Display current score
+        TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
+        playerOneCurrent.setText(scoreTextOne);
+
+        TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
+        playerOneCurrent.setText(scoreTextTwo);
+
         // Get all the views for both players and set the values
         switch(setNumber) {
             case 1:
@@ -146,12 +153,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        // Display current score
-        TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
-        playerOneCurrent.setText(scoreTextOne);
 
-        TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
-        playerOneCurrent.setText(scoreTextTwo);
 
     }
 
