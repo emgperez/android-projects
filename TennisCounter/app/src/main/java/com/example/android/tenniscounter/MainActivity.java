@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 playerOneGames = 0;
                 playerTwoGames = 0;
                 playerOneSets += 1;
+                currentSet += 1;
             }
             else
             {
@@ -93,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 playerOneGames = 0;
                 playerTwoGames = 0;
                 playerTwoSets += 1;
+                currentSet += 1;
             }
             else
             {
@@ -100,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        // And now, take the score and print in on the layout
+        // And now, take the score and print it on the layout
         switch (currentSet)
         {
             case 1:
