@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             playerTwoScore = 0;
 
             // Add a game or set to player one depending on current score
-            if((playerOneGames >= 6) && (Math.abs(playerOneGames - playerTwoGames) > 1))
+            if((playerOneGames >= 5) && (Math.abs(playerOneGames - playerTwoGames) > 1))
             {
                 playerOneGames = 0;
                 playerTwoGames = 0;
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             playerTwoScore = 0;
 
             // Add a game or set to player two depending on current score
-            if((playerTwoGames >= 6) && (Math.abs(playerTwoGames - playerOneGames) > 1))
+            if((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1))
             {
                 playerOneGames = 0;
                 playerTwoGames = 0;
