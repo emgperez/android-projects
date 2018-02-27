@@ -161,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
                 TextView pTwoSetOneView = (TextView) findViewById(R.id.player_b_set1_games);
                 pTwoSetOneView.setText(String.valueOf(playerTwoGames));
 
+                break;
+
             case 2:
                 // Player One status
                 TextView pOneSetTwoView = (TextView) findViewById(R.id.player_a_set2_games);
@@ -169,6 +171,8 @@ public class MainActivity extends AppCompatActivity {
                 // Player Two status
                 TextView pTwoSetTwoView = (TextView) findViewById(R.id.player_b_set2_games);
                 pTwoSetTwoView.setText(String.valueOf(playerOneGames));
+
+                break;
 
             case 3:
 
@@ -186,6 +190,8 @@ public class MainActivity extends AppCompatActivity {
                     TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
                     pTwoSetThreeView.setText(String.valueOf(playerOneGames));
                 }
+
+                break;
         }
 
     }
