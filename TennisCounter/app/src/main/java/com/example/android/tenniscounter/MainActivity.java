@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 currentSet += 1;
                 playerOneGames = 0;
                 playerTwoGames = 0;
-                
+
             }
             else
             {
@@ -104,14 +104,19 @@ public class MainActivity extends AppCompatActivity {
             playerTwoScore = 0;
 
             // Add a game or set to player two depending on current score
-            if((playerTwoGames >= 6) && (Math.abs(playerTwoGames - playerOneGames) > 1))
+            if((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1))
             {
-                playerOneGames = 0;
-                playerTwoGames = 0;
+                playerTwoGames += 1;
                 playerTwoSets += 1;
                 newSet = true;
-                currentSet += 1;
                 Toast.makeText(this ,"Set for player two", Toast.LENGTH_SHORT).show();
+                displayStatus(playerOneScore, playerTwoScore, 1);
+
+                // Once the status is displayed, reset game counters
+                currentSet += 1;
+                playerOneGames = 0;
+                playerTwoGames = 0;
+
             }
             else
             {
