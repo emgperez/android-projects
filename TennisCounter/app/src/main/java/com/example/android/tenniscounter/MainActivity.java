@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 playerOneSets += 1;
                 newSet = true;
                 Toast.makeText(this ,"Set for player one", Toast.LENGTH_SHORT).show();
-                displayStatus(playerOneScore, playerTwoScore, 1);
+                displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                 // Once the status is displayed, reset game counters
                 currentSet += 1;
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 playerTwoSets += 1;
                 newSet = true;
                 Toast.makeText(this ,"Set for player two", Toast.LENGTH_SHORT).show();
-                displayStatus(playerOneScore, playerTwoScore, 1);
+                displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                 // Once the status is displayed, reset game counters
                 currentSet += 1;
@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this ,"Game already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
                     return;
                 }
-                else {
+                //else {
                     // Player One status
                     TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
                     pOneSetThreeView.setText(String.valueOf(playerOneGames));
@@ -234,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
                     // Player Two status
                     TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
                     pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
-                }
+                //}
 
                 break;
         }
