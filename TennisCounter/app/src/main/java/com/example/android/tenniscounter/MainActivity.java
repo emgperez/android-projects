@@ -158,6 +158,16 @@ public class MainActivity extends AppCompatActivity {
         String scoreTextOne = reformatScore(scoreOne);
         String scoreTextTwo = reformatScore(scoreTwo);
 
+        if(setNumber == 3)
+        {
+            // Check number of won sets
+            if (playerOneSets == 2 || playerTwoSets == 2) {
+
+                Toast.makeText(this, "Game already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
+                return;
+            }
+        }
+
         // Display current score
         TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
         playerOneCurrent.setText(scoreTextOne);
