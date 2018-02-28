@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             // Add a game or set to player one depending on current score
-            if((playerOneGames >= 5) && (Math.abs(playerOneGames - playerTwoGames) > 1))
+            if((playerOneGames >= 5) && (Math.abs(playerOneGames - playerTwoGames) >= 1))
             {
                 playerOneGames += 1;
                 playerOneSets += 1;
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-        else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) > 1))
+        else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) >= 1))
         {
             // Player Two wins the game
             //Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
