@@ -117,30 +117,34 @@ public class MainActivity extends AppCompatActivity {
             // Player Two wins the game
             //Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
 
-            // Reset score
-            playerOneScore = 0;
-            playerTwoScore = 0;
-
-
-
-            // Add a game or set to player two depending on current score
-            if((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1))
+            if(playerOneScore == 3)
             {
-                playerTwoGames += 1;
-                playerTwoSets += 1;
-                newSet = true;
-                Toast.makeText(this ,"Set for player two", Toast.LENGTH_SHORT).show();
+                // Advantage, don't end game
                 displayStatus(playerOneScore, playerTwoScore, currentSet);
-
-                // Once the status is displayed, reset game counters
-                currentSet += 1;
-                playerOneGames = 0;
-                playerTwoGames = 0;
-
             }
-            else
-            {
-                playerTwoGames += 1;
+            else {
+
+                // Reset score
+                playerOneScore = 0;
+                playerTwoScore = 0;
+
+
+                // Add a game or set to player two depending on current score
+                if ((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1)) {
+                    playerTwoGames += 1;
+                    playerTwoSets += 1;
+                    newSet = true;
+                    Toast.makeText(this, "Set for player two", Toast.LENGTH_SHORT).show();
+                    displayStatus(playerOneScore, playerTwoScore, currentSet);
+
+                    // Once the status is displayed, reset game counters
+                    currentSet += 1;
+                    playerOneGames = 0;
+                    playerTwoGames = 0;
+
+                } else {
+                    playerTwoGames += 1;
+                }
             }
         }
 
