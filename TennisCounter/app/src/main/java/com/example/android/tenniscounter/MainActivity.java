@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     boolean newSet = false;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
                 playerOneScore = 0;
                 playerTwoScore = 0;
 
-
                 // Add a game or set to player one depending on current score
                 if ((playerOneGames >= 5) && (Math.abs(playerOneGames - playerTwoGames) >= 1)) {
                     playerOneGames += 1;
@@ -114,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-
         }
         else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) >= 1))
         {
@@ -131,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
                 // Reset score
                 playerOneScore = 0;
                 playerTwoScore = 0;
-
 
                 // Add a game or set to player two depending on current score
                 if ((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1)) {
@@ -151,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-
 
         // And now, take the score and print it on the layout
         switch (currentSet)
@@ -173,10 +168,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-
-
     }
-
 
     /**
      * Displays the given score for both Player One and Player Two.
@@ -204,7 +196,6 @@ public class MainActivity extends AppCompatActivity {
         playerOneCurrent.setText(scoreTextOne);
         //Toast.makeText(this ,"Displayed current score for player one: " + scoreTextOne, Toast.LENGTH_SHORT).show();
 
-
         TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
         playerTwoCurrent.setText(scoreTextTwo);
         //Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
@@ -221,9 +212,6 @@ public class MainActivity extends AppCompatActivity {
                 displaySetStatus(3);
                 break;
         }
-
-
-
     }
 
     /**
@@ -331,7 +319,6 @@ public class MainActivity extends AppCompatActivity {
         TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
         playerTwoCurrent.setText("0");
 
-
         // Games in all sets
         TextView pOneSetOneView = (TextView) findViewById(R.id.player_a_set1_games);
         pOneSetOneView.setText(String.valueOf(playerOneGames));
@@ -352,5 +339,4 @@ public class MainActivity extends AppCompatActivity {
         pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
 
     }
-
 }
