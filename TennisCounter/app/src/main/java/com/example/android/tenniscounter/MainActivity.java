@@ -39,8 +39,17 @@ public class MainActivity extends AppCompatActivity {
      */
     public void scorePlayerOne(View v) {
 
-        playerOneScore += 1;
-        Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
+
+        // In case of advantage of player two, if player one scores, then deuce
+        if(playerOneScore == 3 && playerTwoScore == 4)
+        {
+            playerTwoScore -=1;
+        }
+        else
+        {
+            playerOneScore += 1;
+            Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
+        }
 
         // Always check game status when incrementing player score
         getScore();
@@ -51,8 +60,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void scorePlayerTwo(View v) {
 
-        playerTwoScore += 1;
-        //Toast.makeText(this ,"Point for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
+        // In case of advantage of player one, if player two scores, then deuce
+        if(playerTwoScore == 3 && playerOneScore == 4)
+        {
+            playerOneScore -=1;
+        }
+        else
+        {
+            playerTwoScore += 1;
+            //Toast.makeText(this ,"Point for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
+        }
 
         // Always check game status when incrementing player score
         getScore();
@@ -102,6 +119,8 @@ public class MainActivity extends AppCompatActivity {
             // Reset score
             playerOneScore = 0;
             playerTwoScore = 0;
+
+
 
             // Add a game or set to player two depending on current score
             if((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1))
