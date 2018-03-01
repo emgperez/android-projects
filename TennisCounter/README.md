@@ -5,11 +5,13 @@
 # Features 
 
 -Two players
+
 -Three buttons for each player
+
 	- ACE
 	- WINNER
 	- UNFORCED ERR
-	
+
 -There's no tie-break in any set
 
 
