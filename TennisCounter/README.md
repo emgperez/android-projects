@@ -1,6 +1,6 @@
 # Tennis Counter App
 
-- This app implements a three-setter tennis match. There's two players (named 'FED' and 'NAD' -I know, they sound familiar-) and any of them can score by hitting an ace, a winner or thanks to an unforced error from the other player. Every one of those three actions has its own button.
+- This app implements a three-setter tennis match. There's two players (named 'FED' and 'NAD' -I know, they sound familiar-) and any of them can score by hitting an ace, a winner or thanks to an unforced error from the other player. Each one of those three actions has its own button.
 
 # Features 
 
