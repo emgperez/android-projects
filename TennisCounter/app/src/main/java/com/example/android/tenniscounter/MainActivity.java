@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     // Control new set
     boolean newSet = false;
 
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             // Player Two wins the game
             //Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
 
-            if(playerOneScore == 3)
+            if(playerTwoScore == 4 && playerOneScore == 3)
             {
                 // Advantage, don't end game
                 displayStatus(playerOneScore, playerTwoScore, currentSet);
