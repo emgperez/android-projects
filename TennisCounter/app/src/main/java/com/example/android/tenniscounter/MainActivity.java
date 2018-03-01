@@ -39,16 +39,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void scorePlayerOne(View v) {
 
-
-        // In case of advantage of player two, if player one scores, then deuce
-        if(playerOneScore == 3 && playerTwoScore == 4)
-        {
-            playerTwoScore -=1;
+        if(playerTwoScore == 4 || playerOneScore == 3) {
+            playerTwoScore -= 1;
         }
-        else
-        {
+        else {
             playerOneScore += 1;
-            Toast.makeText(this ,"Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
         }
 
         // Always check game status when incrementing player score
@@ -60,16 +56,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void scorePlayerTwo(View v) {
 
-        // In case of advantage of player one, if player two scores, then deuce
-        if(playerTwoScore == 3 && playerOneScore == 4)
+        if(playerOneScore == 4 || playerTwoScore == 3)
         {
-            playerOneScore -=1;
+            playerOneScore -= 1;
         }
-        else
-        {
+        else {
             playerTwoScore += 1;
             //Toast.makeText(this ,"Point for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
+
         }
+
 
         // Always check game status when incrementing player score
         getScore();
@@ -80,35 +76,40 @@ public class MainActivity extends AppCompatActivity {
         if(newSet)
             newSet = false;
 
-        if((playerOneScore > 3) && (Math.abs(playerOneScore - playerTwoScore) > 1))
+        if((playerOneScore > 3) && (Math.abs(playerOneScore - playerTwoScore) >= 1))
         {
             // Player One wins the game
-            Toast.makeText(this ,"Games for player one: " + playerOneGames, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this ,"Games for player one: " + playerOneGames, Toast.LENGTH_SHORT).show();
 
-            // Reset score
-            playerOneScore = 0;
-            playerTwoScore = 0;
-
-
-            // Add a game or set to player one depending on current score
-            if((playerOneGames >= 5) && (Math.abs(playerOneGames - playerTwoGames) >= 1))
+            if(playerTwoScore == 3)
             {
-                playerOneGames += 1;
-                playerOneSets += 1;
-                newSet = true;
-                Toast.makeText(this ,"Set for player one", Toast.LENGTH_SHORT).show();
+                // Advantage, don't end game
                 displayStatus(playerOneScore, playerTwoScore, currentSet);
-
-                // Once the status is displayed, reset game counters
-                currentSet += 1;
-                playerOneGames = 0;
-                playerTwoGames = 0;
-
             }
-            else
-            {
-                playerOneGames += 1;
+            else {
+                // Reset score
+                playerOneScore = 0;
+                playerTwoScore = 0;
+
+
+                // Add a game or set to player one depending on current score
+                if ((playerOneGames >= 5) && (Math.abs(playerOneGames - playerTwoGames) >= 1)) {
+                    playerOneGames += 1;
+                    playerOneSets += 1;
+                    newSet = true;
+                    Toast.makeText(this, "Set for player one", Toast.LENGTH_SHORT).show();
+                    displayStatus(playerOneScore, playerTwoScore, currentSet);
+
+                    // Once the status is displayed, reset game counters
+                    currentSet += 1;
+                    playerOneGames = 0;
+                    playerTwoGames = 0;
+
+                } else {
+                    playerOneGames += 1;
+                }
             }
+
 
         }
         else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) >= 1))
@@ -143,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+
         // And now, take the score and print it on the layout
         switch (currentSet)
         {
@@ -176,6 +178,8 @@ public class MainActivity extends AppCompatActivity {
         // First, reformat player score (0 = 0, 1 = 15, and so on)
         String scoreTextOne = reformatScore(scoreOne);
         String scoreTextTwo = reformatScore(scoreTwo);
+
+        Toast.makeText(this, "Displaying status: " + scoreOne + " " + scoreTwo, Toast.LENGTH_SHORT).show();
 
         if(setNumber == 3)
         {
