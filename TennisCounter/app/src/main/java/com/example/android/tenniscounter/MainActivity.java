@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void scorePlayerOne(View v) {
 
-        if(playerTwoScore == 4 || playerOneScore == 3) {
+        if(playerTwoScore == 4 && playerOneScore == 3) {
             playerTwoScore -= 1;
         }
         else {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void scorePlayerTwo(View v) {
 
-        if(playerOneScore == 4 || playerTwoScore == 3)
+        if(playerOneScore == 4 && playerTwoScore == 3)
         {
             playerOneScore -= 1;
         }
