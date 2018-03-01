@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
         // Always check game status when incrementing player score
         getScore();
     }
@@ -263,15 +262,14 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this ,"Game already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
                     return;
                 }
-                //else {
-                    // Player One status
-                    TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
-                    pOneSetThreeView.setText(String.valueOf(playerOneGames));
 
-                    // Player Two status
-                    TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
-                    pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
-                //}
+                // Player One status
+                TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
+                pOneSetThreeView.setText(String.valueOf(playerOneGames));
+
+                // Player Two status
+                TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
+                pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
 
                 break;
         }
@@ -352,9 +350,6 @@ public class MainActivity extends AppCompatActivity {
 
         TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
         pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
-
-
-
 
     }
 
