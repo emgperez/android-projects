@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Player 1 by 1 point, scoring being 0 = 0, 1 = 15, 2 = 30, 3 = 40
+     * Increase the score for Player 1 by 1 point, score being 0 = 0, 1 = 15, 2 = 30, 3 = 40
      */
     public void scorePlayerOne(View v) {
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Player 21 by 1 point, scoring being 0 = 0, 1 = 15, 2 = 30, 3 = 40
+     * Increase the score for Player 2 by 1 point, score being 0 = 0, 1 = 15, 2 = 30, 3 = 40
      */
     public void scorePlayerTwo(View v) {
 
@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
         getScore();
     }
 
+    /**
+     * Checks the current state of the scoring and triggers its printing on the different Views
+     */
     public void getScore() {
 
         if(newSet)
@@ -177,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Displays the given score for Player One.
+     * Displays the given score for both Player One and Player Two.
      */
     public void displayStatus(int scoreOne, int scoreTwo, int setNumber) {
 
@@ -207,15 +210,6 @@ public class MainActivity extends AppCompatActivity {
         playerTwoCurrent.setText(scoreTextTwo);
         //Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
 
-        // If player scored a set, update the counter (I shouldn't update currentSet BEFORE displaying the status, but AFTER
-        //if(newSet) {
-            //currentSet += 1;
-            //Toast.makeText(this ,"New set", Toast.LENGTH_SHORT).show();
-
-            // Get ready for next set
-            //newSet = false;
-        //}
-
         // Get all the views for both players and set the values
         switch(setNumber) {
             case 1:
@@ -233,6 +227,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Displays the status of the set (games for player one and games for player two)
+     * @param set
+     */
     public void displaySetStatus(int set)
     {
         switch (set){
@@ -280,6 +278,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Given the score in an int variable, it reformats it to a String so that it can be properly displayed
+     * @param score
+     * @return
+     */
     private String reformatScore(int score)
     {
         String value = "";
@@ -306,6 +309,10 @@ public class MainActivity extends AppCompatActivity {
         return value;
     }
 
+    /**
+     * Resets all the variables and views the game is comprised of
+     * @param v
+     */
     public void resetScore(View v) {
 
         // Reset all views and counters
@@ -350,15 +357,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-    /**
-     * Displays the given score for Player Two.
-     */
-    //public void displayForTeamB(int score) {
-    //    TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-    //    scoreView.setText(String.valueOf(score));
-    //}
-
-
 
 }
