@@ -14,6 +14,8 @@
 
 -There's no tie-break in any set
 
+-Reset button to clear all the scores
+
 
 # Screenshot
 ![screenshot](https://github.com/emgperez/android-projects/blob/master/Screenshots/TennisCounterApp/Screenshot.PNG)
