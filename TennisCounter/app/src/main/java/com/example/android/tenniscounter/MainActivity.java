@@ -172,6 +172,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays the given score for both Player One and Player Two.
+     * @param scoreOne Score por player one
+     * @param scoreTwo Score for player two
      */
     public void displayStatus(int scoreOne, int scoreTwo, int setNumber) {
 
@@ -216,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays the status of the set (games for player one and games for player two)
-     * @param set
+     * @param set Number of current set (1 = first, 2 = second , 3 = third)
      */
     public void displaySetStatus(int set)
     {
@@ -266,7 +268,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Given the score in an int variable, it reformats it to a String so that it can be properly displayed
-     * @param score
+     * @param score Numeric value representing the score (0 = 0, 1 = 15, 2 = 30, 3 = 40, 4 = AD)
      * @return
      */
     private String reformatScore(int score)
@@ -297,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Resets all the variables and views the game is comprised of
-     * @param v
+     * @param v Current View
      */
     public void resetScore(View v) {
 
