@@ -542,45 +542,38 @@
             android:textSize="12sp"
             android:textStyle="bold" />
 
-        <RadioGroup
-            android:id="@+id/questionEleven"
+        <CheckBox
+            android:id="@+id/choice_11_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginLeft="16dp"
+            android:text="@string/ans_11_1"
+            android:textSize="12sp" />
 
-            <RadioButton
-                android:id="@+id/choice_11_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="@string/ans_11_1"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/choice_11_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/ans_11_2"
+            android:textSize="12sp" />
 
-            <RadioButton
-                android:id="@+id/choice_11_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="@string/ans_11_2"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/choice_11_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/ans_11_3"
+            android:textSize="12sp" />
 
-            <RadioButton
-                android:id="@+id/choice_11_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="@string/ans_11_3"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/choice_11_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/ans_11_4"
+            android:textSize="12sp" />
 
-            <RadioButton
-                android:id="@+id/choice_11_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="@string/ans_11_4"
-                android:textSize="12sp" />
-
-        </RadioGroup>
 
 
 
