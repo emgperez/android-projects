@@ -8,11 +8,11 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/main_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/main_score"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,15 +45,15 @@
 
                     <TextView
                         style="@style/SetsGames"
-                        android:text="@string/set_2"/>
+                        android:text="@string/set_2" />
 
                     <TextView
                         style="@style/SetsGames"
-                        android:text="@string/set_3"/>
+                        android:text="@string/set_3" />
 
                     <TextView
                         style="@style/SetsGames"
-                        android:text="@string/current"/>
+                        android:text="@string/current" />
 
                 </LinearLayout>
 
@@ -75,17 +75,17 @@
                     <TextView
                         android:id="@+id/player_a_set2_games"
                         style="@style/Stats_Score"
-                        android:text="@string/zero"/>
+                        android:text="@string/zero" />
 
                     <TextView
                         android:id="@+id/player_a_set3_games"
                         style="@style/Stats_Score"
-                        android:text="@string/zero"/>
+                        android:text="@string/zero" />
 
                     <TextView
                         android:id="@+id/player_a_current"
                         style="@style/Current_Score"
-                        android:text="@string/zero"/>
+                        android:text="@string/zero" />
 
                 </LinearLayout>
 
@@ -107,17 +107,17 @@
                     <TextView
                         android:id="@+id/player_b_set2_games"
                         style="@style/Stats_Score"
-                        android:text="@string/zero"/>
+                        android:text="@string/zero" />
 
                     <TextView
                         android:id="@+id/player_b_set3_games"
                         style="@style/Stats_Score"
-                        android:text="@string/zero"/>
+                        android:text="@string/zero" />
 
                     <TextView
                         android:id="@+id/player_b_current"
                         style="@style/Current_Score"
-                        android:text="@string/zero"/>
+                        android:text="@string/zero" />
 
                 </LinearLayout>
 
@@ -128,8 +128,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -143,22 +143,22 @@
                 <TextView
                     android:id="@+id/player_a_name_small"
                     style="@style/Player"
-                    android:text="FED"/>
+                    android:text="FED" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/ace"
-                    android:onClick="scorePlayerOne"/>
+                    android:onClick="scorePlayerOne"
+                    android:text="@string/ace" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/winner"
-                    android:onClick="scorePlayerOne"/>
+                    android:onClick="scorePlayerOne"
+                    android:text="@string/winner" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/unforced"
-                    android:onClick="scorePlayerTwo"/>
+                    android:onClick="scorePlayerTwo"
+                    android:text="@string/unforced" />
 
             </LinearLayout>
 
@@ -177,27 +177,26 @@
                 <TextView
                     android:id="@+id/player_b_name_small"
                     style="@style/Player"
-                    android:text="NAD"/>
+                    android:text="NAD" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/ace"
-                    android:onClick="scorePlayerTwo"/>
+                    android:onClick="scorePlayerTwo"
+                    android:text="@string/ace" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/winner"
-                    android:onClick="scorePlayerTwo"/>
+                    android:onClick="scorePlayerTwo"
+                    android:text="@string/winner" />
 
                 <Button
                     style="@style/Button"
-                    android:text="@string/unforced"
-                    android:onClick="scorePlayerOne"/>
+                    android:onClick="scorePlayerOne"
+                    android:text="@string/unforced" />
 
             </LinearLayout>
 
         </LinearLayout>
-
 
 
     </LinearLayout>
@@ -205,22 +204,22 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_below="@id/main_score"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="10dp" >
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/button"
             style="@style/Reset_Button"
-            android:text="@string/reset"
-            android:onClick="resetScore"/>
+            android:onClick="resetScore"
+            android:text="@string/reset" />
 
         <LinearLayout
             android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_below="@id/button"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:layout_below="@id/button">
 
             <ImageView
                 android:layout_width="wrap_content"
