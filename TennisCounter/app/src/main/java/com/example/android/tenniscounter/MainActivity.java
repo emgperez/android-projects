@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     // Control new set
     boolean newSet = false;
 
+    // Control match state
+    boolean matchEnded = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                     playerTwoGames += 1;
                     playerTwoSets += 1;
                     newSet = true;
-                    Toast.makeText(this, "Set for player two", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "Set for player two", Toast.LENGTH_SHORT).show();
                     displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                     // Once the status is displayed, reset game counters
@@ -181,38 +184,47 @@ public class MainActivity extends AppCompatActivity {
         String scoreTextOne = reformatScore(scoreOne);
         String scoreTextTwo = reformatScore(scoreTwo);
 
-        Toast.makeText(this, "Displaying status: " + scoreOne + " " + scoreTwo, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Displaying status: " + scoreOne + " " + scoreTwo, Toast.LENGTH_SHORT).show();
 
-        if(setNumber == 3)
-        {
+        if (setNumber >= 2) {
             // Check number of won sets
-            if (playerOneSets == 2 || playerTwoSets == 2) {
+            if (playerOneSets == 2) {
 
-                Toast.makeText(this, "Game already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
-                return;
+                Toast.makeText(this, "Match already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Match for FED " + playerOneSets, Toast.LENGTH_SHORT).show();
+                displaySetStatus(setNumber);
+                //return;
+                matchEnded = true;
+            } else if (playerTwoSets == 2) {
+                Toast.makeText(this, "Match for NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
+                //return;
+                displaySetStatus(setNumber);
+                matchEnded = true;
             }
         }
 
-        // Display current score
-        TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
-        playerOneCurrent.setText(scoreTextOne);
-        //Toast.makeText(this ,"Displayed current score for player one: " + scoreTextOne, Toast.LENGTH_SHORT).show();
-
-        TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
-        playerTwoCurrent.setText(scoreTextTwo);
-        //Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
 
         // Get all the views for both players and set the values
-        switch(setNumber) {
-            case 1:
-                displaySetStatus(1);
-                break;
-            case 2:
-                displaySetStatus(2);
-                break;
-            case 3:
-                displaySetStatus(3);
-                break;
+        if (!matchEnded)
+        {
+            displayCurrent(scoreTextOne, scoreTextTwo);
+
+            switch (setNumber) {
+                case 1:
+                    displaySetStatus(1);
+                    break;
+                case 2:
+                    displaySetStatus(2);
+                    break;
+                case 3:
+                    displaySetStatus(3);
+                    break;
+            }
+        }
+        else
+        {
+            // Match ended, but reset current values
+            displayCurrent("0", "0");
         }
     }
 
@@ -249,7 +261,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if(playerOneSets == 2 || playerTwoSets == 2) {
 
-                    Toast.makeText(this ,"Game already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
+
+                    Toast.makeText(this ,"Match already ended: " + playerOneSets + " " + playerTwoSets, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -314,6 +327,9 @@ public class MainActivity extends AppCompatActivity {
         playerTwoSets = 0;
         currentSet = 1;
 
+        // Control variables
+        matchEnded = false;
+
         // Current Score
         TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
         playerOneCurrent.setText("0");
@@ -340,5 +356,17 @@ public class MainActivity extends AppCompatActivity {
         TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
         pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
 
+    }
+
+    private void displayCurrent(String textA, String textB)
+    {
+        // Display current score
+        TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
+        playerOneCurrent.setText(textA);
+        //Toast.makeText(this ,"Displayed current score for player one: " + scoreTextOne, Toast.LENGTH_SHORT).show();
+
+        TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
+        playerTwoCurrent.setText(textB);
+        //Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
     }
 }
