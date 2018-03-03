@@ -358,6 +358,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Displays score for current game
+     * @param textA Score for player one
+     * @param textB Score for player two
+     */
     private void displayCurrent(String textA, String textB)
     {
         // Display current score
