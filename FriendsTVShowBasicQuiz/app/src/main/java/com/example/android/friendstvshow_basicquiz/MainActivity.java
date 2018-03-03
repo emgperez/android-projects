@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         checkAnswers(view);
 
         Toast.makeText(this ,"Correct Answers: " + correctAnswers, Toast.LENGTH_SHORT).show();
-        resetAnswers();
+        resetAnswers(view);
 
     }
 
