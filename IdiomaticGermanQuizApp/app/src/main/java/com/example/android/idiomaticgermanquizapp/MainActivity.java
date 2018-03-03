@@ -25,6 +25,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Checks the number of correct answers depending on the choices you made
+     * @param view
+     */
+    private void checkAnswers(View view) {
+
+        // Get questions answers
+
+        // Question number one
+        RadioButton answerOne = (RadioButton)findViewById(R.id.choice_1_1);
+        if (answerOne.isChecked())
+            correctAnswers += 1;
+
+        // Question number two
+        RadioButton answerTwo = (RadioButton)findViewById(R.id.choice_2_2);
+        if (answerTwo.isChecked())
+            correctAnswers += 1;
+
+
+
+    }
 
 
     @Override
