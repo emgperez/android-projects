@@ -13,6 +13,13 @@ public class MainActivity extends AppCompatActivity {
     // Number of correct answers
     int correctAnswers = 0;
 
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
     /**
      * This methods triggers the checking of your quiz answers
      * @param view
@@ -90,13 +97,6 @@ public class MainActivity extends AppCompatActivity {
         if (answerEleven_1.isChecked() && answerEleven_2.isChecked())
             correctAnswers += 1;
 
-    }
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 
     /**
