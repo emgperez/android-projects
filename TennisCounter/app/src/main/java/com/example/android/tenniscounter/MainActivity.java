@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                     playerOneGames += 1;
                     playerOneSets += 1;
                     newSet = true;
-                    Toast.makeText(this, "Set for player one", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Set for FED", Toast.LENGTH_SHORT).show();
                     displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                     // Once the status is displayed, reset game counters
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                     playerTwoGames += 1;
                     playerTwoSets += 1;
                     newSet = true;
-                    //Toast.makeText(this, "Set for player two", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Set for NAD", Toast.LENGTH_SHORT).show();
                     displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                     // Once the status is displayed, reset game counters
@@ -190,7 +190,6 @@ public class MainActivity extends AppCompatActivity {
             // Check number of won sets
             if (playerOneSets == 2) {
 
-                Toast.makeText(this, "Match already ended: " + playerOneGames + " " + playerTwoGames, Toast.LENGTH_SHORT).show();
                 Toast.makeText(this, "Match for FED " + playerOneSets, Toast.LENGTH_SHORT).show();
                 displaySetStatus(setNumber);
                 //return;
