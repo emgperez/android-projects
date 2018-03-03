@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         checkAnswers(view);
 
         Toast.makeText(this ,"Correct Answers: " + correctAnswers, Toast.LENGTH_SHORT).show();
-        resetAnswers();
 
     }
 
@@ -102,7 +101,47 @@ public class MainActivity extends AppCompatActivity {
     /**
      * It resets the counter that keeps your correct answers
      */
-    public void resetAnswers(){
+    public void resetAnswers(View view){
+
         correctAnswers = 0;
+        Toast.makeText(this ,"Answers reset " + correctAnswers, Toast.LENGTH_SHORT).show();
+
+        // Uncheck all the answers
+        RadioGroup questionOne = (RadioGroup)findViewById(R.id.questionOne);
+        questionOne.clearCheck();
+
+        RadioGroup questionTwo = (RadioGroup)findViewById(R.id.questionTwo);
+        questionTwo.clearCheck();
+
+        RadioGroup questionThree = (RadioGroup)findViewById(R.id.questionThree);
+        questionThree.clearCheck();
+
+        RadioGroup questionFour = (RadioGroup)findViewById(R.id.questionFour);
+        questionFour.clearCheck();
+
+        RadioGroup questionFive = (RadioGroup)findViewById(R.id.questionFive);
+        questionFive.clearCheck();
+
+        RadioGroup questionSix = (RadioGroup)findViewById(R.id.questionSix);
+        questionSix.clearCheck();
+
+        RadioGroup questionSeven = (RadioGroup)findViewById(R.id.questionSeven);
+        questionSeven.clearCheck();
+
+        RadioGroup questionEight = (RadioGroup)findViewById(R.id.questionEight);
+        questionEight.clearCheck();
+
+        RadioGroup questionNine = (RadioGroup)findViewById(R.id.questionNine);
+        questionNine.clearCheck();
+
+        RadioGroup questionTen = (RadioGroup)findViewById(R.id.questionTen);
+        questionTen.clearCheck();
+
+        CheckBox questionEleven_1 = (CheckBox)findViewById(R.id.choice_11_2);
+        questionEleven_1.setChecked(false);
+
+        CheckBox questionEleven_2 = (CheckBox)findViewById(R.id.choice_11_3);
+        questionEleven_2.setChecked(false);
+
     }
 }
