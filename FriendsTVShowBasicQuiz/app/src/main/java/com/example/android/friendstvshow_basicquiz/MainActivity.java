@@ -106,7 +106,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * It resets the counter that keeps your correct answers
      */
-    public void resetAnswers(){
+    public void resetAnswers(View view){
+
         correctAnswers = 0;
     }
 }
