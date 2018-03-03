@@ -79,7 +79,7 @@
     <style name="Reset_Button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_marginBottom">48dp</item>
