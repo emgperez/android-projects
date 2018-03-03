@@ -207,14 +207,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_below="@id/main_score"
         android:layout_marginBottom="10dp" >
-
 
         <Button
             android:id="@+id/button"
             style="@style/Reset_Button"
             android:text="@string/reset"
             android:onClick="resetScore"/>
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_below="@id/button"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tennis_ball" />
+
+        </LinearLayout>
 
     </RelativeLayout>
     <!-- -->
