@@ -574,8 +574,26 @@
             android:text="@string/ans_11_4"
             android:textSize="12sp" />
 
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="submitQuestions"
+                android:text="Check Answers" />
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="resetAnswers"
+                android:text="Reset Quiz" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
