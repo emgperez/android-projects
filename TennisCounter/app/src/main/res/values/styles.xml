@@ -14,8 +14,8 @@
     <style name="Player">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">16dp</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:padding">4dp</item>
         <item name="android:textSize">10sp</item>
@@ -26,7 +26,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">6dp</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:padding">4dp</item>
         <item name="android:textSize">8sp</item>
@@ -36,7 +36,7 @@
     <style name="Stats_Score">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:padding">4dp</item>
@@ -47,7 +47,7 @@
     <style name="SetsGames">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:padding">4dp</item>
@@ -58,7 +58,7 @@
     <style name="Current_Score">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:padding">4dp</item>
@@ -82,8 +82,9 @@
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_gravity">center_horizontal</item>
+        <!--
         <item name="android:layout_marginBottom">48dp</item>
-        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_marginTop">60dp</item>-->
         <item name="android:textColor">@color/textColorButton</item>
     </style>
 
