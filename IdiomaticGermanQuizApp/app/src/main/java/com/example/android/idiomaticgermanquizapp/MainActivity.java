@@ -98,4 +98,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    /**
+     * It resets the counter that keeps your correct answers
+     */
+    private void resetAnswers(){
+        correctAnswers = 0;
+    }
 }
