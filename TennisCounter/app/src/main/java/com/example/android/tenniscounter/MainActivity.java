@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Toast.makeText(this, "Displaying status: " + scoreOne + " " + scoreTwo, Toast.LENGTH_SHORT).show();
 
-        if (setNumber >= 2) {
+        if (setNumber >= 2 && !matchEnded) {
             // Check number of won sets
             if (playerOneSets == 2) {
 
@@ -263,7 +263,7 @@ public class MainActivity extends AppCompatActivity {
                 if(playerOneSets == 2 || playerTwoSets == 2) {
 
                     Toast.makeText(this ,"Match already ended: " + playerOneSets + " " + playerTwoSets, Toast.LENGTH_SHORT).show();
-                    return;
+                    //return;
                 }
 
                 // Player One status
