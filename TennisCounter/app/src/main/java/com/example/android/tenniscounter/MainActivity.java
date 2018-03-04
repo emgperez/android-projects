@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Player 1 by 1 point, score being 0 = 0, 1 = 15, 2 = 30, 3 = 40
+     * Increases the score for Player 1 by 1 point, score being 0 = 0, 1 = 15, 2 = 30, 3 = 40
      */
     public void scorePlayerOne(View v) {
 
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Player 2 by 1 point, score being 0 = 0, 1 = 15, 2 = 30, 3 = 40
+     * Increases the score for Player 2 by 1 point, score being 0 = 0, 1 = 15, 2 = 30, 3 = 40
      */
     public void scorePlayerTwo(View v) {
 
@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         else {
             playerTwoScore += 1;
             //Toast.makeText(this ,"Point for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
-
         }
 
         // Always check game status when incrementing player score
@@ -152,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // And now, take the score and print it on the layout
-        switch (currentSet)
+        /**switch (currentSet)
         {
             case 1:
                 // Print status on set 1 view
@@ -169,7 +168,9 @@ public class MainActivity extends AppCompatActivity {
                 if(!newSet)
                     displayStatus(playerOneScore, playerTwoScore, 3);
                 break;
-        }
+        }*/
+        if(!newSet)
+            displayStatus(playerOneScore, playerTwoScore, currentSet);
 
     }
 
@@ -202,13 +203,12 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-
         // Get all the views for both players and set the values
         if (!matchEnded)
         {
             displayCurrent(scoreTextOne, scoreTextTwo);
 
-            switch (setNumber) {
+            /*switch (setNumber) {
                 case 1:
                     displaySetStatus(1);
                     break;
@@ -218,7 +218,8 @@ public class MainActivity extends AppCompatActivity {
                 case 3:
                     displaySetStatus(3);
                     break;
-            }
+            }*/
+            displaySetStatus(setNumber);
         }
         else
         {
