@@ -192,13 +192,13 @@ public class MainActivity extends AppCompatActivity {
             if (playerOneSets == 2) {
 
                 Toast.makeText(this, "Match for FED " + playerOneSets, Toast.LENGTH_SHORT).show();
-                displaySetStatus(setNumber);
+                //displaySetStatus(setNumber);
                 //return;
                 matchEnded = true;
             } else if (playerTwoSets == 2) {
                 Toast.makeText(this, "Match for NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
                 //return;
-                displaySetStatus(setNumber);
+                //displaySetStatus(setNumber);
                 matchEnded = true;
             }
         }
@@ -225,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
         {
             // Match ended, but reset current values
             displayCurrent("0", "0");
+            displaySetStatus(setNumber);
         }
     }
 
@@ -260,7 +261,6 @@ public class MainActivity extends AppCompatActivity {
             case 3:
 
                 if(playerOneSets == 2 || playerTwoSets == 2) {
-
 
                     Toast.makeText(this ,"Match already ended: " + playerOneSets + " " + playerTwoSets, Toast.LENGTH_SHORT).show();
                     return;
