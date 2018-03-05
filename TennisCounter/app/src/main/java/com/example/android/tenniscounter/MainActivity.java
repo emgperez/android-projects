@@ -197,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
                 matchEnded = true;
             } else if (playerTwoSets == 2) {
                 Toast.makeText(this, "Match for NAD", Toast.LENGTH_SHORT).show();
+
                 //return;
                 displaySetStatus(setNumber);
                 matchEnded = true;
@@ -213,6 +214,7 @@ public class MainActivity extends AppCompatActivity {
         {
             // Match ended, but reset current values
             displayCurrent("0", "0");
+            Toast.makeText(this ,"Match ended: " + "FED " + playerOneSets + " NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
             //if(setNumber <= 2)
                 //displaySetStatus(setNumber);
         }
@@ -224,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displaySetStatus(int set)
     {
-        boolean exit = false;
+
 
         switch (set){
             case 1:
@@ -251,24 +253,13 @@ public class MainActivity extends AppCompatActivity {
 
             case 3:
 
-                //if(playerOneSets == 2 || playerTwoSets == 2) {
-                if(matchEnded)
-                {
-                    Toast.makeText(this ,"Match ended: " + "FED " + playerOneSets + " NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
-                    exit = true;
-                }
-                //else {
+                // Player One status
+                TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
+                pOneSetThreeView.setText(String.valueOf(playerOneGames));
 
-                //if(!exit) {
-                    // Player One status
-                    TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
-                    pOneSetThreeView.setText(String.valueOf(playerOneGames));
-
-                    // Player Two status
-                    TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
-                    pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
-                    //}
-                //}
+                // Player Two status
+                TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
+                pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
 
                 break;
         }
