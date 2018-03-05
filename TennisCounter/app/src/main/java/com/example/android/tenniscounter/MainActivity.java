@@ -151,24 +151,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // And now, take the score and print it on the layout
-        /**switch (currentSet)
-        {
-            case 1:
-                // Print status on set 1 view
-                if(!newSet)
-                    displayStatus(playerOneScore, playerTwoScore, 1);
-                break;
-            case 2:
-                // Print status on set 2 view
-                if(!newSet)
-                    displayStatus(playerOneScore, playerTwoScore, 2);
-                break;
-            case 3:
-                // Print status on set 3 view
-                if(!newSet)
-                    displayStatus(playerOneScore, playerTwoScore, 3);
-                break;
-        }*/
         if(!newSet)
             displayStatus(playerOneScore, playerTwoScore, currentSet);
 
@@ -193,12 +175,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(this, "Match for FED", Toast.LENGTH_SHORT).show();
                 displaySetStatus(setNumber);
-                //return;
                 matchEnded = true;
             } else if (playerTwoSets == 2) {
                 Toast.makeText(this, "Match for NAD", Toast.LENGTH_SHORT).show();
-
-                //return;
                 displaySetStatus(setNumber);
                 matchEnded = true;
             }
@@ -215,8 +194,7 @@ public class MainActivity extends AppCompatActivity {
             // Match ended, but reset current values
             displayCurrent("0", "0");
             Toast.makeText(this ,"Match ended: " + "FED " + playerOneSets + " NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
-            //if(setNumber <= 2)
-                //displaySetStatus(setNumber);
+
         }
     }
 
@@ -226,8 +204,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displaySetStatus(int set)
     {
-
-
         switch (set){
             case 1:
                 // Player One status
@@ -252,7 +228,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case 3:
-
                 // Player One status
                 TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
                 pOneSetThreeView.setText(String.valueOf(playerOneGames));
