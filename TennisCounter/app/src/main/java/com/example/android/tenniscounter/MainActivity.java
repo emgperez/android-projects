@@ -255,14 +255,16 @@ public class MainActivity extends AppCompatActivity {
                 }
                 //else {
 
-                // Player One status
-                TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
-                pOneSetThreeView.setText(String.valueOf(playerOneGames));
+                if(!matchEnded) {
+                    // Player One status
+                    TextView pOneSetThreeView = (TextView) findViewById(R.id.player_a_set3_games);
+                    pOneSetThreeView.setText(String.valueOf(playerOneGames));
 
-                // Player Two status
-                TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
-                pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
-                //}
+                    // Player Two status
+                    TextView pTwoSetThreeView = (TextView) findViewById(R.id.player_b_set3_games);
+                    pTwoSetThreeView.setText(String.valueOf(playerTwoGames));
+                    //}
+                }
 
                 break;
         }
