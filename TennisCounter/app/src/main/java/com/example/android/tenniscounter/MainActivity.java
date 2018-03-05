@@ -3,8 +3,6 @@ package com.example.android.tenniscounter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             playerOneScore += 1;
-            //Toast.makeText(this, "Point for player one: " + playerOneScore, Toast.LENGTH_SHORT).show();
         }
 
         // Always check game status when incrementing player score
@@ -66,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             playerTwoScore += 1;
-            //Toast.makeText(this ,"Point for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
         }
 
         // Always check game status when incrementing player score
@@ -84,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         if((playerOneScore > 3) && (Math.abs(playerOneScore - playerTwoScore) >= 1))
         {
             // Player One wins the game
-            //Toast.makeText(this ,"Games for player one: " + playerOneGames, Toast.LENGTH_SHORT).show();
 
             if(playerOneScore == 4 && playerTwoScore == 3)
             {
@@ -118,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
         else if((playerTwoScore > 3) && (Math.abs(playerTwoScore - playerOneScore) >= 1))
         {
             // Player Two wins the game
-            //Toast.makeText(this ,"Game for player two: " + playerTwoScore, Toast.LENGTH_SHORT).show();
 
             if(playerTwoScore == 4 && playerOneScore == 3)
             {
@@ -126,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
                 displayStatus(playerOneScore, playerTwoScore, currentSet);
             }
             else {
-
                 // Reset score
                 playerOneScore = 0;
                 playerTwoScore = 0;
@@ -166,8 +159,6 @@ public class MainActivity extends AppCompatActivity {
         // First, reformat player score (0 = 0, 1 = 15, and so on)
         String scoreTextOne = reformatScore(scoreOne);
         String scoreTextTwo = reformatScore(scoreTwo);
-
-        //Toast.makeText(this, "Displaying status: " + scoreOne + " " + scoreTwo, Toast.LENGTH_SHORT).show();
 
         if (setNumber >= 2 && !matchEnded) {
             // Check number of won sets
@@ -330,10 +321,8 @@ public class MainActivity extends AppCompatActivity {
         // Display current score
         TextView playerOneCurrent = (TextView) findViewById(R.id.player_a_current);
         playerOneCurrent.setText(textA);
-        //Toast.makeText(this ,"Displayed current score for player one: " + scoreTextOne, Toast.LENGTH_SHORT).show();
 
         TextView playerTwoCurrent = (TextView) findViewById(R.id.player_b_current);
         playerTwoCurrent.setText(textB);
-        //Toast.makeText(this ,"Displayed current score for player two: " + scoreTextTwo, Toast.LENGTH_SHORT).show();
     }
 }
