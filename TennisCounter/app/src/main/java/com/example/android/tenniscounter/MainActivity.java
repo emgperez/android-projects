@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 playerTwoScore = 0;
 
                 // Add a game or set to player two depending on current score
-                if ((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) > 1)) {
+                if ((playerTwoGames >= 5) && (Math.abs(playerTwoGames - playerOneGames) >= 1)) {
                     playerTwoGames += 1;
                     playerTwoSets += 1;
                     newSet = true;
