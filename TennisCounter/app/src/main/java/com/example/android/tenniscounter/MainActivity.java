@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     playerOneGames += 1;
                     playerOneSets += 1;
                     newSet = true;
-                    Toast.makeText(this, "Set for FED " + playerOneGames, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Set for FED ", Toast.LENGTH_SHORT).show();
                     displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                     // Once the status is displayed, reset game counters
