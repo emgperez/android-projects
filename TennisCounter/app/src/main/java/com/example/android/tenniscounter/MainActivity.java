@@ -207,18 +207,6 @@ public class MainActivity extends AppCompatActivity {
         if (!matchEnded)
         {
             displayCurrent(scoreTextOne, scoreTextTwo);
-
-            /*switch (setNumber) {
-                case 1:
-                    displaySetStatus(1);
-                    break;
-                case 2:
-                    displaySetStatus(2);
-                    break;
-                case 3:
-                    displaySetStatus(3);
-                    break;
-            }*/
             displaySetStatus(setNumber);
         }
         else
@@ -262,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(playerOneSets == 2 || playerTwoSets == 2) {
 
-                    Toast.makeText(this ,"Match already ended: " + playerOneSets + " " + playerTwoSets, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this ,"Match already ended: " + "FED " + playerOneSets + " NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
                     //return;
                 }
                 else {
