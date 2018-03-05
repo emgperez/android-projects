@@ -191,12 +191,12 @@ public class MainActivity extends AppCompatActivity {
             // Check number of won sets
             if (playerOneSets == 2) {
 
-                Toast.makeText(this, "Match for FED " + playerOneSets, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Match for FED", Toast.LENGTH_SHORT).show();
                 //displaySetStatus(setNumber);
                 //return;
                 matchEnded = true;
             } else if (playerTwoSets == 2) {
-                Toast.makeText(this, "Match for NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Match for NAD", Toast.LENGTH_SHORT).show();
                 //return;
                 //displaySetStatus(setNumber);
                 matchEnded = true;
@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(playerOneSets == 2 || playerTwoSets == 2) {
 
-                    Toast.makeText(this ,"Match already ended: " + "FED " + playerOneSets + " NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this ,"Match ended: " + "FED " + playerOneSets + " NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
                     //return;
                 }
                 //else {
