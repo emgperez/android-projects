@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         correctAnswers = 0;
         checkAnswers(view);
 
-        Toast.makeText(this , getString(R.string.Result) + correctAnswers, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this , getString(R.string.Result) + " " + correctAnswers, Toast.LENGTH_SHORT).show();
 
     }
 
