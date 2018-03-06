@@ -9,16 +9,16 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // Scoring: 0 = 0, 1 = 15, 2 = 30, 3 = 40
-    int playerOneScore = 0;
-    int playerTwoScore = 0;
+    int playerOneScore;
+    int playerTwoScore;
 
     // Number of won games by each player
-    int playerOneGames = 0;
-    int playerTwoGames = 0;
+    int playerOneGames;
+    int playerTwoGames;
 
     // Number of won sets by each player
-    int playerOneSets = 0;
-    int playerTwoSets = 0;
+    int playerOneSets;
+    int playerTwoSets;
 
     // Current set counter
     int currentSet = 1;
