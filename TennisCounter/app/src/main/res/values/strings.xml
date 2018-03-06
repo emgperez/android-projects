@@ -21,5 +21,5 @@
     <string name="setPlayerTwo">Set for NAD</string>
     <string name="matchPlayerOne">Match for FED</string>
     <string name="matchPlayerTwo">Match for NAD</string>
-    <string name="matchEnded">Match ended: </string>
+    <string name="matchEnded">Match ended</string>
 </resources>
