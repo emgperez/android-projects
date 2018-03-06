@@ -102,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
         // Question number twelve (text input)
         EditText answerTwelve = (EditText)findViewById(R.id.question12Input);
         String value = answerTwelve.getText().toString();
-        Toast.makeText(this , value, Toast.LENGTH_SHORT).show();
         if(value.equalsIgnoreCase(getString(R.string.ans_12)))
             correctAnswers += 1;
     }
