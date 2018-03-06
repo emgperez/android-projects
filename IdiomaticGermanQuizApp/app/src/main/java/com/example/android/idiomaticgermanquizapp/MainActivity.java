@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
     // Number of correct answers
     int correctAnswers;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
