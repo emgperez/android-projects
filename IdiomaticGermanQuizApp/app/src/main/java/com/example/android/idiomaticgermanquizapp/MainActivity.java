@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         correctAnswers = 0;
         checkAnswers(view);
 
+        // Display number of correct answers
         Toast.makeText(this , getString(R.string.Result) + " " + correctAnswers, Toast.LENGTH_SHORT).show();
 
     }
