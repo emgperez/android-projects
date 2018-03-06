@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         correctAnswers = 0;
         checkAnswers(view);
 
-        Toast.makeText(this ,"Correct Answers: " + correctAnswers, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this , R.string.Result + correctAnswers, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     public void resetAnswers(View view){
 
         correctAnswers = 0;
-        Toast.makeText(this ,"Answers reset", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this , R.string.Reset, Toast.LENGTH_SHORT).show();
 
         // Uncheck all the answers
         RadioGroup questionOne = (RadioGroup)findViewById(R.id.questionOne);
