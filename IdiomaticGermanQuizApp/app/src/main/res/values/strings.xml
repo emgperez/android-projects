@@ -16,6 +16,7 @@
     <string name="Question9">You are walking and have lost your way. How would you say that?</string>
     <string name="Question10">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
     <string name="Question11">Pick two ways of saying \'It is hot today\'</string>
+    <string name="Question12">You host a party and the number of guests went out of hand. How would you say "The more, the merrier" in German?</string>
 
     <!-- Strings for possible answers-->
     <!-- Answers for Question1-->
@@ -83,6 +84,9 @@
     <string name="ans_11_2">Es ist Heute eine Affenhitze</string>
     <string name="ans_11_3">Mir ist heiß heute</string>
     <string name="ans_11_4">Es gibt sehr warm heute</string>
+
+    <!-- Answers for Question12-->
+    <string name="ans_12">Je mehr, desto besser</string>
 
     <!-- Buttons -->
     <string name="checkButton">Check Answers</string>
