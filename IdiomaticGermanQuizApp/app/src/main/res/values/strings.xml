@@ -12,6 +12,8 @@
     <string name="Question10">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
     <string name="Question11">Pick two ways of saying \'It is hot today\'</string>
     <string name="AppHeadName">Idiomatic German</string>
+    <string name="Result">Correct Answers: </string>
+    <string name="Reset">Answers reset</string>
 
     <!-- Strings for possible answers-->
     <!-- Answers for Question1-->
