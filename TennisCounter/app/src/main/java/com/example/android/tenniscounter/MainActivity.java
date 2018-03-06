@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                     playerOneGames += 1;
                     playerOneSets += 1;
                     newSet = true;
-                    Toast.makeText(this, "Set for FED ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.setPlayerOne, Toast.LENGTH_SHORT).show();
                     displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                     // Once the status is displayed, reset game counters
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
                     playerTwoGames += 1;
                     playerTwoSets += 1;
                     newSet = true;
-                    Toast.makeText(this, "Set for NAD", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.setPlayerTwo, Toast.LENGTH_SHORT).show();
                     displayStatus(playerOneScore, playerTwoScore, currentSet);
 
                     // Once the status is displayed, reset game counters
@@ -164,11 +164,11 @@ public class MainActivity extends AppCompatActivity {
             // Check number of won sets
             if (playerOneSets == 2) {
 
-                Toast.makeText(this, "Match for FED", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.matchPlayerOne, Toast.LENGTH_SHORT).show();
                 displaySetStatus(setNumber);
                 matchEnded = true;
             } else if (playerTwoSets == 2) {
-                Toast.makeText(this, "Match for NAD", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.matchPlayerTwo, Toast.LENGTH_SHORT).show();
                 displaySetStatus(setNumber);
                 matchEnded = true;
             }
@@ -183,8 +183,8 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             // Match ended, but reset current values
-            displayCurrent("0", "0");
-            Toast.makeText(this ,"Match ended: " + "FED " + playerOneSets + " NAD " + playerTwoSets, Toast.LENGTH_SHORT).show();
+            displayCurrent("0 ", "0");
+            Toast.makeText(this , R.string.matchEnded + R.string.playerOne + " " + playerOneSets + " " + R.string.playerTwo + " " + playerTwoSets, Toast.LENGTH_SHORT).show();
 
         }
     }
