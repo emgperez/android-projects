@@ -79,4 +79,8 @@
     <string name="ans_11_2">Es ist Heute eine Affenhitze</string>
     <string name="ans_11_3">Mir ist heiß heute</string>
     <string name="ans_11_4">Es gibt sehr warm heute</string>
+
+    <!-- Buttons -->
+    <string name="checkButton">Check Answers</string>
+    <string name="resetButton">Reset Quiz</string>
 </resources>
