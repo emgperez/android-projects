@@ -152,5 +152,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox questionEleven_2 = (CheckBox)findViewById(R.id.choice_11_3);
         questionEleven_2.setChecked(false);
 
+        EditText questionTwelve = (EditText)findViewById(R.id.question12Input);
+        questionTwelve.setText("");
+
     }
 }
