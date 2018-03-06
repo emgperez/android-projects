@@ -584,14 +584,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="submitQuestions"
-                android:text="Check Answers" />
+                android:text="@string/checkButton" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="resetAnswers"
-                android:text="Reset Quiz" />
+                android:text="@string/resetButton" />
 
         </LinearLayout>
 
