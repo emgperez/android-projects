@@ -10,8 +10,8 @@
     <string name="stats">Match Score</string>
     <string name="winner">WINNER</string>
     <string name="unforced">Unforced ERR</string>
-    <string name="playerA">Player A</string>
-    <string name="playerB">Player B</string>
+    <string name="playerOne">FED</string>
+    <string name="playerTwo">NAD</string>
     <string name="sets">Sets</string>
     <string name="set_1">Set 1</string>
     <string name="set_2">Set 2</string>
