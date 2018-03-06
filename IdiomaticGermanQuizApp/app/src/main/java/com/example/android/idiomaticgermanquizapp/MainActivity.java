@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // Number of correct answers
-    int correctAnswers = 0;
+    int correctAnswers;
 
 
     @Override
