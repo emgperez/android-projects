@@ -94,10 +94,17 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers += 1;
 
         // Question number eleven (two answers needed)
-        CheckBox answerEleven_1 = (CheckBox)findViewById(R.id.choice_11_2);
-        CheckBox answerEleven_2 = (CheckBox)findViewById(R.id.choice_11_3);
-        if (answerEleven_1.isChecked() && answerEleven_2.isChecked())
-            correctAnswers += 1;
+        CheckBox answerEleven_1 = (CheckBox)findViewById(R.id.choice_11_1);
+        CheckBox answerEleven_2 = (CheckBox)findViewById(R.id.choice_11_2);
+        CheckBox answerEleven_3 = (CheckBox)findViewById(R.id.choice_11_3);
+        CheckBox answerEleven_4 = (CheckBox)findViewById(R.id.choice_11_4);
+
+        if (answerEleven_2.isChecked() && answerEleven_3.isChecked()) {
+
+            // Verify that only the correct answers are checked
+            if(!answerEleven_1.isChecked() && !answerEleven_4.isChecked())
+                correctAnswers += 1;
+        }
 
         // Question number twelve (text input)
         EditText answerTwelve = (EditText)findViewById(R.id.question12Input);
