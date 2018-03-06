@@ -4,7 +4,7 @@
 
 # Features 
 
--Eleven questions including mainly radio buttons and a check box. All the questions and answers have been taken from http://www.funtrivia.com/playquiz/quiz141815103e0d0.html
+-Twelve questions including mainly radio buttons, a check box and a text entry. The questions and answers have been mostly taken from http://www.funtrivia.com/playquiz/quiz141815103e0d0.html
 
 -Two buttons:
 
