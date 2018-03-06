@@ -82,9 +82,6 @@
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <!--
-        <item name="android:layout_marginBottom">48dp</item>
-        <item name="android:layout_marginTop">60dp</item>-->
         <item name="android:layout_marginBottom">4dp</item>
         <item name="android:textColor">@color/textColorButton</item>
     </style>
