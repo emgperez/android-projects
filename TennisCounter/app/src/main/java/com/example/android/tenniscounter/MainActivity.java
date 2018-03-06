@@ -184,7 +184,8 @@ public class MainActivity extends AppCompatActivity {
         {
             // Match ended, but reset current values
             displayCurrent("0 ", "0");
-            Toast.makeText(this , R.string.matchEnded + R.string.playerOne + " " + playerOneSets + " " + R.string.playerTwo + " " + playerTwoSets, Toast.LENGTH_SHORT).show();
+            String matchStatusMessage = getString(R.string.matchEnded) + " - " + getString(R.string.playerOne) + " " + playerOneSets + " " + getString(R.string.playerTwo) + " " + playerTwoSets;
+            Toast.makeText(this , matchStatusMessage, Toast.LENGTH_SHORT).show();
 
         }
     }
