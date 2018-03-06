@@ -16,6 +16,9 @@
     <string name="set_1">Set 1</string>
     <string name="set_2">Set 2</string>
     <string name="set_3">Set 3</string>
-
-
+    <string name="setPlayerOne">Set for FED</string>
+    <string name="setPlayerTwo">Set for NAD</string>
+    <string name="matchPlayerOne">Match for FED</string>
+    <string name="matchPlayerTwo">Match for NAD</string>
+    <string name="matchEnded">Match ended: </string>
 </resources>
