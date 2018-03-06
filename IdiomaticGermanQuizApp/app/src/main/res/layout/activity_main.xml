@@ -591,7 +591,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textSize="14sp" />
 
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
