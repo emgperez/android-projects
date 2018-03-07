@@ -10,8 +10,8 @@
 
 	- CHECK ANSWERS: after checking all the answers, a Toast message with the score will be displayed.
 	- RESET QUIZ: when pressing it, the text entry as well as all the radio buttons and check boxes 
-	previously selected will be cleared, and the number of correct answers set to zero. 
-	A Toast message will indicate the quiz has been reset.
+	  previously selected will be cleared, and the number of correct answers set to zero. 
+	  A Toast message will indicate the quiz has been reset.
 
 
 # Screenshot
