@@ -7,16 +7,14 @@
     <!-- Strings for questions-->
     <string name="Question1">Which of these greetings ist NOT used in German?</string>
     <string name="Question2">You want to ask the way to the Town Hall. Which one do you choose?</string>
-    <string name="Question3">You want to buy a return rail ticket to Wismar. What do you say to the booking-clerk?</string>
-    <string name="Question4">You want a cup of coffee. What should you ask for?</string>
-    <string name="Question5">You are looking for accommodation. What is the expression for \'a single room\'?</string>
-    <string name="Question6">You want to ask what a word or phrase is in English. How should you express that?</string>
-    <string name="Question7">You want to ask when the next train to Koblenz leaves. Which is most idiomatic?</string>
-    <string name="Question8">You need to disappear for a moment. How do you say \'I\'ll be back in a moment\'?</string>
-    <string name="Question9">You are walking and have lost your way. How would you say that?</string>
-    <string name="Question10">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
-    <string name="Question11">Pick two ways of saying \'It is hot today\'</string>
-    <string name="Question12">You host a party and the number of guests went out of hand. How would you say \'The more, the merrier\' in German?</string>
+    <string name="Question3">You are looking for accommodation. What is the expression for \'a single room\'?</string>
+    <string name="Question4">You want to ask what a word or phrase is in English. How should you express that?</string>
+    <string name="Question5">You want to ask when the next train to Koblenz leaves. Which is most idiomatic?</string>
+    <string name="Question6">You need to disappear for a moment. How do you say \'I\'ll be back in a moment\'?</string>
+    <string name="Question7">You are walking and have lost your way. How would you say that?</string>
+    <string name="Question8">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
+    <string name="Question9">Pick two ways of saying \'It is hot today\'</string>
+    <string name="Question10">You host a party and the number of guests went out of hand. How would you say \'The more, the merrier\' in German?</string>
 
     <!-- Strings for possible answers-->
     <!-- Answers for Question1-->
@@ -31,62 +29,50 @@
     <string name="ans_2_3">Würden Sie mir sagen, wie ich das Rathaus erreichen kann?</string>
     <string name="ans_2_4">Wo ist der Weg zum Rathaus?</string>
 
-    <!-- Answers for Question3-->
-    <string name="ans_3_1">Wismar - hin und zurück, bitte</string>
-    <string name="ans_3_2">Eine Rundkarte - Wismar, bitte</string>
-    <string name="ans_3_3">Eine Rundfahrt nach Wismar, bitte</string>
-    <string name="ans_3_4">Eine Heimkehrkarte nach Wismar, bitte</string>
-
-    <!-- Answers for Question4-->
-    <string name="ans_4_1">eine Tasse Kaffee</string>
-    <string name="ans_4_2">eine Tasse Kaffees</string>
-    <string name="ans_4_3">eine Tasse von Kaffee</string>
-    <string name="ans_4_4">eine Kaffeetasse</string>
-
     <!-- Answers for Question5-->
-    <string name="ans_5_1">eine Zimmer für eine Person</string>
-    <string name="ans_5_2">eine Zimmer mit einem Bett</string>
-    <string name="ans_5_3">ein Einzelzimmer</string>
-    <string name="ans_5_4">ein Einbettzimmer</string>
+    <string name="ans_3_1">eine Zimmer für eine Person</string>
+    <string name="ans_3_2">eine Zimmer mit einem Bett</string>
+    <string name="ans_3_3">ein Einzelzimmer</string>
+    <string name="ans_3_4">ein Einbettzimmer</string>
 
     <!-- Answers for Question6-->
-    <string name="ans_6_1">Was ist das auf Englisch?</string>
-    <string name="ans_6_2">Was ist das in Englisch?</string>
-    <string name="ans_6_3">Kannitverstan</string>
-    <string name="ans_6_4">Wie heißt das auf Englisch?</string>
+    <string name="ans_4_1">Was ist das auf Englisch?</string>
+    <string name="ans_4_2">Was ist das in Englisch?</string>
+    <string name="ans_4_3">Kannitverstan</string>
+    <string name="ans_4_4">Wie heißt das auf Englisch?</string>
 
     <!-- Answers for Question7-->
-    <string name="ans_7_1">Wann fährt der nächste Zug nach Koblenz?</string>
-    <string name="ans_7_2">Ob ein Zug nach Koblenz fährt?</string>
-    <string name="ans_7_3">Wenn fährt der nächste Zug nach Koblenz?</string>
-    <string name="ans_7_4">Wann wird der nächste Zug nach Koblenz losfahren?</string>
+    <string name="ans_5_1">Wann fährt der nächste Zug nach Koblenz?</string>
+    <string name="ans_5_2">Ob ein Zug nach Koblenz fährt?</string>
+    <string name="ans_5_3">Wenn fährt der nächste Zug nach Koblenz?</string>
+    <string name="ans_5_4">Wann wird der nächste Zug nach Koblenz losfahren?</string>
 
     <!-- Answers for Question8-->
-    <string name="ans_8_1">Ich werde in einem Augenblick zurückkommen</string>
-    <string name="ans_8_2">Ich bin im Augenblick wieder zurück</string>
-    <string name="ans_8_3">Ich komme schnell zurück</string>
-    <string name="ans_8_4">Ich bin gleich wieder da</string>
+    <string name="ans_6_1">Ich werde in einem Augenblick zurückkommen</string>
+    <string name="ans_6_2">Ich bin im Augenblick wieder zurück</string>
+    <string name="ans_6_3">Ich komme schnell zurück</string>
+    <string name="ans_6_4">Ich bin gleich wieder da</string>
 
     <!-- Answers for Question9-->
-    <string name="ans_9_1">Ich kenne mich hier nicht aus</string>
-    <string name="ans_9_2">Ich habe mich verlaufen</string>
-    <string name="ans_9_3">Ich weiß nicht, wo ich bin</string>
-    <string name="ans_9_4">Ich habe meinen Weg verloren</string>
+    <string name="ans_7_1">Ich kenne mich hier nicht aus</string>
+    <string name="ans_7_2">Ich habe mich verlaufen</string>
+    <string name="ans_7_3">Ich weiß nicht, wo ich bin</string>
+    <string name="ans_7_4">Ich habe meinen Weg verloren</string>
 
     <!-- Answers for Question10-->
-    <string name="ans_10_1">Ich muss morgen morgen um neun Uhr aufstehen</string>
-    <string name="ans_10_2">Ich muss morgen früh um neun Uhr aufstehen</string>
-    <string name="ans_10_3">Ich muss morgen Vormittag um neun Uhr aufstehen</string>
-    <string name="ans_10_4">Ich muss morgen um neun Uhr in der Frühe aufstehen</string>
+    <string name="ans_8_1">Ich muss morgen morgen um neun Uhr aufstehen</string>
+    <string name="ans_8_2">Ich muss morgen früh um neun Uhr aufstehen</string>
+    <string name="ans_8_3">Ich muss morgen Vormittag um neun Uhr aufstehen</string>
+    <string name="ans_8_4">Ich muss morgen um neun Uhr in der Frühe aufstehen</string>
 
     <!-- Answers for Question11-->
-    <string name="ans_11_1">Heute bin ich heiß</string>
-    <string name="ans_11_2">Es ist Heute eine Affenhitze</string>
-    <string name="ans_11_3">Mir ist heiß heute</string>
-    <string name="ans_11_4">Es gibt sehr warm heute</string>
+    <string name="ans_9_1">Heute bin ich heiß</string>
+    <string name="ans_9_2">Es ist Heute eine Affenhitze</string>
+    <string name="ans_9_3">Mir ist heiß heute</string>
+    <string name="ans_9_4">Es gibt sehr warm heute</string>
 
     <!-- Answers for Question12-->
-    <string name="ans_12">Je mehr, desto besser</string>
+    <string name="ans_10">Je mehr, desto besser</string>
 
     <!-- Buttons -->
     <string name="checkButton">Check Answers</string>
