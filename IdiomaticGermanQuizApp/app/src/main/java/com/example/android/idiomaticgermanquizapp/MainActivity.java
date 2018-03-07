@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers += 1;
 
         // Question number three
-        RadioButton answerThree = (RadioButton)findViewById(R.id.choice_3_1);
+        RadioButton answerThree = (RadioButton)findViewById(R.id.choice_3_3);
         if (answerThree.isChecked())
             correctAnswers += 1;
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers += 1;
 
         // Question number seven
-        RadioButton answerSeven = (RadioButton)findViewById(R.id.choice_6_2);
+        RadioButton answerSeven = (RadioButton)findViewById(R.id.choice_7_2);
         if (answerSeven.isChecked())
             correctAnswers += 1;
 
