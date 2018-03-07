@@ -136,20 +136,20 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup questionEight = (RadioGroup)findViewById(R.id.questionEight);
         questionEight.clearCheck();
 
-        CheckBox questionEleven_1 = (CheckBox)findViewById(R.id.choice_9_1);
-        questionEleven_1.setChecked(false);
+        CheckBox questionNine_1 = (CheckBox)findViewById(R.id.choice_9_1);
+        questionNine_1.setChecked(false);
 
-        CheckBox questionEleven_2 = (CheckBox)findViewById(R.id.choice_9_2);
-        questionEleven_2.setChecked(false);
+        CheckBox questionNine_2 = (CheckBox)findViewById(R.id.choice_9_2);
+        questionNine_2.setChecked(false);
 
-        CheckBox questionEleven_3 = (CheckBox)findViewById(R.id.choice_9_3);
-        questionEleven_3.setChecked(false);
+        CheckBox questionNine_3 = (CheckBox)findViewById(R.id.choice_9_3);
+        questionNine_3.setChecked(false);
 
-        CheckBox questionEleven_4 = (CheckBox)findViewById(R.id.choice_9_4);
-        questionEleven_4.setChecked(false);
+        CheckBox questionNine_4 = (CheckBox)findViewById(R.id.choice_9_4);
+        questionNine_4.setChecked(false);
 
-        EditText questionTwelve = (EditText)findViewById(R.id.question10Input);
-        questionTwelve.setText("");
+        EditText questionTen = (EditText)findViewById(R.id.question10Input);
+        questionTen.setText("");
 
     }
 }
