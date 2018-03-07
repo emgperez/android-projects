@@ -59,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers += 1;
 
         // Question number four
-        RadioButton answerFour = (RadioButton)findViewById(R.id.choice_4_1);
+        RadioButton answerFour = (RadioButton)findViewById(R.id.choice_4_4);
         if (answerFour.isChecked())
             correctAnswers += 1;
 
         // Question number five
-        RadioButton answerFive = (RadioButton)findViewById(R.id.choice_5_3);
+        RadioButton answerFive = (RadioButton)findViewById(R.id.choice_5_1);
         if (answerFive.isChecked())
             correctAnswers += 1;
 
@@ -74,42 +74,32 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers += 1;
 
         // Question number seven
-        RadioButton answerSeven = (RadioButton)findViewById(R.id.choice_7_1);
+        RadioButton answerSeven = (RadioButton)findViewById(R.id.choice_6_2);
         if (answerSeven.isChecked())
             correctAnswers += 1;
 
         // Question number eight
-        RadioButton answerEight = (RadioButton)findViewById(R.id.choice_8_4);
+        RadioButton answerEight = (RadioButton)findViewById(R.id.choice_8_2);
         if (answerEight.isChecked())
             correctAnswers += 1;
 
-        // Question number nine
-        RadioButton answerNine = (RadioButton)findViewById(R.id.choice_9_2);
-        if (answerNine.isChecked())
-            correctAnswers += 1;
+        // Question number nine (two answers needed)
+        CheckBox answerNine_1 = (CheckBox)findViewById(R.id.choice_9_1);
+        CheckBox answerNine_2 = (CheckBox)findViewById(R.id.choice_9_2);
+        CheckBox answerNine_3 = (CheckBox)findViewById(R.id.choice_9_3);
+        CheckBox answerNine_4 = (CheckBox)findViewById(R.id.choice_9_4);
 
-        // Question number ten
-        RadioButton answerTen = (RadioButton)findViewById(R.id.choice_10_2);
-        if (answerTen.isChecked())
-            correctAnswers += 1;
-
-        // Question number eleven (two answers needed)
-        CheckBox answerEleven_1 = (CheckBox)findViewById(R.id.choice_11_1);
-        CheckBox answerEleven_2 = (CheckBox)findViewById(R.id.choice_11_2);
-        CheckBox answerEleven_3 = (CheckBox)findViewById(R.id.choice_11_3);
-        CheckBox answerEleven_4 = (CheckBox)findViewById(R.id.choice_11_4);
-
-        if (answerEleven_2.isChecked() && answerEleven_3.isChecked()) {
+        if (answerNine_2.isChecked() && answerNine_3.isChecked()) {
 
             // Verify that only the correct answers are checked
-            if(!answerEleven_1.isChecked() && !answerEleven_4.isChecked())
+            if(!answerNine_1.isChecked() && !answerNine_4.isChecked())
                 correctAnswers += 1;
         }
 
-        // Question number twelve (text input)
-        EditText answerTwelve = (EditText)findViewById(R.id.question12Input);
-        String value = answerTwelve.getText().toString();
-        if(value.equalsIgnoreCase(getString(R.string.ans_12)))
+        // Question number ten (text input)
+        EditText answerTen = (EditText)findViewById(R.id.question10Input);
+        String value = answerTen.getText().toString();
+        if(value.equalsIgnoreCase(getString(R.string.ans_10)))
             correctAnswers += 1;
     }
 
@@ -146,25 +136,19 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup questionEight = (RadioGroup)findViewById(R.id.questionEight);
         questionEight.clearCheck();
 
-        RadioGroup questionNine = (RadioGroup)findViewById(R.id.questionNine);
-        questionNine.clearCheck();
-
-        RadioGroup questionTen = (RadioGroup)findViewById(R.id.questionTen);
-        questionTen.clearCheck();
-
-        CheckBox questionEleven_1 = (CheckBox)findViewById(R.id.choice_11_1);
+        CheckBox questionEleven_1 = (CheckBox)findViewById(R.id.choice_9_1);
         questionEleven_1.setChecked(false);
 
-        CheckBox questionEleven_2 = (CheckBox)findViewById(R.id.choice_11_2);
+        CheckBox questionEleven_2 = (CheckBox)findViewById(R.id.choice_9_2);
         questionEleven_2.setChecked(false);
 
-        CheckBox questionEleven_3 = (CheckBox)findViewById(R.id.choice_11_3);
+        CheckBox questionEleven_3 = (CheckBox)findViewById(R.id.choice_9_3);
         questionEleven_3.setChecked(false);
 
-        CheckBox questionEleven_4 = (CheckBox)findViewById(R.id.choice_11_4);
+        CheckBox questionEleven_4 = (CheckBox)findViewById(R.id.choice_9_4);
         questionEleven_4.setChecked(false);
 
-        EditText questionTwelve = (EditText)findViewById(R.id.question12Input);
+        EditText questionTwelve = (EditText)findViewById(R.id.question10Input);
         questionTwelve.setText("");
 
     }
