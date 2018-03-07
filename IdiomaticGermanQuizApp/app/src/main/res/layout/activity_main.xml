@@ -482,49 +482,41 @@
             android:textSize="12sp"
             android:textStyle="bold" />
 
-        <RadioGroup
-            android:id="@+id/questionNine"
+        <CheckBox
+            android:id="@+id/choice_9_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/ans_9_1"
+            android:textSize="12sp" />
 
-            <RadioButton
-                android:id="@+id/choice_9_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_9_1"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/choice_9_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/ans_9_2"
+            android:textSize="12sp" />
 
-            <RadioButton
-                android:id="@+id/choice_9_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_9_2"
-                android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/choice_9_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/ans_9_3"
+            android:textSize="12sp" />
 
-            <RadioButton
-                android:id="@+id/choice_9_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_9_3"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/choice_9_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_9_4"
-                android:textSize="12sp" />
-
-        </RadioGroup>
+        <CheckBox
+            android:id="@+id/choice_9_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/ans_9_4"
+            android:textSize="12sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -538,112 +530,8 @@
             android:textSize="12sp"
             android:textStyle="bold" />
 
-        <RadioGroup
-            android:id="@+id/questionTen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/choice_10_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_10_1"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/choice_10_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_10_2"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/choice_10_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_10_3"
-                android:textSize="12sp" />
-
-            <RadioButton
-                android:id="@+id/choice_10_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:text="@string/ans_10_4"
-                android:textSize="12sp" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/Question11"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <CheckBox
-            android:id="@+id/choice_11_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:text="@string/ans_11_1"
-            android:textSize="12sp" />
-
-        <CheckBox
-            android:id="@+id/choice_11_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:text="@string/ans_11_2"
-            android:textSize="12sp" />
-
-        <CheckBox
-            android:id="@+id/choice_11_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:text="@string/ans_11_3"
-            android:textSize="12sp" />
-
-        <CheckBox
-            android:id="@+id/choice_11_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:text="@string/ans_11_4"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/Question12"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
         <EditText
-            android:id="@+id/question12Input"
+            android:id="@+id/question10Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
