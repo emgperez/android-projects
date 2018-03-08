@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Question number ten (text input)
-        EditText answerTen = (EditText)findViewById(R.id.question10Input);
+        EditText answerTen = (EditText)findViewById(R.id.question_10_input);
         String value = answerTen.getText().toString().trim();
         if(value.equalsIgnoreCase(getString(R.string.ans_10)))
             correctAnswers += 1;
@@ -112,28 +112,28 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this , R.string.Reset, Toast.LENGTH_SHORT).show();
 
         // Uncheck all the answers
-        RadioGroup questionOne = (RadioGroup)findViewById(R.id.questionOne);
+        RadioGroup questionOne = (RadioGroup)findViewById(R.id.question_one);
         questionOne.clearCheck();
 
-        RadioGroup questionTwo = (RadioGroup)findViewById(R.id.questionTwo);
+        RadioGroup questionTwo = (RadioGroup)findViewById(R.id.question_two);
         questionTwo.clearCheck();
 
-        RadioGroup questionThree = (RadioGroup)findViewById(R.id.questionThree);
+        RadioGroup questionThree = (RadioGroup)findViewById(R.id.question_three);
         questionThree.clearCheck();
 
-        RadioGroup questionFour = (RadioGroup)findViewById(R.id.questionFour);
+        RadioGroup questionFour = (RadioGroup)findViewById(R.id.question_four);
         questionFour.clearCheck();
 
-        RadioGroup questionFive = (RadioGroup)findViewById(R.id.questionFive);
+        RadioGroup questionFive = (RadioGroup)findViewById(R.id.question_five);
         questionFive.clearCheck();
 
-        RadioGroup questionSix = (RadioGroup)findViewById(R.id.questionSix);
+        RadioGroup questionSix = (RadioGroup)findViewById(R.id.question_six);
         questionSix.clearCheck();
 
-        RadioGroup questionSeven = (RadioGroup)findViewById(R.id.questionSeven);
+        RadioGroup questionSeven = (RadioGroup)findViewById(R.id.question_seven);
         questionSeven.clearCheck();
 
-        RadioGroup questionEight = (RadioGroup)findViewById(R.id.questionEight);
+        RadioGroup questionEight = (RadioGroup)findViewById(R.id.question_eight);
         questionEight.clearCheck();
 
         CheckBox questionNine_1 = (CheckBox)findViewById(R.id.choice_9_1);
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox questionNine_4 = (CheckBox)findViewById(R.id.choice_9_4);
         questionNine_4.setChecked(false);
 
-        EditText questionTen = (EditText)findViewById(R.id.question10Input);
+        EditText questionTen = (EditText)findViewById(R.id.question_10_input);
         questionTen.setText("");
 
     }
