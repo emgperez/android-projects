@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Question number ten (text input)
         EditText answerTen = (EditText)findViewById(R.id.question10Input);
-        String value = answerTen.getText().toString();
+        String value = answerTen.getText().toString().trim();
         if(value.equalsIgnoreCase(getString(R.string.ans_10)))
             correctAnswers += 1;
     }
