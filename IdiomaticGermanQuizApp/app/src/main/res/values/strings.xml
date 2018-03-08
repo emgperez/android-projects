@@ -5,16 +5,16 @@
     <string name="Reset">Answers reset</string>
 
     <!-- Strings for questions-->
-    <string name="Question1">Which of these greetings ist NOT used in German?</string>
-    <string name="Question2">You want to ask the way to the Town Hall. Which one do you choose?</string>
-    <string name="Question3">You are looking for accommodation. What is the expression for \'a single room\'?</string>
-    <string name="Question4">You want to ask what a word or phrase is in English. How should you express that?</string>
-    <string name="Question5">You want to ask when the next train to Koblenz leaves. Which is most idiomatic?</string>
-    <string name="Question6">You need to disappear for a moment. How do you say \'I\'ll be back in a moment\'?</string>
-    <string name="Question7">You are walking and have lost your way. How would you say that?</string>
-    <string name="Question8">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
-    <string name="Question9">Pick two ways of saying \'It is hot today\'</string>
-    <string name="Question10">You host a party and the number of guests went out of hand. How would you say \'The more, the merrier\' in German?</string>
+    <string name="question_1">Which of these greetings ist NOT used in German?</string>
+    <string name="question_2">You want to ask the way to the Town Hall. Which one do you choose?</string>
+    <string name="question_3">You are looking for accommodation. What is the expression for \'a single room\'?</string>
+    <string name="question_4">You want to ask what a word or phrase is in English. How should you express that?</string>
+    <string name="question_5">You want to ask when the next train to Koblenz leaves. Which is most idiomatic?</string>
+    <string name="question_6">You need to disappear for a moment. How do you say \'I\'ll be back in a moment\'?</string>
+    <string name="question_7">You are walking and have lost your way. How would you say that?</string>
+    <string name="question_8">Which of these is the best way of saying \'I have to get up at nine tomorrow morning\'?</string>
+    <string name="question_9">Pick two ways of saying \'It is hot today\'</string>
+    <string name="question_10">You host a party and the number of guests went out of hand. How would you say \'The more, the merrier\' in German?</string>
 
     <!-- Strings for possible answers-->
     <!-- Answers for Question1-->
@@ -75,6 +75,6 @@
     <string name="ans_10">Je mehr, desto besser</string>
 
     <!-- Buttons -->
-    <string name="checkButton">Check Answers</string>
-    <string name="resetButton">Reset Quiz</string>
+    <string name="check_button">Check Answers</string>
+    <string name="reset_button">Reset Quiz</string>
 </resources>
