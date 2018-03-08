@@ -28,14 +28,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question1"
+            android:text="@string/question_1"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionOne"
+            android:id="@+id/question_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -84,14 +84,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question2"
+            android:text="@string/question_2"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionTwo"
+            android:id="@+id/question_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -140,14 +140,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question3"
+            android:text="@string/question_3"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionThree"
+            android:id="@+id/question_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -196,14 +196,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question4"
+            android:text="@string/question_4"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionFour"
+            android:id="@+id/question_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -252,14 +252,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question5"
+            android:text="@string/question_5"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionFive"
+            android:id="@+id/question_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -308,14 +308,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question6"
+            android:text="@string/question_6"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionSix"
+            android:id="@+id/question_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -364,14 +364,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question7"
+            android:text="@string/question_7"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionSeven"
+            android:id="@+id/question_seven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -420,14 +420,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question8"
+            android:text="@string/question_8"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/questionEight"
+            android:id="@+id/question_eight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -476,7 +476,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question9"
+            android:text="@string/question_9"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
@@ -524,14 +524,14 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/Question10"
+            android:text="@string/question_10"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="12sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/question10Input"
+            android:id="@+id/question_10_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -551,14 +551,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="submitQuestions"
-                android:text="@string/checkButton" />
+                android:text="@string/check_button" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="resetAnswers"
-                android:text="@string/resetButton" />
+                android:text="@string/reset_button" />
 
         </LinearLayout>
 
