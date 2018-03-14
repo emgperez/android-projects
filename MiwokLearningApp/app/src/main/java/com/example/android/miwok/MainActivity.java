@@ -73,6 +73,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        // Find the view that shows the Phrases category
+        TextView phrases = (TextView)findViewById(R.id.phrases);
+
+        // Set a click listener on the Phrases view
+        phrases.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(phrasesIntent);
+            }
+        });
+
 
     }
 
