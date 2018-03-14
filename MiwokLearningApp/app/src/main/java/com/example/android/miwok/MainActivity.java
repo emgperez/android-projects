@@ -39,12 +39,29 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers View is clicked on
             @Override
             public void onClick(View view) {
-
                 // Behaviour for when the event happens
                 Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
                 startActivity(numbersIntent);
             }
         });
+
+        // Find the view that shows the family members category
+        TextView family = (TextView)findViewById(R.id.family);
+
+        // Set a click listener on the Family Members category View
+        family.setOnClickListener(new View.OnClickListener(){
+
+            // What to do when the view is clicked on
+            @Override
+            public void onClick(View view){
+                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
+        
+
+
 
     }
 
