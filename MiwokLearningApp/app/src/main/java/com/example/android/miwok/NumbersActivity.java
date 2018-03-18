@@ -32,6 +32,8 @@ public class NumbersActivity extends AppCompatActivity {
 
         LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
 
+        // TODO: replace this code with a loop
+
         // Create view for the first element in the array
         TextView wordView = new TextView(this);
         wordView.setText(words.get(0));
@@ -49,5 +51,7 @@ public class NumbersActivity extends AppCompatActivity {
         wordView3.setText(words.get(2));
         // Add child view to parent
         rootView.addView(wordView3);
+
+
     }
 }
