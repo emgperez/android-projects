@@ -33,9 +33,9 @@ public class NumbersActivity extends AppCompatActivity {
         LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
 
         // Index to control the loop
-        int wordIndex = 0;
+        int wordIndex;
 
-        while(wordIndex < words.size())
+        for(wordIndex = 0; wordIndex < words.size(); wordIndex++)
         {
             // Create view for the element in the array
             TextView wordView = new TextView(this);
@@ -43,9 +43,6 @@ public class NumbersActivity extends AppCompatActivity {
 
             // Add child view to parent
             rootView.addView(wordView);
-
-            // Update index to keep on looping
-            wordIndex++;
         }
 
     }
