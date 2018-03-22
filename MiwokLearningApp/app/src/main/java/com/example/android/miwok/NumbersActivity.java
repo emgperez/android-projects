@@ -38,12 +38,10 @@ public class NumbersActivity extends AppCompatActivity {
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
 
         // Find the ListView identified by 'list' in the layout
-        //ListView listView = (ListView) findViewById(R.id.list);
-        GridView gridView = (GridView)findViewById(R.id.list);
+        ListView listView = (ListView) findViewById(R.id.list);
 
         // And set the adapter created before
-        //listView.setAdapter(itemsAdapter);
-        gridView.setAdapter(itemsAdapter);
+        listView.setAdapter(itemsAdapter);
 
     }
 }
