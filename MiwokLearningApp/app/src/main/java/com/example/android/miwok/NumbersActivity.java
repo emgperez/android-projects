@@ -37,13 +37,13 @@ public class NumbersActivity extends AppCompatActivity {
 
         // ArrayAdapter to create a View for each element in the words list. Every item in the words list will have
         // a View in the 'listView' object
-        ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>(this, R.layout.list_item, words);
+        WordAdapter adapter = new WordAdapter(this, words);
 
         // Find the ListView identified by 'list' in the layout
         ListView listView = (ListView) findViewById(R.id.list);
 
         // And set the adapter created before
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
 
     }
 }
