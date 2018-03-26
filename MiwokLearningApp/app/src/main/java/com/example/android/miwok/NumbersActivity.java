@@ -35,7 +35,7 @@ public class NumbersActivity extends AppCompatActivity {
 
         // ArrayAdapter to create a View for each element in the words list. Every item in the words list will have
         // a View in the 'listView' object
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.list_item, words);
 
         // Find the ListView identified by 'list' in the layout
         ListView listView = (ListView) findViewById(R.id.list);
