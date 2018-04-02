@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructureapp.MainActivity">
+
+    <TextView
+        android:id="@+id/Playlists"
+        style="@style/MusicCategory"
+        android:background="@color/category"
+        android:text="@string/playlists"
+        android:drawableLeft="@drawable/ic_playlist"
+        />
+
+    <TextView
+        android:id="@+id/Songs"
+        style="@style/MusicCategory"
+        android:background="@color/category"
+        android:text="@string/songs"
+        android:drawableLeft="@drawable/ic_song"/>
+
+    <TextView
+        android:id="@+id/Artists"
+        style="@style/MusicCategory"
+        android:background="@color/category"
+        android:text="@string/artists"
+        android:drawableLeft="@drawable/ic_artist"/>
+
+
+
+</LinearLayout>
