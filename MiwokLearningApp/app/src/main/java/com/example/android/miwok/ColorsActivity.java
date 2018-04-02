@@ -26,7 +26,7 @@ public class ColorsActivity extends AppCompatActivity {
         words.add(new Word("white", "kelelli"));
         words.add(new Word("dusty yellow", "ṭopiisә"));
         words.add(new Word("mustard yellow", "chiwiiṭә"));
-       
+
         // ArrayAdapter to create a View for each element in the words list. Every item in the words list will have
         // a View in the 'listView' object
         WordAdapter adapter = new WordAdapter(this, words);
