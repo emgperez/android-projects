@@ -32,12 +32,12 @@ public class SongsActivity extends AppCompatActivity{
         ArrayList<Song> songList = new ArrayList<Song>();
 
         // Populate the ArrayList
-        songList.add(new Song("I want it all", "Queen", R.drawable.queen));
-        songList.add(new Song("24K", "Bruno Mars", R.drawable.bruno_mars));
-        songList.add(new Song("Billie Jean", "Michael Jackson", R.drawable.jacko));
-        songList.add(new Song("Rolling in the deep", "Adele", R.drawable.adele));
+        songList.add(new Song("I want it all", "Queen", "The Miracle", R.drawable.queen));
+        songList.add(new Song("24K Magic", "Bruno Mars", "24K Magic", R.drawable.bruno_mars));
+        songList.add(new Song("Billie Jean", "Michael Jackson", "The Essential Michael Jackson", R.drawable.jacko));
+        songList.add(new Song("Rolling in the deep", "Adele", "21", R.drawable.adele));
 
-        // ArrayAdapter to create a View for each element in the playlists list. Every item in the list will have
+        // ArrayAdapter to create a View for each element in the songs list. Every item in the list will have
         // a View in the 'listView' object
         SongAdapter adapter = new SongAdapter(this, songList);
 
