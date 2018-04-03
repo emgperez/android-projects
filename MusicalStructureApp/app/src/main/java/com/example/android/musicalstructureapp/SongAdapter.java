@@ -41,7 +41,7 @@ public class SongAdapter extends ArrayAdapter<Song>{
                     R.layout.song_item, parent, false);
         }
 
-        // Get the playlist object located at this position in the list
+        // Get the song object located at this position in the list
         Song currentSong = getItem(position);
 
         // Find the TextView in the song_item.xml layout with the song name text view
@@ -51,6 +51,10 @@ public class SongAdapter extends ArrayAdapter<Song>{
         // Find the TextView in the song_item.xml layout with the artist name text view
         TextView songArtist = (TextView) listItemView.findViewById(R.id.artist_name);
         songArtist.setText(currentSong.getArtistName());
+
+        // Find the TextView in the song_item.xml layout with the album name text view
+        TextView songAlbum = (TextView) listItemView.findViewById(R.id.album_name);
+        songAlbum.setText(currentSong.getAlbumName());
 
         // Find the ImageView in the song_item.xml layout with the ID song_icon
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.song_icon);
