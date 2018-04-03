@@ -22,7 +22,6 @@ public class PlaylistsActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        Toast.makeText(this , "OnCreate Playlist", Toast.LENGTH_SHORT).show();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlists);
@@ -32,9 +31,9 @@ public class PlaylistsActivity extends AppCompatActivity{
 
         // Populate the ArrayList
         pLists.add(new Playlist("Weird music", "Repeat"));
-        //pLists.add(new Playlist("Uplifting music", "Shuffle"));
-        //pLists.add(new Playlist("Italo Disco", "Repeat"));
-        //pLists.add(new Playlist("Spanish Copla", "Repeat"));
+        pLists.add(new Playlist("Uplifting music", "Shuffle"));
+        pLists.add(new Playlist("Italo Disco", "Repeat"));
+        pLists.add(new Playlist("Spanish Copla", "Repeat"));
 
         // ArrayAdapter to create a View for each element in the playlists list. Every item in the list will have
         // a View in the 'listView' object
