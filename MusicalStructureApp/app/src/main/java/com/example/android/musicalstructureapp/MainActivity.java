@@ -57,6 +57,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        // Find the view that shows the artist category
+        TextView pArtists = (TextView)findViewById(R.id.artists);
+
+        //Toast.makeText(this , "Found TextView list", Toast.LENGTH_SHORT).show();
+
+        // Set a click listener on that View
+        pArtists.setOnClickListener(new View.OnClickListener(){
+
+            // The code in this method will be executed when the play lists View is clicked on
+            @Override
+            public void onClick(View view) {
+
+                // Behaviour for when the event happens
+                Intent playlistIntent = new Intent(MainActivity.this, ArtistsActivity.class);
+                startActivity(playlistIntent);
+
+            }
+        });
     }
 
 }
