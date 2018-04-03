@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".PlaylistsActivity"
             android:label="@string/category_playlists"/>
+        <activity android:name=".SongsActivity"
+            android:label="@string/category_songs"/>
 
     </application>
 
