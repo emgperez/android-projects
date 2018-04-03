@@ -19,13 +19,10 @@ import java.util.ArrayList;
 public class ArtistAdapter extends ArrayAdapter<Artist>{
 
 
-
     public ArtistAdapter(Activity context, ArrayList<Artist> lists) {
 
         // Initialize the adapter internal storage
         super(context, 0, lists);
-
-
     }
 
     @NonNull
@@ -42,7 +39,7 @@ public class ArtistAdapter extends ArrayAdapter<Artist>{
         // Get the artist object located at this position in the list
         Artist currentArtist = getItem(position);
 
-        // Find the TextView in the artist_item.xml layout with the playlist name text view
+        // Find the TextView in the artist_item.xml layout with the artist name text view
         TextView artistName = (TextView) listItemView.findViewById(R.id.artist_name_text_view);
         artistName.setText(currentArtist.getName());
 
@@ -50,8 +47,7 @@ public class ArtistAdapter extends ArrayAdapter<Artist>{
         TextView artistGenre = (TextView) listItemView.findViewById(R.id.artist_genre_text_view);
         artistGenre.setText(currentArtist.getGenre());
 
-
-        // Return the whole list item layout (containing 2 TextViews and an ImageView)
+        // Return the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView
         return listItemView;
     }
