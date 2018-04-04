@@ -13,15 +13,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by emilio on 02/04/2018.
- */
-
 public class PlaylistsActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlists);
