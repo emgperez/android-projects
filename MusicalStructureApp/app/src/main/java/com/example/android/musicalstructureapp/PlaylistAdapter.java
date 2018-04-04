@@ -11,21 +11,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-
-/**
- * Created by emilio on 02/04/2018.
- */
-
 public class PlaylistAdapter extends ArrayAdapter<Playlist>{
-
-
 
     public PlaylistAdapter(Activity context, ArrayList<Playlist> lists) {
 
         // Initialize the adapter internal storage
         super(context, 0, lists);
-
-
     }
 
     @NonNull
@@ -51,7 +42,6 @@ public class PlaylistAdapter extends ArrayAdapter<Playlist>{
 
         // Get the play mode for the current playlist
         playlistPlayMode.setText(currentPlaylist.getPlayMode());
-
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
