@@ -13,3 +13,6 @@
 
 # Screenshots
 ![screenshot](https://github.com/emgperez/android-projects/blob/master/Screenshots/MusicalStructureApp/Screenshot_Main.jpeg)
+![screenshot](https://github.com/emgperez/android-projects/blob/master/Screenshots/MusicalStructureApp/Screenshot_Playlists.jpeg)
+![screenshot](https://github.com/emgperez/android-projects/blob/master/Screenshots/MusicalStructureApp/Screenshot_Songs.jpeg)
+![screenshot](https://github.com/emgperez/android-projects/blob/master/Screenshots/MusicalStructureApp/Screenshot_Artists.jpeg)
