@@ -11,11 +11,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-
-/**
- * Created by emilio on 03/04/2018.
- */
-
 public class ArtistAdapter extends ArrayAdapter<Artist>{
 
 
