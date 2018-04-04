@@ -17,12 +17,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-/**
- * Created by emilio on 03/04/2018.
- */
-
 public class SongAdapter extends ArrayAdapter<Song>{
-
 
 
     public SongAdapter(Activity context, ArrayList<Song> songs) {

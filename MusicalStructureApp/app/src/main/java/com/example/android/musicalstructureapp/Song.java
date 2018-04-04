@@ -1,9 +1,5 @@
 package com.example.android.musicalstructureapp;
 
-/**
- * Created by emilio on 03/04/2018.
- */
-
 public class Song {
 
     // Song name
