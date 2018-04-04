@@ -14,10 +14,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by emilio on 03/04/2018.
- */
-
 public class ArtistsActivity extends AppCompatActivity{
 
     @Override
