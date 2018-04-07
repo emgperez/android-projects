@@ -49,7 +49,7 @@
                     android:layout_height="64dp"
                     android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/queen" />
+                    android:src="@mipmap/ic_queen" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                     android:layout_height="64dp"
                     android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/bruno_mars" />
+                    android:src="@mipmap/ic_bruno_mars" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -171,7 +171,7 @@
                     android:layout_height="64dp"
                     android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/jacko" />
+                    android:src="@mipmap/ic_jacko" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -232,7 +232,7 @@
                     android:layout_height="64dp"
                     android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/adele" />
+                    android:src="@mipmap/ic_adele" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -265,7 +265,7 @@
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableRight="@drawable/ic_play_circle_filled_black_48dp"
+                        android:drawableRight="@mipmap/ic_play"
                         android:gravity="center"
                         android:paddingBottom="2dp"
                         android:paddingTop="2dp"
