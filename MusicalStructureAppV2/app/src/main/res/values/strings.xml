@@ -4,4 +4,15 @@
     <string name="category_songs">Songs</string>
     <string name="category_artists">Artists</string>
     <string name="play_song">Play Now</string>
+
+    <string name="playlist_one">Weird Music</string>
+    <string name="playlist_two">Uplifting Music</string>
+    <string name="playlist_three">Italo disco</string>
+    <string name="playlist_four">Spanish Copla</string>
+
+    <string name="mode_one">Shuffle</string>
+    <string name="mode_two">Repeat</string>
+
+
+
 </resources>
