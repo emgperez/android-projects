@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/buttons"
@@ -11,13 +10,13 @@
 
         <Button
             android:id="@+id/songsButton"
-            android:text="@string/category_songs"
-            style="@style/Buttons"/>
+            style="@style/Buttons"
+            android:text="@string/category_songs" />
 
         <Button
             android:id="@+id/playlistsButton"
-            android:text="@string/category_playlists"
-            style="@style/Buttons"/>
+            style="@style/Buttons"
+            android:text="@string/category_playlists" />
 
 
     </LinearLayout>
@@ -33,60 +32,60 @@
 
             <TextView
                 android:id="@+id/artist_one_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Adele"/>
+                android:text="@string/artist_four" />
 
             <TextView
                 android:id="@+id/artist_one_genre"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Soul"/>
+                android:text="@string/genre_three" />
 
 
             <TextView
                 android:id="@+id/artist_two_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Bruno Mars"/>
+                android:text="@string/artist_two" />
 
             <TextView
                 android:id="@+id/artist_two_genre"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Pop"/>
+                android:text="@string/genre_two" />
 
             <TextView
                 android:id="@+id/artist_three_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Michael Jackson"/>
+                android:text="@string/artist_three" />
 
             <TextView
                 android:id="@+id/artist_three_genre"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Pop"/>
+                android:text="@string/genre_two" />
 
             <TextView
                 android:id="@+id/artist_four_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Queen"/>
+                android:text="@string/artist_one" />
 
             <TextView
                 android:id="@+id/artist_four_genre"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Rock"/>
+                android:text="@string/genre_one" />
 
         </LinearLayout>
 
