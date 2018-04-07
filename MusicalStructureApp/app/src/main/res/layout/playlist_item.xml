@@ -10,12 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/ItemName"
-        tools:text="Weird music"/>
+        tools:text="@string/playlist_one"/>
 
     <TextView
         android:id="@+id/playlist_mode_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Repeat"/>
+        tools:text="@string/mode_one"/>
+
+
 
 </LinearLayout>

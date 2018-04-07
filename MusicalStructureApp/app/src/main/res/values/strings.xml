@@ -4,4 +4,32 @@
     <string name="category_songs">Songs</string>
     <string name="category_artists">Artists</string>
     <string name="play_song">Play Now</string>
+
+    <string name="playlist_one">Weird Music</string>
+    <string name="playlist_two">Uplifting Music</string>
+    <string name="playlist_three">Italo disco</string>
+    <string name="playlist_four">Spanish Copla</string>
+
+    <string name="mode_one">Shuffle</string>
+    <string name="mode_two">Repeat</string>
+
+    <string name="song_one">I want it all</string>
+    <string name="song_two">24K Magic</string>
+    <string name="song_three">Billie Jean</string>
+    <string name="song_four">Rolling in the deep</string>
+
+    <string name="artist_one">Queen</string>
+    <string name="artist_two">Bruno Mars</string>
+    <string name="artist_three">Michael Jackson</string>
+    <string name="artist_four">Adele</string>
+
+    <string name="album_one">The Miracle</string>
+    <string name="album_two">24K Magic</string>
+    <string name="album_three">The Essential Michael Jackson</string>
+    <string name="album_four">21</string>
+
+    <string name="genre_one">Rock</string>
+    <string name="genre_two">Pop</string>
+    <string name="genre_three">Soul</string>
+
 </resources>

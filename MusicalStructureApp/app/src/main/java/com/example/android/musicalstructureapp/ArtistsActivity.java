@@ -26,11 +26,13 @@ public class ArtistsActivity extends AppCompatActivity{
         // ArrayList of words
         ArrayList<Artist> pArtists = new ArrayList<Artist>();
 
+
+
         // Populate the ArrayList
-        pArtists.add(new Artist("Adele", "Soul"));
-        pArtists.add(new Artist("Bruno Mars", "Pop"));
-        pArtists.add(new Artist("Michael Jackson", "Pop"));
-        pArtists.add(new Artist("Queen", "Rock"));
+        pArtists.add(new Artist(getString(R.string.artist_four), getString(R.string.genre_three)));
+        pArtists.add(new Artist(getString(R.string.artist_two), getString(R.string.genre_two)));
+        pArtists.add(new Artist(getString(R.string.artist_three), getString(R.string.genre_two)));
+        pArtists.add(new Artist(getString(R.string.artist_one), getString(R.string.genre_one)));;
 
         // ArrayAdapter to create a View for each element in the artists list. Every item in the list will have
         // a View in the 'listView' object
