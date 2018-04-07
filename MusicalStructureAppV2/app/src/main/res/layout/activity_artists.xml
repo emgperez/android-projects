@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        style="@style/ButtonsLayout">
+
+        <Button
+            android:id="@+id/songsButton"
+            android:text="@string/category_songs"
+            style="@style/Buttons"/>
+
+        <Button
+            android:id="@+id/playlistsButton"
+            android:text="@string/category_playlists"
+            style="@style/Buttons"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artist_one_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemName"
+                android:text="Adele"/>
+
+            <TextView
+                android:id="@+id/artist_one_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemSecondary"
+                android:text="Soul"/>
+
+
+            <TextView
+                android:id="@+id/artist_two_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemName"
+                android:text="Bruno Mars"/>
+
+            <TextView
+                android:id="@+id/artist_two_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemSecondary"
+                android:text="Pop"/>
+
+            <TextView
+                android:id="@+id/artist_three_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemName"
+                android:text="Michael Jackson"/>
+
+            <TextView
+                android:id="@+id/artist_three_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemSecondary"
+                android:text="Pop"/>
+
+            <TextView
+                android:id="@+id/artist_four_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemName"
+                android:text="Queen"/>
+
+            <TextView
+                android:id="@+id/artist_four_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemSecondary"
+                android:text="Rock"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

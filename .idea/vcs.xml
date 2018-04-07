@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Others/Musical-Structure-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Others/MusicalStructureApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android_games_quiz_udacity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android_music_player" vcs="Git" />
+  </component>
+</project>
