@@ -13,21 +13,21 @@
         android:id="@+id/playLists"
         style="@style/MusicCategory"
         android:background="@color/category"
-        android:drawableLeft="@drawable/ic_playlist"
+        android:drawableLeft="@mipmap/ic_playlist"
         android:text="@string/category_playlists" />
 
     <TextView
         android:id="@+id/songs"
         style="@style/MusicCategory"
         android:background="@color/category"
-        android:drawableLeft="@drawable/ic_song"
+        android:drawableLeft="@mipmap/ic_song"
         android:text="@string/category_songs" />
 
     <TextView
         android:id="@+id/artists"
         style="@style/MusicCategory"
         android:background="@color/category"
-        android:drawableLeft="@drawable/ic_artist"
+        android:drawableLeft="@mipmap/ic_artist"
         android:text="@string/category_artists" />
 
 
