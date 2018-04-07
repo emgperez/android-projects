@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/buttons"
@@ -11,13 +10,13 @@
 
         <Button
             android:id="@+id/songsButton"
-            android:text="@string/category_songs"
-            style="@style/Buttons"/>
+            style="@style/Buttons"
+            android:text="@string/category_songs" />
 
         <Button
             android:id="@+id/artistsButton"
-            android:text="@string/category_artists"
-            style="@style/Buttons"/>
+            style="@style/Buttons"
+            android:text="@string/category_artists" />
 
 
     </LinearLayout>
@@ -33,59 +32,59 @@
 
             <TextView
                 android:id="@+id/playlist_one_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Weird music"/>
+                android:text="@string/playlist_one" />
 
             <TextView
                 android:id="@+id/playlist_one_mode"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Repeat"/>
+                android:text="@string/mode_two" />
 
             <TextView
                 android:id="@+id/playlist_two_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Uplifting music"/>
+                android:text="@string/playlist_two" />
 
             <TextView
                 android:id="@+id/playlist_two_mode"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Shuffle"/>
+                android:text="@string/mode_one" />
 
             <TextView
                 android:id="@+id/playlist_three_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Italo disco"/>
+                android:text="@string/playlist_three" />
 
             <TextView
                 android:id="@+id/playlist_three_mode"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Repeat"/>
+                android:text="@string/mode_two" />
 
             <TextView
                 android:id="@+id/playlist_four_name"
+                style="@style/ItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemName"
-                android:text="Spanish copla"/>
+                android:text="@string/playlist_four" />
 
             <TextView
                 android:id="@+id/playlist_four_mode"
+                style="@style/ItemSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/ItemSecondary"
-                android:text="Repeat"/>
+                android:text="@string/mode_two" />
 
         </LinearLayout>
 
