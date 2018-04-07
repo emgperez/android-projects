@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/buttons"
@@ -11,13 +10,13 @@
 
         <Button
             android:id="@+id/playlistsButton"
-            android:text="@string/category_playlists"
-            style="@style/Buttons"/>
+            style="@style/Buttons"
+            android:text="@string/category_playlists" />
 
         <Button
             android:id="@+id/artistsButton"
-            android:text="@string/category_artists"
-            style="@style/Buttons"/>
+            style="@style/Buttons"
+            android:text="@string/category_artists" />
 
 
     </LinearLayout>
@@ -35,48 +34,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/darker_gray" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/song_one_icon"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
+                    android:scaleType="centerInside"
                     android:src="@mipmap/ic_queen" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toRightOf="@id/song_one_icon">
+                    android:layout_toRightOf="@id/song_one_icon"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/song_one_name"
+                        style="@style/ItemName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemName"
-                        android:text="I want it all"/>
+                        android:text="@string/song_one" />
 
                     <TextView
                         android:id="@+id/artist_one_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="Queen"/>
+                        android:text="@string/artist_one" />
 
                     <TextView
                         android:id="@+id/album_one_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="The Miracle"/>
+                        android:text="@string/album_one" />
 
                     <Button
                         style="?android:attr/borderlessButtonStyle"
@@ -96,48 +95,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/darker_gray" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/song_two_icon"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
+                    android:scaleType="centerInside"
                     android:src="@mipmap/ic_bruno_mars" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toRightOf="@id/song_two_icon">
+                    android:layout_toRightOf="@id/song_two_icon"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/song_two_name"
+                        style="@style/ItemName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemName"
-                        android:text="24K Magic"/>
+                        android:text="@string/song_two" />
 
                     <TextView
                         android:id="@+id/artist_two_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="Bruno Mars"/>
+                        android:text="@string/artist_two" />
 
                     <TextView
                         android:id="@+id/album_two_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="24K Magic"/>
+                        android:text="@string/album_two" />
 
                     <Button
                         style="?android:attr/borderlessButtonStyle"
@@ -157,48 +156,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/darker_gray" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/song_three_icon"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
+                    android:scaleType="centerInside"
                     android:src="@mipmap/ic_jacko" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toRightOf="@id/song_three_icon">
+                    android:layout_toRightOf="@id/song_three_icon"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/song_three_name"
+                        style="@style/ItemName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemName"
-                        android:text="Billie Jean"/>
+                        android:text="@string/song_three" />
 
                     <TextView
                         android:id="@+id/artist_three_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="Michael Jackson"/>
+                        android:text="@string/artist_three" />
 
                     <TextView
                         android:id="@+id/album_three_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="The Essential Michael Jackson"/>
+                        android:text="@string/album_three" />
 
                     <Button
                         style="?android:attr/borderlessButtonStyle"
@@ -218,48 +217,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/darker_gray"/>
+                android:background="@android:color/darker_gray" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/song_four_icon"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:scaleType="centerInside"
                     android:layout_marginLeft="30dp"
+                    android:scaleType="centerInside"
                     android:src="@mipmap/ic_adele" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toRightOf="@id/song_four_icon">
+                    android:layout_toRightOf="@id/song_four_icon"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/song_four_name"
+                        style="@style/ItemName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemName"
-                        android:text="Rolling in the Deep"/>
+                        android:text="@string/song_four" />
 
                     <TextView
                         android:id="@+id/artist_four_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="Michael Jackson"/>
+                        android:text="@string/artist_four" />
 
                     <TextView
                         android:id="@+id/album_four_name"
+                        style="@style/ItemSecondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/ItemSecondary"
-                        android:text="21"/>
+                        android:text="@string/album_four" />
 
                     <Button
                         style="?android:attr/borderlessButtonStyle"
