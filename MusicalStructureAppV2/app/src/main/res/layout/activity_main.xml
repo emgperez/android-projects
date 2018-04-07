@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context="com.example.android.musicalstructureappv2.MainActivity">
 
-
     <TextView
         android:id="@+id/playLists"
         style="@style/Category"
@@ -29,8 +28,5 @@
         android:background="@color/category"
         android:drawableLeft="@drawable/ic_artist"
         android:text="@string/category_artists" />
-
-
-
 
 </LinearLayout>
