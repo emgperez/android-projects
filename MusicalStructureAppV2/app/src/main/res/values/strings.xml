@@ -28,4 +28,8 @@
     <string name="album_three">The Essential Michael Jackson</string>
     <string name="album_four">21</string>
 
+    <string name="genre_one">Rock</string>
+    <string name="genre_two">Pop</string>
+    <string name="genre_three">Soul</string>
+
 </resources>
