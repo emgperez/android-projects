@@ -13,6 +13,19 @@
     <string name="mode_one">Shuffle</string>
     <string name="mode_two">Repeat</string>
 
+    <string name="song_one">I want it all</string>
+    <string name="song_two">24K Magic</string>
+    <string name="song_three">Billie Jean</string>
+    <string name="song_four">Rolling in the deep</string>
 
+    <string name="artist_one">Queen</string>
+    <string name="artist_two">Bruno Mars</string>
+    <string name="artist_three">Michael Jackson</string>
+    <string name="artist_four">Adele</string>
+
+    <string name="album_one">The Miracle</string>
+    <string name="album_two">24K Magic</string>
+    <string name="album_three">The Essential Michael Jackson</string>
+    <string name="album_four">21</string>
 
 </resources>
