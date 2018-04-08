@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        style="@style/ButtonsLayout">
+
+
+        <Button
+            android:id="@+id/playlistsButton"
+            style="@style/Buttons"
+            android:text="@string/category_playlists" />
+
+        <Button
+            android:id="@+id/artistsButton"
+            style="@style/Buttons"
+            android:text="@string/category_artists" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
