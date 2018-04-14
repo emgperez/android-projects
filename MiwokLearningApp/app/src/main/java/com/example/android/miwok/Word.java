@@ -13,6 +13,9 @@ public class Word {
     // Miwok translation for the word
     private String mMiwokTranslation;
 
+    // Drawable resource ID
+    private int imageResourceId;
+
     public Word(String defaultTranslation, String miwokTranslation)
     {
         mDefaultTranslation = defaultTranslation;
@@ -34,4 +37,10 @@ public class Word {
     {
         return mMiwokTranslation;
     }
+
+    /**
+     * Get the image resource ID
+     */
+    public int getImageResourceId() { return imageResourceId; }
+
 }
