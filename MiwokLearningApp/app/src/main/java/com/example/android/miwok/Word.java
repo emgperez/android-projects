@@ -54,4 +54,9 @@ public class Word {
      */
     public int getImageResourceId() { return mImageResourceId; }
 
+    /**
+     * Check if the word has an image
+     */
+    public boolean hasImage() { return mImageResourceId != NO_IMAGE_PROVIDED; }
+
 }
