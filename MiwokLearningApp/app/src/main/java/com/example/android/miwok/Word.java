@@ -13,8 +13,12 @@ public class Word {
     // Miwok translation for the word
     private String mMiwokTranslation;
 
-    // Drawable resource ID
-    private int mImageResourceId;
+    // Drawable resource ID with default visibility set to this value
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    // Constant to represent that no image is being provided for the word
+    private static final int NO_IMAGE_PROVIDED = -1;
+
 
     public Word(String defaultTranslation, String miwokTranslation)
     {
