@@ -3,6 +3,7 @@ package com.example.android.miwok;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,11 +19,15 @@ import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word>{
 
+    // Background colour ID
+    private int mBackgroundColorID;
 
-    public WordAdapter(Activity context, ArrayList<Word> words) {
+
+    public WordAdapter(Activity context, ArrayList<Word> words, int backgroundColourID) {
 
         // Initialize the adapter internal storage
         super(context, 0, words);
+        mBackgroundColorID = backgroundColourID;
     }
 
     @NonNull
@@ -68,6 +73,13 @@ public class WordAdapter extends ArrayAdapter<Word>{
             // Set visibility to to GONE
             iconView.setVisibility(View.GONE);
         }
+
+        // And now change the color of the LinearLayout for the container
+        View wordContainer = listItemView.findViewById(R.id.text_container);
+
+        // Find the color for the background id and set it to the container
+        int color = ContextCompat.getColor(getContext(), mBackgroundColorID);
+        wordContainer.setBackgroundColor(color);
 
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
