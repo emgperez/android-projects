@@ -1,12 +1,18 @@
 package com.example.android.miwok;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
+
+    // MediaPlayer object to play numbers audio files
+    private MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,17 @@ public class NumbersActivity extends AppCompatActivity {
 
         // And set the adapter created before
         listView.setAdapter(adapter);
+
+        // Set a listener so that audio is played when clicking on any item of the list
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                player = MediaPlayer.create(NumbersActivity.this, R.raw.number_one);
+                player.start();
+            }
+        });
 
     }
 }
