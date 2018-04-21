@@ -1,12 +1,18 @@
 package com.example.android.miwok;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class ColorsActivity extends AppCompatActivity {
+
+    // MediaPlayer object to play numbers audio files
+    private MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +20,7 @@ public class ColorsActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         // ArrayList of words
-        ArrayList<Word> words = new ArrayList<Word>();
+        final ArrayList<Word> words = new ArrayList<Word>();
 
         // Populate the ArrayList
         //words.add("one");
@@ -36,5 +42,22 @@ public class ColorsActivity extends AppCompatActivity {
 
         // And set the adapter created before
         listView.setAdapter(adapter);
+
+        // Set a listener so that audio is played when clicking on any item of the list
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                // First, get the Word object on the i-position of the adapter
+                Word currentWord = words.get(i);
+
+                // Then create the player for that current word and its associated audio
+                player = MediaPlayer.create(ColorsActivity.this, currentWord.getAudioResourceId());
+
+                // And start the audio
+                player.start();
+            }
+        });
     }
 }
