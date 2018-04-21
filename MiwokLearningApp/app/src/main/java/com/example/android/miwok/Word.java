@@ -19,6 +19,9 @@ public class Word {
     // Constant to represent that no image is being provided for the word
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    // Audio file which will be played when clicking on the word
+    private int mAudioResourceId;
+
 
     public Word(String defaultTranslation, String miwokTranslation)
     {
@@ -26,11 +29,19 @@ public class Word {
         mMiwokTranslation = miwokTranslation;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId)
+    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId)
+    {
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
+        mAudioResourceId = audioResourceId;
+    }
+
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId)
     {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
     }
 
     /**
@@ -58,5 +69,10 @@ public class Word {
      * Check if the word has an image
      */
     public boolean hasImage() { return mImageResourceId != NO_IMAGE_PROVIDED; }
+
+    /**
+     * Get the audio resource ID
+     */
+    public int getAudioResourceId() { return mAudioResourceId; }
 
 }
