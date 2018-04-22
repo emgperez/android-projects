@@ -23,6 +23,9 @@ public class FamilyActivity extends AppCompatActivity {
         }
     };
 
+    // Audio focus handler
+    AudioManager audioManager;
+
     /**
      * This listener will be triggered whenever the audio focus changes
      */
@@ -89,17 +92,21 @@ public class FamilyActivity extends AppCompatActivity {
                 // First, get the Word object on the i-position of the adapter
                 Word currentWord = words.get(i);
 
-                // Release the player resources before playing a new sound
-                releaseMediaPlayer();
+                // Request audio focus to play the file (streamtype STREAM_MUSIC, durationHint AUDIOFOCUS_GAIN_TRANSIENT)
+                int result = audioManager.requestAudioFocus(onAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
-                // Then create the player for that current word and its associated audio
-                player = MediaPlayer.create(FamilyActivity.this, currentWord.getAudioResourceId());
+                if(result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+                    // If request has been granted, then play the audio
 
-                // And start the audio
-                player.start();
+                    // Create the player for that current word and its associated audio
+                    player = MediaPlayer.create(FamilyActivity.this, currentWord.getAudioResourceId());
 
-                // Add callback method to release resources when the sound has finished playing
-                player.setOnCompletionListener(completionListener);
+                    // And start the audio
+                    player.start();
+
+                    // Add callback method to release resources when the sound has finished playing
+                    player.setOnCompletionListener(completionListener);
+                }
             }
         });
     }
