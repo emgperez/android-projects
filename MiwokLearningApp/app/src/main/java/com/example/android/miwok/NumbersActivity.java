@@ -124,9 +124,15 @@ public class NumbersActivity extends AppCompatActivity {
     {
         // If the media player is not null, it may be still playing a sound
         if (player != null ) {
+
             // Release its resources
             player.release();
+
+            // Set the player to null (it's the same as telling the player is not ready to play a file at the moment)
             player = null;
+
+            // And abandon the focus whether we have it or not
+            audioManager.abandonAudioFocus(onAudioFocusChangeListener);
         }
     }
 
