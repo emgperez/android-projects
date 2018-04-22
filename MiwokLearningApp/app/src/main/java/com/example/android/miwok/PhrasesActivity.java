@@ -14,6 +14,14 @@ public class PhrasesActivity extends AppCompatActivity {
     // MediaPlayer object to play numbers audio files
     private MediaPlayer player;
 
+    // Listener to get triggered when playing has ended
+    private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mediaPlayer) {
+            releaseMediaPlayer();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,12 +63,31 @@ public class PhrasesActivity extends AppCompatActivity {
                 // First, get the Word object on the i-position of the adapter
                 Word currentWord = words.get(i);
 
+                // Release the player resources before playing a new sound
+                releaseMediaPlayer();
+
                 // Then create the player for that current word and its associated audio
                 player = MediaPlayer.create(PhrasesActivity.this, currentWord.getAudioResourceId());
 
                 // And start the audio
                 player.start();
+
+                // Add callback method to release resources when the sound has finished playing
+                player.setOnCompletionListener(completionListener);
             }
         });
+    }
+
+    /**
+     * Clean up the media player by releasing its resources
+     */
+    private void releaseMediaPlayer()
+    {
+        // If the media player is not null, it may be still playing a sound
+        if (player != null ) {
+            // Release its resources
+            player.release();
+            player = null;
+        }
     }
 }
