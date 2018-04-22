@@ -1,5 +1,6 @@
 package com.example.android.miwok;
 
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,32 @@ public class PhrasesActivity extends AppCompatActivity {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
             releaseMediaPlayer();
+        }
+    };
+
+    /**
+     * This listener will be triggered whenever the audio focus changes
+     */
+    private AudioManager.OnAudioFocusChangeListener onAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+
+            if(focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT || focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK)
+            {
+                // I lost audio focus for a moment but I can duck, so I'll pause the playing and reset playback to the start of the file
+                player.pause();
+                player.seekTo(0); // start
+            }
+            else if(focusChange == AudioManager.AUDIOFOCUS_GAIN)
+            {
+                // Resume playback
+                player.start();
+            }
+            else if(focusChange == AudioManager.AUDIOFOCUS_LOSS)
+            {
+                // I lost audio focus permanently, so I'll release the resources
+                releaseMediaPlayer();
+            }
         }
     };
 
