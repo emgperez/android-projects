@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 mediaPlayer.start();
+                // Include a callback for the moment the player has ended playing
+                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer){
+                        Toast.makeText(MainActivity.this, "I'm done!", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
 
