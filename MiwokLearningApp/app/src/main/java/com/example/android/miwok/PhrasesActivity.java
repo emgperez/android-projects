@@ -134,7 +134,7 @@ public class PhrasesActivity extends AppCompatActivity {
             audioManager.abandonAudioFocus(onAudioFocusChangeListener);
         }
     }
-    
+
     /**
      * Clean up the resources (release) when stopping
      */
