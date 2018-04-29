@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MadridTourGuideApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="find_city_online">Find Madrid online in...</string>
+    <string name="link_one">www.tourspain.es</string>
+    <string name="link_two">www.munimadrid.es</string>
+    <string name="link_three">www.puertademadrid.com</string>
+    <string name="link_four">www.ctm-madrid.es</string>
+    <string name="link_five">www.descubremadrid.com</string>
+    <string name="link_six">madrid.lanetro.com</string>
+    <string name="link_seven">www.madrid.org</string>
+    <string name="link_eight">www.madridamano.com</string>
+
+    <string name="category_home">Home</string>
+
+</resources>
