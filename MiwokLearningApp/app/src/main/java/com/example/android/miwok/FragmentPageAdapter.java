@@ -15,7 +15,13 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
-    /**
+    public FragmentPageAdapter(Context mContext, FragmentManager fm)
+    {
+        super(fm);
+        context = mContext;
+    }
+
+
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
@@ -27,14 +33,14 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
         } else {
             return new PhrasesFragment();
         }
-    }*/
+    }
 
     @Override
     public int getCount() {
         return PAGE_COUNT;
     }
 
-    @Override
+    /**@Override
     public Fragment getItem(int position) {
 
         if(position == 0)
@@ -48,12 +54,19 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
         else
             return null;
 
-    }
+    }*/
 
     @Override
     public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+        if (position == 0) {
+            return context.getString(R.string.category_numbers);
+        } else if (position == 1) {
+            return context.getString(R.string.category_family);
+        } else if (position == 2) {
+            return context.getString(R.string.category_colors);
+        } else {
+            return context.getString(R.string.category_phrases);
+        }
     }
 
 }
