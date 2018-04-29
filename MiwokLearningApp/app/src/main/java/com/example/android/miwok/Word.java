@@ -8,10 +8,10 @@ package com.example.android.miwok;
 public class Word {
 
     // Default translation for the word
-    private String mDefaultTranslation;
+    private int mDefaultTranslation;
 
     // Miwok translation for the word
-    private String mMiwokTranslation;
+    private int mMiwokTranslation;
 
     // Drawable resource ID with default visibility set to this value
     private int mImageResourceId = NO_IMAGE_PROVIDED;
@@ -23,20 +23,20 @@ public class Word {
     private int mAudioResourceId;
 
 
-    public Word(String defaultTranslation, String miwokTranslation)
+    public Word(int defaultTranslation, int miwokTranslation)
     {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId)
+    public Word(int defaultTranslation, int miwokTranslation, int audioResourceId)
     {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mAudioResourceId = audioResourceId;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId)
+    public Word(int defaultTranslation, int miwokTranslation, int imageResourceId, int audioResourceId)
     {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
@@ -44,10 +44,12 @@ public class Word {
         mAudioResourceId = audioResourceId;
     }
 
+
+
     /**
      * Get the default translation of the word
      */
-    public String getDefaultTranslation()
+    public int getDefaultTranslation()
     {
         return mDefaultTranslation;
     }
@@ -55,7 +57,7 @@ public class Word {
     /**
      * Get the Miwok translation of the word
      */
-    public String getMiwokTranslation()
+    public int getMiwokTranslation()
     {
         return mMiwokTranslation;
     }
