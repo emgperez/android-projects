@@ -34,6 +34,18 @@ public class FamilyFragment extends Fragment {
     // Audio focus handler
     private AudioManager audioManager;
 
+    public static final String ARG_PAGE = "ARG_PAGE";
+
+    private int mPage;
+
+    public static FamilyFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        FamilyFragment fragment = new FamilyFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     public FamilyFragment() {
         // Required empty public constructor
     }

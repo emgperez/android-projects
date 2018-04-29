@@ -34,6 +34,18 @@ public class ColorsFragment extends Fragment {
     // Audio focus handler
     private AudioManager audioManager;
 
+    public static final String ARG_PAGE = "ARG_PAGE";
+
+    private int mPage;
+
+    public static ColorsFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        ColorsFragment fragment = new ColorsFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     public ColorsFragment() {
         // Required empty public constructor
     }

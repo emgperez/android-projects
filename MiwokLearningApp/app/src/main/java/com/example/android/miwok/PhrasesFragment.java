@@ -34,6 +34,18 @@ public class PhrasesFragment extends Fragment {
     // Audio focus handler
     private AudioManager audioManager;
 
+    public static final String ARG_PAGE = "ARG_PAGE";
+
+    private int mPage;
+
+    public static PhrasesFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        PhrasesFragment fragment = new PhrasesFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     public PhrasesFragment() {
         // Required empty public constructor
     }

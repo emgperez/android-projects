@@ -34,8 +34,16 @@ public class NumbersFragment extends Fragment {
     // Audio focus handler
     private AudioManager audioManager;
 
-    public NumbersFragment() {
-        // Required empty public constructor
+    public static final String ARG_PAGE = "ARG_PAGE";
+
+    private int mPage;
+
+    public static NumbersFragment newInstance(int page) {
+        Bundle args = new Bundle();
+        args.putInt(ARG_PAGE, page);
+        NumbersFragment fragment = new NumbersFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
