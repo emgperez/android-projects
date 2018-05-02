@@ -29,7 +29,7 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
         } else if (position == 1){
             return new WestFragment();
         } else if (position == 2) {
-            return new WestFragment();
+            return new CenterFragment();
         } else {
             return new WestFragment();
         }
