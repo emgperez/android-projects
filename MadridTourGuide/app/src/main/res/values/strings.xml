@@ -27,6 +27,14 @@
     <string name="palacio_real">Palacio Real</string>
     <string name="plaza_oriente">Plaza de Oriente</string>
 
+    <!-- CENTER locations -->
+    <string name="museo_reina_sofia">Museo Reina Sofía</string>
+    <string name="museo_thyssen">Museo Thyssen</string>
+    <string name="plaza_mayor">Plaza Mayor</string>
+    <string name="puerta_del_sol">Puerta del Sol</string>
+    <string name="rastro">El Rastro</string>
+    <string name="plaza_cebada">Plaza de la Cebada</string>
+
     <!--Addresses -->
     <string name="casa_campo_location">Calle Marqués de Monistrol</string>
     <string name="catedral_almudena_location">Calle Bailén</string>
@@ -34,6 +42,12 @@
     <string name="museo_traje_location">Avenida Juan de Herrera 6</string>
     <string name="palacio_real_location">Calle Bailén</string>
     <string name="plaza_oriente_location">Calle Bailén</string>
+    <string name="museo_reina_sofia_location">Calle Santa Isabel 52</string>
+    <string name="museo_thyssen_location">Paseo del Prado 8</string>
+    <string name="plaza_mayor_location">Plaza Mayor</string>
+    <string name="puerta_del_sol_location">Puerta del Sol</string>
+    <string name="rastro_location">Ribera de Curtidores</string>
+    <string name="plaza_cebada_location">Plaza de la Cebada</string>
 
     <!--Metro stations -->
     <string name="casa_campo_metro">Lago, Batán, Casa de Campo</string>
@@ -42,6 +56,12 @@
     <string name="museo_traje_metro">Moncloa, Ciudad Universitaria</string>
     <string name="palacio_real_metro">Ópera</string>
     <string name="plaza_oriente_metro">Ópera</string>
+    <string name="museo_reina_sofia_metro">Atocha</string>
+    <string name="museo_thyssen_metro">Banco de España</string>
+    <string name="plaza_mayor_metro">Sol, Ópera</string>
+    <string name="puerta_del_sol_metro">Sol</string>
+    <string name="rastro_metro">Tirso de Molina</string>
+    <string name="plaza_cebada_metro">La Latina, Tirso de Molina</string>
 
     <!--Bus stops-->
     <string name="casa_campo_bus">41, 33, 39, 65</string>
@@ -50,7 +70,12 @@
     <string name="museo_traje_bus">46, 66, 82</string>
     <string name="palacio_real_bus">3, 25, 33</string>
     <string name="plaza_oriente_bus">3, 25, 33</string>
-
+    <string name="museo_reina_sofia_bus">6, 10, 14, 24</string>
+    <string name="museo_thyssen_bus">1, 2, 5, 24</string>
+    <string name="plaza_mayor_bus">3, 5, 51, 52</string>
+    <string name="puerta_del_sol_bus">3, 5, 15, 20</string>
+    <string name="rastro_bus">41, 60</string>
+    <string name="plaza_cebada_bus">17, 23, 35</string>
 
 
 </resources>
