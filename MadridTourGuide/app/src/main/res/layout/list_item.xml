@@ -10,7 +10,8 @@
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height"/>
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/grey_background"/>
 
     <RelativeLayout
         android:id="@+id/text_container"
@@ -30,42 +31,42 @@
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textStyle="bold"
-            tools:text="lutti" />
+            tools:text="Location" />
 
         <TextView
             android:id="@+id/sight_location_text_view"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
+            android:layout_height="20dp"
             android:layout_below="@id/sight_name_text_view"
             android:layout_weight="1"
             android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            tools:text="one" />
+            android:textColor="@color/dark_blue"
+            android:textSize="12dp"
+            tools:text="Location" />
 
         <TextView
             android:id="@+id/sight_metro_text_view"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
+            android:layout_height="20dp"
             android:layout_below="@id/sight_location_text_view"
             android:layout_weight="1"
             android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            tools:text="one" />
+            android:textColor="@color/dark_blue"
+            android:textSize="12dp"
+            tools:text="Location" />
 
         <TextView
             android:id="@+id/sight_bus_text_view"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
+            android:layout_height="20dp"
             android:layout_below="@id/sight_metro_text_view"
             android:layout_weight="1"
             android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            tools:text="one" />
+            android:textColor="@color/dark_blue"
+            android:textSize="12dp"
+            tools:text="Location" />
 
         <!--
         <ImageView
