@@ -4,8 +4,9 @@
 
 # Features 
 
--Four Fragments, one for each location (West, East, North, Center)
--Fragment Adapter, helping display those Fragments into tabs.
+- Four Fragments, one for each location (West, East, North, Center)
+
+- Fragment Adapter, helping display those Fragments into tabs.
 
 
 # Screenshots
