@@ -43,11 +43,14 @@ public class WestFragment extends Fragment {
         final ArrayList<Sight> sights = new ArrayList<Sight>();
         sights.add(new Sight(R.drawable.ic_casa_campo, R.string.casa_campo_location, R.string.casa_campo_metro, R.string.casa_campo_bus, R.string.casa_campo));
         sights.add(new Sight(R.drawable.ic_catedral_almudena, R.string.catedral_almudena_location, R.string.catedral_almudena_metro, R.string.catedral_almudena_bus, R.string.catedral_almudena));
-
+        sights.add(new Sight(R.drawable.ic_museo_america, R.string.museo_america_location, R.string.museo_america_metro, R.string.museo_america_bus, R.string.museo_america));
+        sights.add(new Sight(R.drawable.ic_palacio_real, R.string.palacio_real_location, R.string.palacio_real_metro, R.string.palacio_real_bus, R.string.palacio_real));
+        sights.add(new Sight(R.drawable.ic_museo_traje, R.string.museo_traje_location, R.string.museo_traje_metro, R.string.museo_traje_bus, R.string.museo_traje));
+        sights.add(new Sight(R.drawable.ic_plaza_oriente, R.string.plaza_oriente_location, R.string.plaza_oriente_metro, R.string.plaza_oriente_bus, R.string.plaza_oriente));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Sight}s. The
         // adapter knows how to create list items for each item in the list.
-        SightAdapter adapter = new SightAdapter(getActivity(), sights, R.color.category_west);
+        SightAdapter adapter = new SightAdapter(getActivity(), sights, R.color.blue_background);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
