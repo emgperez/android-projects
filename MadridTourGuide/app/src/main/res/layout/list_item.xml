@@ -33,7 +33,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            tools:text="Location" />
+            tools:text="Name" />
 
         <TextView
             android:id="@+id/sight_location_text_view"
@@ -44,6 +44,7 @@
             android:gravity="top"
             android:textColor="@color/dark_blue"
             android:textSize="12dp"
+            android:drawableLeft="@drawable/ic_location_on"
             tools:text="Location" />
 
         <TextView
@@ -55,7 +56,8 @@
             android:gravity="top"
             android:textColor="@color/dark_blue"
             android:textSize="12dp"
-            tools:text="Location" />
+            android:drawableLeft="@drawable/ic_directions_subway"
+            tools:text="Subway" />
 
         <TextView
             android:id="@+id/sight_bus_text_view"
@@ -66,7 +68,8 @@
             android:gravity="top"
             android:textColor="@color/dark_blue"
             android:textSize="12dp"
-            tools:text="Location" />
+            android:drawableLeft="@drawable/ic_directions_bus"
+            tools:text="Bus" />
 
         <!--
         <ImageView
