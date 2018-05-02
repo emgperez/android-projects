@@ -14,6 +14,43 @@
     <string name="link_seven">www.madrid.org</string>
     <string name="link_eight">www.madridamano.com</string>
 
-    <string name="category_home">Home</string>
+    <string name="category_west">West</string>
+    <string name="category_east">East</string>
+    <string name="category_center">Center</string>
+    <string name="category_north">North</string>
+
+    <!-- WEST locations -->
+    <string name="casa_campo">Casa de Campo</string>
+    <string name="catedral_almudena">Catedral de la Almudena</string>
+    <string name="museo_america">Museo de América</string>
+    <string name="museo_traje">Museo del Traje</string>
+    <string name="palacio_real">Palacio Real</string>
+    <string name="plaza_oriente">Plaza de Oriente</string>
+
+    <!--Addresses -->
+    <string name="casa_campo_location">Calle Marqués de Monistrol</string>
+    <string name="catedral_almudena_location">Calle Bailén</string>
+    <string name="museo_america_location">Avenida Reyes Católicos 6</string>
+    <string name="museo_traje_location">Avenida Juan de Herrera 6</string>
+    <string name="palacio_real_location">Calle Bailén</string>
+    <string name="plaza_oriente_location">Calle Bailén</string>
+
+    <!--Metro stations -->
+    <string name="casa_campo_metro">Lago, Batán, Casa de Campo</string>
+    <string name="catedral_almudena_metro">Ópera</string>
+    <string name="museo_america_metro">Moncloa, Islas Filipinas</string>
+    <string name="museo_traje_metro">Moncloa, Ciudad Universitaria</string>
+    <string name="palacio_real_metro">Ópera</string>
+    <string name="plaza_oriente_metro">Ópera</string>
+
+    <!--Bus stops-->
+    <string name="casa_campo_bus">41, 33, 39, 65</string>
+    <string name="catedral_almudena_bus">3, 31, 148</string>
+    <string name="museo_america_bus">Circular, 12, 16, 44</string>
+    <string name="museo_traje_bus">46, 66, 82</string>
+    <string name="palacio_real_bus">3, 25, 33</string>
+    <string name="plaza_oriente_bus">3, 25, 33</string>
+
+
 
 </resources>
