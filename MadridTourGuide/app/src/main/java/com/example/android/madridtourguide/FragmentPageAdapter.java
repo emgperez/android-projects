@@ -5,10 +5,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+/**
+ * Fragment handler class
+ */
 public class FragmentPageAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[] { "CENTER", "EAST", "WEST", "NORTH" };
+    private String tabTitles[] = new String[] { "WEST", "EAST", "CENTER", "NORTH" };
     private Context context;
 
     public FragmentPageAdapter(FragmentManager fm) {
@@ -21,17 +24,16 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
         context = mContext;
     }
 
-
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
             return new WestFragment();
         } else if (position == 1){
-            return new WestFragment();
+            return new EastFragment();
         } else if (position == 2) {
             return new CenterFragment();
         } else {
-            return new WestFragment();
+            return new NorthFragment();
         }
     }
 
@@ -39,22 +41,6 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return PAGE_COUNT;
     }
-
-    /**@Override
-    public Fragment getItem(int position) {
-
-    if(position == 0)
-    return NumbersFragment.newInstance(position + 1);
-    else if(position == 1)
-    return FamilyFragment.newInstance(position + 1);
-    else if(position == 2)
-    return ColorsFragment.newInstance(position + 1);
-    else if(position == 3)
-    return PhrasesFragment.newInstance(position + 1);
-    else
-    return null;
-
-    }*/
 
     @Override
     public CharSequence getPageTitle(int position) {

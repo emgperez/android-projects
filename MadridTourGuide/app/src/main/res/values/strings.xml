@@ -35,6 +35,20 @@
     <string name="rastro">El Rastro</string>
     <string name="plaza_cebada">Plaza de la Cebada</string>
 
+    <!-- EAST locations -->
+    <string name="museo_prado">Museo del Prado</string>
+    <string name="parque_retiro">Parque del Retiro</string>
+    <string name="puerta_alcala">Puerta de Alcalá</string>
+    <string name="estacion_atocha">Estación de Atocha</string>
+    <string name="fabrica_tapices">Real Fábrica de Tapices</string>
+
+    <!-- NORTH locations -->
+    <string name="museo_sorolla">Museo Sorolla</string>
+    <string name="estatuas_botero">Estatuas de Botero</string>
+    <string name="fundacion_march">Fundación Juan March</string>
+    <string name="plaza_dos_mayo">Plaza de Dos de Mayo</string>
+    <string name="sala_canal">Sala del Canal de Isabel II</string>
+
     <!--Addresses -->
     <string name="casa_campo_location">Calle Marqués de Monistrol</string>
     <string name="catedral_almudena_location">Calle Bailén</string>
@@ -48,6 +62,16 @@
     <string name="puerta_del_sol_location">Puerta del Sol</string>
     <string name="rastro_location">Ribera de Curtidores</string>
     <string name="plaza_cebada_location">Plaza de la Cebada</string>
+    <string name="museo_prado_location">Paseo del Prado</string>
+    <string name="parque_retiro_location">Calle Alcalá</string>
+    <string name="puerta_alcala_location">Plaza de la Independencia</string>
+    <string name="estacion_atocha_location">Plaza del Emperador Carlos V</string>
+    <string name="fabrica_tapices_location">Calle de Fuenterrabía 2</string>
+    <string name="museo_sorolla_location">Paseo Gral. Martínez Campos 37</string>
+    <string name="estatuas_botero_location">Plaza San Juan de la Cruz</string>
+    <string name="fundacion_march_location">Calle Castelló 77</string>
+    <string name="plaza_dos_mayo_location">Plaza de Dos de Mayo</string>
+    <string name="sala_canal_location">Calle Santa Engracia 125</string>
 
     <!--Metro stations -->
     <string name="casa_campo_metro">Lago, Batán, Casa de Campo</string>
@@ -62,6 +86,16 @@
     <string name="puerta_del_sol_metro">Sol</string>
     <string name="rastro_metro">Tirso de Molina</string>
     <string name="plaza_cebada_metro">La Latina, Tirso de Molina</string>
+    <string name="museo_prado_metro">Banco de España, Atocha</string>
+    <string name="parque_retiro_metro">Retiro, Atocha, Ibiza</string>
+    <string name="puerta_alcala_metro">Retiro</string>
+    <string name="atocha_metro">Atocha</string>
+    <string name="fabrica_tapices_metro">Menéndez Pelayo</string>
+    <string name="museo_sorolla_metro">Iglesia, Rubén Darío</string>
+    <string name="estatuas_botero_metro">Colón, Nuevos Ministerios</string>
+    <string name="fundacion_march_metro">Núñez de Balboa</string>
+    <string name="plaza_dos_mayo_metro">Bilbao</string>
+    <string name="sala_canal_metro">Ríos Rosas</string>
 
     <!--Bus stops-->
     <string name="casa_campo_bus">41, 33, 39, 65</string>
@@ -76,6 +110,15 @@
     <string name="puerta_del_sol_bus">3, 5, 15, 20</string>
     <string name="rastro_bus">41, 60</string>
     <string name="plaza_cebada_bus">17, 23, 35</string>
-
+    <string name="museo_prado_bus">9, 10, 14, 19</string>
+    <string name="parque_retiro_bus">2, 14, 19, 20</string>
+    <string name="puerta_alcala_bus">9, 15, 20</string>
+    <string name="atocha_bus">14, 27, 34</string>
+    <string name="fabrica_tapices_bus">14, 24, 26, 32</string>
+    <string name="museo_sorolla_bus">5, 17, 16, 40</string>
+    <string name="estatuas_botero_bus">7, 14, 27, 40</string>
+    <string name="fundacion_march_bus">29, 52</string>
+    <string name="plaza_dos_mayo_bus">40, 21, 149</string>
+    <string name="sala_canal_bus">3, 37, 149</string>
 
 </resources>

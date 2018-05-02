@@ -1,5 +1,8 @@
 package com.example.android.madridtourguide;
 
+/**
+ * A class to represent a sight in the city
+ */
 public class Sight {
 
     // Image resource

@@ -16,7 +16,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass.
+ * A Fragment subclass to represent locations in the west of the city.
  */
 public class WestFragment extends Fragment {
 
@@ -30,7 +30,6 @@ public class WestFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,7 +47,7 @@ public class WestFragment extends Fragment {
         sights.add(new Sight(R.drawable.ic_museo_traje, R.string.museo_traje_location, R.string.museo_traje_metro, R.string.museo_traje_bus, R.string.museo_traje));
         sights.add(new Sight(R.drawable.ic_plaza_oriente, R.string.plaza_oriente_location, R.string.plaza_oriente_metro, R.string.plaza_oriente_bus, R.string.plaza_oriente));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Sight}s. The
+        // Create an {@link SightAdapter}, whose data source is a list of {@link Sight}s. The
         // adapter knows how to create list items for each item in the list.
         SightAdapter adapter = new SightAdapter(getActivity(), sights, R.color.blue_background);
 
