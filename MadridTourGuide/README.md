@@ -1,6 +1,6 @@
 # Tour Guide App
 
-- Being born in Madrid, I took a list of all the places in Madrid I've been to and made a list of them divided by location (West, East, North, Center) 
+- Being born in Madrid, I thought of all the places in Madrid I've been to and made a list of them divided by location (West, East, North, Center) 
 
 # Features 
 
