@@ -43,7 +43,7 @@
             android:layout_weight="1"
             android:gravity="top"
             android:textColor="@color/dark_blue"
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:drawableLeft="@drawable/ic_location_on"
             tools:text="Location" />
 
@@ -55,7 +55,7 @@
             android:layout_weight="1"
             android:gravity="top"
             android:textColor="@color/dark_blue"
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:drawableLeft="@drawable/ic_directions_subway"
             tools:text="Subway" />
 
@@ -67,20 +67,10 @@
             android:layout_weight="1"
             android:gravity="top"
             android:textColor="@color/dark_blue"
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:drawableLeft="@drawable/ic_directions_bus"
             tools:text="Bus" />
-
-        <!--
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/ic_play_arrow_white_24dp"/>
-            -->
-
+        
     </RelativeLayout>
 
 </RelativeLayout>
