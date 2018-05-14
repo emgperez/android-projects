@@ -49,6 +49,12 @@ public class Earthquake {
         mUrl = url;
     }
 
+    public Earthquake(double magnitude, String location, long timeInMilliseconds) {
+        mMagnitude = magnitude;
+        mLocation = location;
+        mTimeInMilliseconds = timeInMilliseconds;
+    }
+
     /**
      * Returns the magnitude of the earthquake.
      */
