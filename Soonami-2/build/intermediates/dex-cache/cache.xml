@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_4a55c1532f4fad6594b3eb5d92d571c25ad8d801.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_da44ddb0e02cd2fd711003a77d5a64f375744f26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\.android\build-cache\d61f4291e274ed947693603986b8a218daede18f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3c338351b9ab0d62387e8034e307984480abd513\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\emilio\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_7abef40d210a25ffbf922bd65fbc813f2157de6f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_7abef40d210a25ffbf922bd65fbc813f2157de6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\.android\build-cache\d61f4291e274ed947693603986b8a218daede18f\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_45693f8c4a5a61fb6d358ba030d26bf6619a4dfb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_74fc3572fb584c102b83b2edc7513d9beb46c38e.jar" />
+    </item>
+    <item
+        jar="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_8a799ab52028f247b00aa0d6450ce9640b162a1c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="5d8f169dd717380bdc790583c3dd9269b25a8224">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c99ddfddf303d3999d59169c8e9050379ce8db78\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_b5a1fc194ee8b9e358767a631626264831141be3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\.android\build-cache\b3c750320ef76b6b0ca8150916704267c2d45029\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6313fe0485443f66834d7485fdcf3be7b70a39f8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\.android\build-cache\c725987bfcd7c0b53a6b62287064096e58583bfc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e754326fb68121a3e3ac50bbafbf03018f10a23d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\emilio\.android\build-cache\476f02c77e94a7b06fb237f3f8027bf6ae1b1be1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1be72b4e6d4e101ed1f152099bdbb48c0645cbeb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\emilio\AndroidStudioProjects\android-projects\Soonami\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_35f9662e9e9372abd24a9674073169b41b0df823.jar" />
+    </item>
+
+</items>
