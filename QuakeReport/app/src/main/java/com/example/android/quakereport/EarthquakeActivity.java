@@ -23,9 +23,11 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +49,9 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
     private static final String USGS_REQUEST_URL =
             "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&orderby=time&minmag=6&limit=10";
 
+    /** Empty text view in case there's no item to show*/
+    private TextView emptyTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +59,9 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
 
         // Find a reference to the {@link ListView} in the layout
         ListView earthquakeListView = (ListView) findViewById(R.id.list);
+
+        emptyTextView = (TextView) findViewById(R.id.empty_view);
+        earthquakeListView.setEmptyView(emptyTextView);
 
         // Create a new adapter that takes an empty list of earthquakes as input
         mAdapter = new EarthquakeAdapter(this, new ArrayList<Earthquake>());
@@ -86,6 +94,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
 
         // Init the loader whose ID is EARTHQUAKE_LOADER_ID value and pass this activity for the LoaderCallbacks
         loaderManager.initLoader(EARTHQUAKE_LOADER_ID, null, this);
+        Log.e(LOG_TAG, "Loaded the loader");
     }
 
     @Override
