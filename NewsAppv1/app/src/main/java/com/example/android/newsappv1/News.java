@@ -8,6 +8,9 @@ public class News {
     /** Section */
     private String mSection;
 
+    /** Author */
+    private String mAuthor;
+
     /** Website URL of the news */
     private String mUrl;
 
@@ -19,19 +22,22 @@ public class News {
      *
      * @param title is the title of the piece of news
      * @param section is the section
+     * @param author is the author of the news
      * @param date is the date of the news
      * @param url is the website URL to find more details about the news
      */
-    public News(String title, String section, String date, String url) {
+    public News(String title, String section, String author, String date, String url) {
         mTitle = title;
         mSection = section;
+        mAuthor = author;
         mDate = date;
         mUrl = url;
     }
 
-    public News(String title, String section, String date) {
+    public News(String title, String section, String author, String date) {
         mTitle = title;
         mSection = section;
+        mAuthor = author;
         mDate = date;
     }
 
@@ -44,6 +50,11 @@ public class News {
      * Returns the section.
      */
     public String getSection() { return mSection; }
+
+    /**
+     * Returns the author.
+     */
+    public String getAuthor() { return mAuthor; }
 
     /**
      * Returns the date of the news
