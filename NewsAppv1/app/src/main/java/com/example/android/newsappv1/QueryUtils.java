@@ -2,6 +2,7 @@ package com.example.android.newsappv1;
 
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -67,6 +68,8 @@ public final class QueryUtils {
             // For each piece of news in the results, create an {@link News} object
             for (int index = 0; index < resultNews.length(); index++)
             {
+
+                Log.e("QueryUtils", "Index " + index);
                 // Get a single news object at position i within the list of news
                 JSONObject currentNews = resultNews.getJSONObject(index);
 
@@ -90,19 +93,21 @@ public final class QueryUtils {
                 JSONArray contributorTags = currentNews.getJSONArray("tags");
 
                 // Now add them to the list
-                for (int i = 0; i < contributorTags.length(); i++)
-                {
+                for (int i = 0; i < contributorTags.length(); i++) {
                     // Get the current contributor
                     JSONObject contributor = contributorTags.getJSONObject(i);
 
-                    // Extract the info
-                    // First name
-                    String firstName = contributor.getString("firstName");
-                    // Last name
-                    String lastName = contributor.getString("lastName");
+                    // Extract the info only if it's present
+                    if (contributor.has("firstName") && contributor.has("lastName")) {
 
-                    // Add the author
-                    contributorsList.add(firstName + " " + lastName);
+                        // First name
+                        String firstName = contributor.getString("firstName");
+                        // Last name
+                        String lastName = contributor.getString("lastName");
+
+                        // Add the author
+                        contributorsList.add(firstName + " " + lastName);
+                    }
                 }
 
                 // Now, if the contributors list is not empty, display the author name
