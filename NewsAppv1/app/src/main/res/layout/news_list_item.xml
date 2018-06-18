@@ -9,59 +9,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <!--android:layout_marginStart="16dp"-->
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             android:fontFamily="sans-serif-medium"
             android:textStyle="bold"
             android:textSize="16sp"
-            tools:text="News Title"/>
+            tools:text="Title"/>
 
         <TextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
             android:textAppearance="?android:textAppearanceMedium"
             android:textSize="12sp"
-            tools:text="News Date"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_weight="5"
-        android:orientation="vertical">
+            android:layout_marginLeft="10dp"
+            tools:text="Date"/>
 
         <TextView
             android:id="@+id/author"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:fontFamily="sans-serif-medium"
             android:textStyle="bold"
             android:textSize="14sp"
-            tools:text="News Author"/>
+            android:layout_marginLeft="10dp"
+            tools:text="Author"/>
 
         <TextView
             android:id="@+id/section"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:textAppearance="?android:textAppearanceMedium"
             android:textSize="12sp"
-            tools:text="News Section"/>
+            android:layout_marginLeft="10dp"
+            tools:text="Section"/>
 
 
     </LinearLayout>
+
 
 </LinearLayout>
