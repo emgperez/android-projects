@@ -16,8 +16,12 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Helper methods related to requesting and receiving earthquake data from USGS.
@@ -232,6 +236,27 @@ public final class QueryUtils {
 
         // Return the list of {@link News)
         return news;
+    }
+
+    private static String formatDate(String date)
+    {
+        SimpleDateFormat currentDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.getDefault());
+        String formattedDate = "";
+
+        try
+        {
+            Date jsonDate = currentDateFormat.parse(date);
+            String pattern = "dd MM YYYY";
+            SimpleDateFormat formatter = new SimpleDateFormat(pattern, Locale.getDefault());
+            formattedDate = formatter.format(jsonDate);
+
+        }
+        catch (ParseException e)
+        {
+            Log.e("QueryUtils", "Error parsing JSON date: ", e);
+        }
+
+        return formattedDate;
     }
 
 }
