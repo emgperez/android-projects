@@ -34,10 +34,16 @@ public class News {
         mUrl = url;
     }
 
-    public News(String title, String section, String author, String date) {
+    public News(String title, String section, String date, String url) {
         mTitle = title;
         mSection = section;
-        mAuthor = author;
+        mDate = date;
+        mUrl = url;
+    }
+
+    public News(String title, String section, String date) {
+        mTitle = title;
+        mSection = section;
         mDate = date;
     }
 
