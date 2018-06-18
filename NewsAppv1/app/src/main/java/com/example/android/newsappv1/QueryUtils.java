@@ -88,6 +88,7 @@ public final class QueryUtils {
                 String newsAuthor = "NA";
                 // Date
                 String newsDate = currentNews.getString("webPublicationDate");
+                newsDate = formatDate(newsDate);
 
                 // If the author is present, it's represented as an array in the JSON response
                 // Make a list fed with that array
@@ -120,6 +121,12 @@ public final class QueryUtils {
 
                 // Finally add the News Object
                 News newNews = new News(newsTitle, newsSection, newsAuthor, newsDate, newsUrl);
+
+                //if(newsAuthor != "NA")
+                //    newNews = new News(newsTitle, newsSection, newsAuthor, newsDate, newsUrl);
+                //else
+                //    newNews = new News(newsTitle, newsSection, newsDate, newsUrl);
+
                 news.add(newNews);
             }
         }
@@ -246,7 +253,7 @@ public final class QueryUtils {
         try
         {
             Date jsonDate = currentDateFormat.parse(date);
-            String pattern = "dd MM YYYY";
+            String pattern = "dd MM yy";
             SimpleDateFormat formatter = new SimpleDateFormat(pattern, Locale.getDefault());
             formattedDate = formatter.format(jsonDate);
 
