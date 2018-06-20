@@ -121,12 +121,6 @@ public final class QueryUtils {
 
                 // Finally add the News Object
                 News newNews = new News(newsTitle, newsSection, newsAuthor, newsDate, newsUrl);
-
-                //if(newsAuthor != "NA")
-                //    newNews = new News(newsTitle, newsSection, newsAuthor, newsDate, newsUrl);
-                //else
-                //    newNews = new News(newsTitle, newsSection, newsDate, newsUrl);
-
                 news.add(newNews);
             }
         }
