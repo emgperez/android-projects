@@ -115,7 +115,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     @Override
-    public void onLoadFinished(Loader<List<News>> loader, List<News> earthquakes)
+    public void onLoadFinished(Loader<List<News>> loader, List<News> news)
     {
         // Hide loading indicator because the data has been loaded
         View loadingIndicator = findViewById(R.id.loading_indicator);
@@ -123,9 +123,9 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
 
         emptyTextView.setText(R.string.no_news_available);
 
-        // If there's Earthquake data, add it all to the adapter
-        if (earthquakes != null && !earthquakes.isEmpty()) {
-            mAdapter.addAll(earthquakes);
+        // If there's news data, add it all to the adapter
+        if (news != null && !news.isEmpty()) {
+            mAdapter.addAll(news);
         }
     }
 
