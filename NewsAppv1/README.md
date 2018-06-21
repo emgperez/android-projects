@@ -1,4 +1,4 @@
-# Musical Structure App
+# News App
 
 - This app contains a main screen which displays multiple news stories 
 
