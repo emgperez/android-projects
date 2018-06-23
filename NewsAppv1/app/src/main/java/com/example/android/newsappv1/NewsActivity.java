@@ -129,7 +129,11 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
 
         emptyTextView.setText(R.string.no_news_available);
 
+<<<<<<< HEAD
         // If there's Earthquake data, add it all to the adapter
+=======
+        // If there's news data, add it all to the adapter
+>>>>>>> 9b87c5e494a76c512e64576f56a32b3461cccb89
         if (news != null && !news.isEmpty()) {
             mAdapter.addAll(news);
         }
