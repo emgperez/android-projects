@@ -29,6 +29,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     public static class EarthquakePreferenceFragment extends PreferenceFragment {
 
+        // When creating, take properties from the preference xml file (settings_main)
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
