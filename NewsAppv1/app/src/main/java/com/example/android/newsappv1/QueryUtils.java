@@ -23,9 +23,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-/**
- * Helper methods related to requesting and receiving earthquake data from USGS.
- */
+
 public final class QueryUtils {
 
     /** Tag for the log messages */
@@ -85,7 +83,7 @@ public final class QueryUtils {
                 // URL
                 String newsUrl = currentNews.getString("webUrl");
                 // Author (it might not be present
-                String newsAuthor = "NA";
+                String newsAuthor = "Author NA";
                 // Date
                 String newsDate = currentNews.getString("webPublicationDate");
                 newsDate = formatDate(newsDate);
@@ -132,7 +130,7 @@ public final class QueryUtils {
             Log.e("QueryUtils", "Problem parsing the news JSON results", e);
         }
 
-        // Return the list of earthquakes
+        // Return the list of news
         return news;
     }
 
@@ -179,7 +177,7 @@ public final class QueryUtils {
                 Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
             }
         } catch (IOException e) {
-            Log.e(LOG_TAG, "Problem retrieving the earthquake JSON results.", e);
+            Log.e(LOG_TAG, "Problem retrieving the news JSON results.", e);
         } finally {
             if (urlConnection != null) {
                 urlConnection.disconnect();

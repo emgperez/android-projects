@@ -40,10 +40,14 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
     /** Empty text view in case there's no item to show*/
     private TextView emptyTextView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
+
+
 
         // Find a reference to the {@link ListView} in the layout
         ListView newsListView = (ListView) findViewById(R.id.list);
@@ -85,7 +89,9 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
         // We have connection, so get the data
-        if (networkInfo != null && networkInfo.isConnected()) {
+        boolean gotConnection = (networkInfo != null && networkInfo.isConnected());
+
+        if (gotConnection) {
 
             // Get a reference to the LoaderManager, in order to interact with loaders.
             LoaderManager loaderManager = getLoaderManager();
@@ -115,7 +121,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     @Override
-    public void onLoadFinished(Loader<List<News>> loader, List<News> earthquakes)
+    public void onLoadFinished(Loader<List<News>> loader, List<News> news)
     {
         // Hide loading indicator because the data has been loaded
         View loadingIndicator = findViewById(R.id.loading_indicator);
@@ -124,8 +130,8 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         emptyTextView.setText(R.string.no_news_available);
 
         // If there's Earthquake data, add it all to the adapter
-        if (earthquakes != null && !earthquakes.isEmpty()) {
-            mAdapter.addAll(earthquakes);
+        if (news != null && !news.isEmpty()) {
+            mAdapter.addAll(news);
         }
     }
 

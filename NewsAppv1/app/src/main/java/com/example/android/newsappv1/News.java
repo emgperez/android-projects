@@ -47,29 +47,14 @@ public class News {
         mDate = date;
     }
 
-    /**
-     * Returns the title.
-     */
     public String getTitle() { return mTitle; }
 
-    /**
-     * Returns the section.
-     */
     public String getSection() { return mSection; }
 
-    /**
-     * Returns the author.
-     */
     public String getAuthor() { return mAuthor; }
 
-    /**
-     * Returns the date of the news
-     */
     public String getDate() { return mDate; }
 
-    /**
-     * Returns the website URL to find more information about the earthquake.
-     */
     public String getUrl() {
         return mUrl;
     }
